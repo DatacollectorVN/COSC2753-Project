@@ -1,0 +1,14 @@
+[project]
+name = "cosc2753-eda"
+version = "0.1.0"
+description = "EDA notebooks for FashionDataset"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.5.5",
+    "ipykernel>=7.3.0",
+    "numpy>=2.0.0",
+    "opencv-python-headless>=5.0.0.93",
+    "pandas>=3.0.5",
+    "plotly>=7.0.0",
+    "tqdm>=4.70.0",
+]

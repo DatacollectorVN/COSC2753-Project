@@ -1,0 +1,15 @@
+{
+    "CHECKPOINT_PATH": "./results/best_model.pth",
+    "DATA_DIR_TRAIN": "../data/FashionDataset/train",
+    "LABEL_COL": "articleType",
+    "LOG_DIR": "./logs",
+
+    "SEED": 42,
+    "IMAGE_SIZE": 224,
+    "IN_CHANNELS": 3,
+    "DROPOUT_RATE": 0.5,
+
+    "BATCH_SIZE": 64,
+    "VAL_RATIO": 0.2,
+    "NUM_WORKERS": 4
+}
