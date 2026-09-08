@@ -3,14 +3,27 @@
     "LABEL_COL": "articleType",
 
     "SAVE_MODEL_DIR": "./results",
-    "LOG_DIR": "./logs",
+    "SAVE_BEST": "val_acc",
 
     "SEED": 42,
-    "IMAGE_SIZE": 224,
     "IN_CHANNELS": 3,
-    "DROPOUT_RATE": 0.5,
 
-    "BATCH_SIZE": 64,
+    "MODEL_NAME": "resnet_cnn",
+    "MODEL_PARAMS": {
+        "depth": 50,
+        "dropout_rate": 0.2
+    },
+
+    "TRANSFORM_PARAMS": {
+        "width": 96,
+        "height": 128,
+        "pad_value": 0
+    },
+
+    "MIN_CLASS_COUNT": 50,
+    "USE_CLASS_WEIGHTS": true,
+
+    "BATCH_SIZE": 32,
     "VAL_RATIO": 0.2,
     "NUM_WORKERS": 4,
 
@@ -19,5 +32,5 @@
     "LR_SCHEDULE_FACTOR": 0.1,
     "LR_PATIENCE": 5,
     "EARLY_STOPPING_PATIENCE": 10,
-    "MAX_EPOCHS": 50
+    "MAX_EPOCHS": 100
 }

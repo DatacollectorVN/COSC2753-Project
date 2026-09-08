@@ -1,5 +1,6 @@
 import logging
 import random
+from datetime import datetime
 from pathlib import Path
 
 import numpy as np
@@ -15,6 +16,7 @@ class SettingConfig:
     def __init__(self, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
+        self.pin_memory = torch.cuda.is_available()
         self.device = torch.device(
             "cuda" if torch.cuda.is_available()
             else "mps" if torch.backends.mps.is_available()
@@ -54,14 +56,21 @@ def set_seed(seed: int) -> None:
         torch.cuda.manual_seed_all(seed)
 
 
-def setup_logger(name: str, log_dir: str = "logs") -> logging.Logger:
-    log_path = Path(log_dir)
-    log_path.mkdir(parents=True, exist_ok=True)
+def create_run_dir(base_dir: str, phase: str) -> Path:
+    """Create a timestamped run directory: base_dir/phase/yyyymmdd_hhmmss/"""
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    run_dir = Path(base_dir) / phase / timestamp
+    run_dir.mkdir(parents=True, exist_ok=True)
+    return run_dir
+
+
+def setup_logger(name: str, log_file: Path) -> logging.Logger:
+    """Setup logger that writes to console + a specific log file."""
+    log_file.parent.mkdir(parents=True, exist_ok=True)
 
     logger = logging.getLogger(name)
-    if logger.handlers:
-        return logger
-
+    # Clear any existing handlers to avoid duplicates across runs
+    logger.handlers.clear()
     logger.setLevel(logging.INFO)
 
     console = logging.StreamHandler()
@@ -69,7 +78,7 @@ def setup_logger(name: str, log_dir: str = "logs") -> logging.Logger:
         logging.Formatter("%(asctime)s [%(levelname)s] %(message)s", datefmt="%H:%M:%S")
     )
 
-    file_handler = logging.FileHandler(log_path / f"{name}.log")
+    file_handler = logging.FileHandler(log_file)
     file_handler.setFormatter(
         logging.Formatter("%(asctime)s [%(levelname)s] %(name)s - %(message)s")
     )
@@ -84,9 +93,10 @@ def plot_training_curves(
     val_losses: list[float],
     train_accs: list[float],
     val_accs: list[float],
-    save_dir: str = "results",
+    save_dir: str | Path,
 ) -> None:
-    Path(save_dir).mkdir(parents=True, exist_ok=True)
+    save_dir = Path(save_dir)
+    save_dir.mkdir(parents=True, exist_ok=True)
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -107,5 +117,5 @@ def plot_training_curves(
     ax2.grid(True)
 
     plt.tight_layout()
-    plt.savefig(Path(save_dir) / "training_curves.png", dpi=150)
+    plt.savefig(save_dir / "training_curves.png", dpi=150)
     plt.close()

@@ -1,12 +1,9 @@
 {
-    "CHECKPOINT_PATH": "./results/best_model.pth",
+    "CHECKPOINT_PATH": "./results/train/<run_timestamp>/best_model.pth",
     "TEST_IMAGE_DIR": "../data/FashionDataset/test/images_test",
-    "SAVE_PREDICTIONS_CSV": "./results/predictions.csv",
-    "LOG_DIR": "./logs",
+    "SAVE_DIR": "./results",
 
-    "IMAGE_SIZE": 224,
     "IN_CHANNELS": 3,
-    "DROPOUT_RATE": 0.5,
 
     "BATCH_SIZE": 64,
     "NUM_WORKERS": 4

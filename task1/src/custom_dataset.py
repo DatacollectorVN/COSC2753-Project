@@ -4,9 +4,30 @@ import cv2
 import numpy as np
 import pandas as pd
 import torch
-from torch.utils.data import DataLoader, Dataset, SubsetRandomSampler
+from sklearn.model_selection import StratifiedShuffleSplit
+from torch.utils.data import DataLoader, Dataset, Subset
 
 from .transforms import get_train_transforms, get_val_transforms
+
+
+def _apply_rare_grouping(df: pd.DataFrame, label_col: str, min_class_count: int) -> pd.DataFrame:
+    """Map classes with fewer than min_class_count samples to 'Other'.
+
+    From the EDA analysis (task1_analysis.md):
+        MIN_CLASS_COUNT=50 preserves 59 named classes covering 97.63% of images,
+        mapping 65 rare classes into a single 'Other' bucket.
+    """
+    if min_class_count <= 0:
+        df["model_target"] = df[label_col]
+        return df
+
+    counts = df[label_col].value_counts()
+    rare_labels = counts[counts < min_class_count].index
+    df["model_target"] = df[label_col].where(
+        ~df[label_col].isin(rare_labels),
+        "Other",
+    )
+    return df
 
 
 class FashionDataset(Dataset):
@@ -15,6 +36,11 @@ class FashionDataset(Dataset):
     Expects:
         data_dir/images_{split}/  — folder of .jpg images named by id
         data_dir/styles_{split}.csv or styles_prediction.csv
+
+    Args:
+        min_class_count: Classes with fewer samples are grouped into 'Other'.
+            Set to 0 to keep all original classes (Experiment A).
+            Recommended: 50 (Experiment C from analysis).
     """
 
     def __init__(
@@ -24,6 +50,7 @@ class FashionDataset(Dataset):
         transform=None,
         label_col: str = "articleType",
         label_map: dict[str, int] | None = None,
+        min_class_count: int = 0,
     ):
         self.data_dir = Path(data_dir)
         self.split = split
@@ -46,12 +73,17 @@ class FashionDataset(Dataset):
         self.has_labels = split == "train"
         if self.has_labels:
             self.df = self.df.dropna(subset=[label_col]).reset_index(drop=True)
+
+            # Apply rare-class grouping
+            self.df = _apply_rare_grouping(self.df, label_col, min_class_count)
+
             if label_map is not None:
                 self.label_map = label_map
             else:
-                unique_labels = sorted(self.df[label_col].unique())
+                unique_labels = sorted(self.df["model_target"].unique())
                 self.label_map = {label: idx for idx, label in enumerate(unique_labels)}
-            self.df["label"] = self.df[label_col].map(self.label_map)
+
+            self.df["label"] = self.df["model_target"].map(self.label_map)
             self.df = self.df.dropna(subset=["label"]).reset_index(drop=True)
             self.df["label"] = self.df["label"].astype(int)
         else:
@@ -64,6 +96,21 @@ class FashionDataset(Dataset):
     @property
     def class_names(self) -> list[str]:
         return [name for name, _ in sorted(self.label_map.items(), key=lambda x: x[1])]
+
+    @property
+    def labels(self) -> np.ndarray:
+        """Return all labels as numpy array (for stratified splitting)."""
+        return self.df["label"].values
+
+    def get_class_weights(self) -> torch.Tensor:
+        """Compute inverse-frequency class weights for CrossEntropyLoss.
+
+        weight_i = total_samples / (num_classes * count_i)
+        """
+        counts = np.bincount(self.df["label"].values, minlength=self.num_classes)
+        counts = np.maximum(counts, 1)  # avoid division by zero
+        weights = len(self.df) / (self.num_classes * counts)
+        return torch.FloatTensor(weights)
 
     def __len__(self) -> int:
         return len(self.df)
@@ -110,63 +157,77 @@ class FashionDatasetTest(Dataset):
 
 def create_train_val_loaders(
     data_dir: str,
-    image_size: int = 224,
     batch_size: int = 64,
     val_ratio: float = 0.2,
     num_workers: int = 4,
     seed: int = 42,
     label_col: str = "articleType",
-) -> tuple[DataLoader, DataLoader, dict[str, int]]:
-    """Create train/val DataLoaders using SubsetRandomSampler.
+    min_class_count: int = 0,
+    transform_params: dict | None = None,
+) -> tuple[DataLoader, DataLoader, dict[str, int], torch.Tensor]:
+    """Create train/val DataLoaders with stratified splitting.
+
+    Uses StratifiedShuffleSplit (sklearn) to guarantee every class appears
+    in both train and val sets, as recommended by the EDA analysis.
 
     Returns:
-        (train_loader, val_loader, label_map)
+        (train_loader, val_loader, label_map, class_weights)
     """
-    train_transform = get_train_transforms(image_size)
-    val_transform = get_val_transforms(image_size)
+    train_transform = get_train_transforms(transform_params)
+    val_transform = get_val_transforms(transform_params)
 
+    # Build dataset to get label_map and class distribution
     train_dataset = FashionDataset(
-        data_dir=data_dir, split="train", transform=train_transform, label_col=label_col,
+        data_dir=data_dir, split="train", transform=train_transform,
+        label_col=label_col, min_class_count=min_class_count,
     )
     label_map = train_dataset.label_map
+    class_weights = train_dataset.get_class_weights()
 
+    # Val dataset with val transforms (same label_map)
     val_dataset = FashionDataset(
         data_dir=data_dir, split="train", transform=val_transform,
-        label_col=label_col, label_map=label_map,
+        label_col=label_col, label_map=label_map, min_class_count=min_class_count,
     )
 
-    num_samples = len(train_dataset)
-    indices = list(range(num_samples))
-    np.random.seed(seed)
-    np.random.shuffle(indices)
+    # Stratified split — ensures every class is in both train and val.
+    # Classes with only 1 sample cannot be stratified, so we merge them into
+    # a temporary group for splitting, then restore original labels.
+    all_labels = train_dataset.labels
+    label_counts = np.bincount(all_labels, minlength=len(label_map))
+    stratify_labels = all_labels.copy()
+    singleton_mask = label_counts[all_labels] < 2
+    if singleton_mask.any():
+        # Assign singletons a shared fake label so StratifiedShuffleSplit can handle them
+        fake_label = all_labels.max() + 1
+        stratify_labels[singleton_mask] = fake_label
 
-    split = int(np.floor(val_ratio * num_samples))
-    val_idx, train_idx = indices[:split], indices[split:]
-
-    train_sampler = SubsetRandomSampler(train_idx)
-    val_sampler = SubsetRandomSampler(val_idx)
+    splitter = StratifiedShuffleSplit(n_splits=1, test_size=val_ratio, random_state=seed)
+    train_idx, val_idx = next(splitter.split(np.zeros(len(stratify_labels)), stratify_labels))
 
     train_loader = DataLoader(
-        train_dataset, batch_size=batch_size, sampler=train_sampler,
-        num_workers=num_workers, pin_memory=True,
+        Subset(train_dataset, train_idx),
+        batch_size=batch_size, shuffle=True,
+        num_workers=num_workers, pin_memory=torch.cuda.is_available(),
     )
     val_loader = DataLoader(
-        val_dataset, batch_size=batch_size, sampler=val_sampler,
-        num_workers=num_workers, pin_memory=True,
+        Subset(val_dataset, val_idx),
+        batch_size=batch_size, shuffle=False,
+        num_workers=num_workers, pin_memory=torch.cuda.is_available(),
     )
-    return train_loader, val_loader, label_map
+    return train_loader, val_loader, label_map, class_weights
 
 
 def create_test_loader(
     image_dir: str,
-    image_size: int = 224,
     batch_size: int = 64,
     num_workers: int = 4,
+    transform_params: dict | None = None,
 ) -> DataLoader:
     """Create test DataLoader for inference."""
-    transform = get_val_transforms(image_size)
+    transform = get_val_transforms(transform_params)
     dataset = FashionDatasetTest(image_dir=image_dir, transform=transform)
     return DataLoader(
         dataset, batch_size=batch_size, shuffle=False,
-        num_workers=num_workers, pin_memory=True,
+        num_workers=num_workers, pin_memory=torch.cuda.is_available(),
     )
