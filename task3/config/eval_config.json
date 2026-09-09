@@ -1,0 +1,16 @@
+{
+    "_comment": "=== Evaluation: loads model from checkpoint, evaluates on val split ===",
+
+    "CHECKPOINT_PATH": "./results/train/<run_timestamp>/best_model.pth",
+    "DATA_DIR_TRAIN": "../data/FashionDataset/train",
+    "SAVE_DIR": "./results",
+
+    "SEED": 42,
+    "IN_CHANNELS": 3,
+
+    "MIN_OCCASION_COUNT": 50,
+
+    "BATCH_SIZE": 64,
+    "VAL_RATIO": 0.2,
+    "NUM_WORKERS": 4
+}

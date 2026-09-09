@@ -1,0 +1,13 @@
+{
+    "_comment": "=== Prediction: loads model from checkpoint, runs inference on test images ===",
+
+    "CHECKPOINT_PATH": "./results/train/<run_timestamp>/best_model.pth",
+    "TEST_IMAGE_DIR": "../data/FashionDataset/test/images_test",
+    "TEST_CSV_PATH": "../data/FashionDataset/test/styles_prediction.csv",
+    "SAVE_DIR": "./results",
+
+    "IN_CHANNELS": 3,
+
+    "BATCH_SIZE": 64,
+    "NUM_WORKERS": 4
+}
