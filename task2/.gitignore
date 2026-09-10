@@ -1,0 +1,5 @@
+# Reproducible local environment and generated feature matrices
+.venv/
+__pycache__/
+*.py[cod]
+artifacts/features/

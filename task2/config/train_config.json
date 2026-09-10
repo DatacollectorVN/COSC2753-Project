@@ -1,0 +1,66 @@
+{
+  "_comment_data": "=== Data ===",
+  "DATA_DIR_TRAIN": "../FashionDataset/train",
+  "LABEL_COL": "season",
+  "EXPECTED_LABELS": [
+    "Spring",
+    "Summer",
+    "Fall",
+    "Winter"
+  ],
+
+  "_comment_output": "=== Output ===",
+  "SAVE_MODEL_DIR": "./results",
+  "ARTIFACT_DIR": "./artifacts",
+  "TRAIN_FEATURE_CACHE": "./artifacts/features/train_features.npz",
+  "HOLDOUT_MODEL_PATH": "./artifacts/holdout_model.joblib",
+  "FINAL_MODEL_PATH": "./artifacts/season_model.joblib",
+  "CV_RESULTS_PATH": "./artifacts/grid_search_results.csv",
+
+  "_comment_reproducibility": "=== Reproducibility and evaluation ===",
+  "SEED": 42,
+  "VAL_RATIO": 0.2,
+  "CV_FOLDS": 5,
+  "REFIT_METRIC": "macro_f1",
+
+  "_comment_features": "=== Deterministic image features ===",
+  "FORCE_REBUILD_FEATURES": false,
+  "FEATURE_PARAMS": {
+    "width": 48,
+    "height": 64,
+    "pad_value": 255,
+    "hog_orientations": 9,
+    "hog_pixels_per_cell": [
+      8,
+      8
+    ],
+    "hog_cells_per_block": [
+      2,
+      2
+    ],
+    "hog_block_norm": "L2-Hys",
+    "hsv_bins": 16
+  },
+
+  "_comment_model": "=== LinearSVC selected by GridSearchCV ===",
+  "MODEL_NAME": "linear_svc",
+  "MODEL_PARAMS": {
+    "max_iter": 10000,
+    "tol": 0.0001
+  },
+  "PARAM_GRID": {
+    "classifier__C": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "classifier__class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "N_JOBS": 4,
+  "PARALLEL_BACKEND": "threading",
+  "VERBOSE": 2
+}

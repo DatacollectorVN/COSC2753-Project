@@ -1,0 +1,26 @@
+{
+  "run_directory": "results/train/20260910_230121",
+  "summary": {
+    "run_directory": "results/train/20260910_230121",
+    "usable_rows": 38592,
+    "feature_dimensions": 1308,
+    "feature_preparation_seconds": 0.48166416701860726,
+    "grid_search_seconds": 1134.0356145410042,
+    "final_refit_seconds": 54.58651812499738,
+    "grid_candidates": 8,
+    "total_cross_validation_fits": 40,
+    "best_params": {
+      "classifier__C": 0.01,
+      "classifier__class_weight": null
+    },
+    "best_cv_macro_f1": 0.6720291062024788,
+    "baseline_accuracy": 0.49578961005311567,
+    "baseline_macro_f1": 0.16572839078468735,
+    "holdout_accuracy": 0.6867469879518072,
+    "holdout_macro_f1": 0.6684325125793753,
+    "holdout_weighted_f1": 0.6820005547873766,
+    "holdout_balanced_accuracy": 0.6298529446668436,
+    "final_model_path": "artifacts/season_model.joblib",
+    "final_model_size_bytes": 71861
+  }
+}

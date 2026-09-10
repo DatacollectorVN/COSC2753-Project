@@ -15,3 +15,6 @@ build/
 *.egg
 results/
 *.DS_Store
+artifacts/
+
+FashionDataset/
