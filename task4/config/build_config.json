@@ -1,0 +1,10 @@
+{
+    "MODEL_NAME": "openai/clip-vit-base-patch32",
+    "EMBEDDING_DIM": 512,
+    "BATCH_SIZE": 64,
+    "NUM_WORKERS": 4,
+    "INDEX_DIR": "results/index",
+    "DATA_DIR": "../data/FashionDataset/train",
+    "IMAGE_SUBDIR": "images_train",
+    "CSV_FILE": "styles_train.csv"
+}

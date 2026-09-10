@@ -1,0 +1,8 @@
+{
+    "MODEL_NAME": "openai/clip-vit-base-patch32",
+    "INDEX_DIR": "results/index",
+    "TOP_K": 5,
+    "SEARCH_MODE": "ann",
+    "HNSW_M": 32,
+    "HNSW_EF_SEARCH": 64
+}
