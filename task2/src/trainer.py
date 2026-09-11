@@ -13,10 +13,18 @@ from sklearn.dummy import DummyClassifier
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, train_test_split
 
 from .custom_dataset import load_training_metadata
-from .features import load_or_extract_features
+from .data_fingerprint import dataset_fingerprint
 from .metric_evaluation import compute_metrics, save_evaluation_artifacts
 from .models import build_model
-from .utils import SettingConfig, create_run_dir, save_json, set_seed, setup_logger
+from .utils import (
+    SettingConfig,
+    create_run_dir,
+    prediction_confidence,
+    save_json,
+    set_seed,
+    setup_logger,
+)
+from .visualization import plot_task2_cnn_epoch_curves
 
 
 SCORING = {
@@ -24,6 +32,17 @@ SCORING = {
     "accuracy": "accuracy",
     "weighted_f1": "f1_weighted",
 }
+
+
+def _grid_candidate_count(param_grid) -> int:
+    grids = [param_grid] if isinstance(param_grid, dict) else param_grid
+    return int(
+        sum(np.prod([len(values) for values in grid.values()]) for grid in grids)
+    )
+
+
+def _classifier(model):
+    return model.named_steps.get("classifier", model) if hasattr(model, "named_steps") else model
 
 
 class FashionTrainer(SettingConfig):
@@ -50,15 +69,25 @@ class FashionTrainer(SettingConfig):
             dataset_audit["missing_image_rows"],
         )
 
-        feature_start = perf_counter()
-        features, feature_fingerprint = load_or_extract_features(
-            metadata,
-            feature_params=self.FEATURE_PARAMS,
-            cache_path=self.TRAIN_FEATURE_CACHE,
-            force_rebuild=self.FORCE_REBUILD_FEATURES,
-            logger=logger,
+        input_start = perf_counter()
+        input_kind = "image_paths"
+        input_params = {
+            "width": int(self.MODEL_PARAMS.get("width", 60)),
+            "height": int(self.MODEL_PARAMS.get("height", 80)),
+            "pad_value": int(self.MODEL_PARAMS.get("pad_value", 255)),
+            "normalization": "(RGB - 0.5) / 0.5",
+        }
+        inputs = metadata["image_path"].astype(str).to_numpy(dtype=object)
+        input_fingerprint = dataset_fingerprint(
+            metadata, {"input_kind": input_kind, **input_params}
         )
-        feature_seconds = perf_counter() - feature_start
+        input_shape = [3, input_params["height"], input_params["width"]]
+        logger.info(
+            "Task2CNN input: %d RGB image paths; tensor shape %s",
+            len(inputs),
+            input_shape,
+        )
+        input_preparation_seconds = perf_counter() - input_start
         labels = metadata[self.LABEL_COL].astype(str).to_numpy()
         all_indices = np.arange(len(metadata))
         development_indices, holdout_indices = train_test_split(
@@ -67,8 +96,8 @@ class FashionTrainer(SettingConfig):
             random_state=self.SEED,
             stratify=labels,
         )
-        development_features = features[development_indices]
-        holdout_features = features[holdout_indices]
+        development_inputs = inputs[development_indices]
+        holdout_inputs = inputs[holdout_indices]
         development_labels = labels[development_indices]
         holdout_labels = labels[holdout_indices]
 
@@ -117,7 +146,7 @@ class FashionTrainer(SettingConfig):
             error_score="raise",
             pre_dispatch=self.N_JOBS,
         )
-        candidate_count = int(np.prod([len(values) for values in self.PARAM_GRID.values()]))
+        candidate_count = _grid_candidate_count(self.PARAM_GRID)
         logger.info(
             "Starting GridSearchCV: %d candidates x %d folds; refit=%s",
             candidate_count,
@@ -126,7 +155,7 @@ class FashionTrainer(SettingConfig):
         )
         search_start = perf_counter()
         with parallel_backend(self.PARALLEL_BACKEND, n_jobs=self.N_JOBS):
-            search.fit(development_features, development_labels)
+            search.fit(development_inputs, development_labels)
         search_seconds = perf_counter() - search_start
 
         cv_results = pd.DataFrame(search.cv_results_).sort_values("rank_test_macro_f1")
@@ -138,9 +167,8 @@ class FashionTrainer(SettingConfig):
         logger.info("Best cross-validation macro-F1: %.4f", search.best_score_)
 
         holdout_model = search.best_estimator_
-        holdout_predictions = holdout_model.predict(holdout_features)
-        holdout_decisions = holdout_model.decision_function(holdout_features)
-        holdout_scores = np.max(holdout_decisions, axis=1)
+        holdout_predictions = holdout_model.predict(holdout_inputs)
+        holdout_scores = prediction_confidence(holdout_model, holdout_inputs)
         holdout_metrics = compute_metrics(
             holdout_labels, holdout_predictions, self.EXPECTED_LABELS
         )
@@ -152,13 +180,28 @@ class FashionTrainer(SettingConfig):
             y_pred=holdout_predictions,
             prediction_scores=holdout_scores,
         )
+        epoch_history = pd.DataFrame(_classifier(holdout_model).history_)
+        epoch_history.to_csv(run_dir / "task2_cnn_epoch_history.csv", index=False)
+        diagnostic_history_path = (
+            Path(self.FIGURE_DIR).parent / "task2_cnn_epoch_history.csv"
+        )
+        diagnostic_history_path.parent.mkdir(parents=True, exist_ok=True)
+        epoch_history.to_csv(diagnostic_history_path, index=False)
+        plot_paths = plot_task2_cnn_epoch_curves(epoch_history, run_dir)
+        stable_plot_paths = {}
+        for plot_name, run_plot_path in plot_paths.items():
+            stable_plot_path = Path(self.FIGURE_DIR) / run_plot_path.name
+            stable_plot_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(run_plot_path, stable_plot_path)
+            stable_plot_paths[plot_name] = str(stable_plot_path)
 
         bundle_metadata = {
             "task": "Fashion Season Classification",
             "target_column": self.LABEL_COL,
             "expected_labels": self.EXPECTED_LABELS,
-            "feature_params": self.FEATURE_PARAMS,
-            "feature_fingerprint": feature_fingerprint,
+            "input_kind": input_kind,
+            "input_params": input_params,
+            "data_fingerprint": input_fingerprint,
             "model_name": self.MODEL_NAME,
             "best_params": search.best_params_,
             "best_cv_macro_f1": float(search.best_score_),
@@ -181,8 +224,17 @@ class FashionTrainer(SettingConfig):
         logger.info("Refitting the selected pipeline on all %d labelled rows", len(metadata))
         final_model = clone(holdout_model)
         final_fit_start = perf_counter()
-        final_model.fit(features, labels)
+        final_model.fit(inputs, labels)
         final_fit_seconds = perf_counter() - final_fit_start
+        holdout_classifier = _classifier(holdout_model)
+        final_classifier = _classifier(final_model)
+        holdout_training_iterations = int(
+            np.max(np.atleast_1d(holdout_classifier.n_iter_))
+        )
+        final_training_iterations = int(
+            np.max(np.atleast_1d(final_classifier.n_iter_))
+        )
+        iteration_unit = "epochs"
         final_bundle = {
             **bundle_metadata,
             "model": final_model,
@@ -195,13 +247,16 @@ class FashionTrainer(SettingConfig):
         stable_final_path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(run_final_path, stable_final_path)
 
-        label_map = {label: index for index, label in enumerate(final_model.classes_)}
+        label_map = {
+            label: index for index, label in enumerate(final_classifier.classes_)
+        }
         save_json(label_map, run_dir / "label_map.json")
         summary = {
             "run_directory": str(run_dir),
             "usable_rows": int(len(metadata)),
-            "feature_dimensions": int(features.shape[1]),
-            "feature_preparation_seconds": feature_seconds,
+            "input_kind": input_kind,
+            "input_shape": input_shape,
+            "input_preparation_seconds": input_preparation_seconds,
             "grid_search_seconds": search_seconds,
             "final_refit_seconds": final_fit_seconds,
             "grid_candidates": int(len(cv_results)),
@@ -214,6 +269,23 @@ class FashionTrainer(SettingConfig):
             "holdout_macro_f1": holdout_metrics["macro_f1"],
             "holdout_weighted_f1": holdout_metrics["weighted_f1"],
             "holdout_balanced_accuracy": holdout_metrics["balanced_accuracy"],
+            "training_iteration_unit": iteration_unit,
+            "holdout_training_iterations": holdout_training_iterations,
+            "final_training_iterations": final_training_iterations,
+            "max_training_iterations": int(
+                getattr(
+                    final_classifier,
+                    "max_epochs",
+                    getattr(final_classifier, "max_iter", final_training_iterations),
+                )
+            ),
+            "model_parameter_count": getattr(
+                final_classifier, "model_parameter_count_", None
+            ),
+            "diagnostic_plots": stable_plot_paths,
+            "diagnostic_history": (
+                str(diagnostic_history_path) if diagnostic_history_path else None
+            ),
             "final_model_path": str(stable_final_path),
             "final_model_size_bytes": int(stable_final_path.stat().st_size),
         }

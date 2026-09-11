@@ -1,5 +1,6 @@
-# Reproducible local environment and generated feature matrices
+# Reproducible local environment
 .venv/
 __pycache__/
 *.py[cod]
-artifacts/features/
+artifacts/
+task2_predictions.csv

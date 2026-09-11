@@ -90,5 +90,5 @@ def save_evaluation_artifacts(
     )
     predictions["correct"] = predictions["actual_season"] == predictions["predicted_season"]
     if prediction_scores is not None:
-        predictions["decision_score"] = prediction_scores
+        predictions["confidence_score"] = prediction_scores
     predictions.to_csv(output_dir / "holdout_predictions.csv", index=False)

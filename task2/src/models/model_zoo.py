@@ -1,10 +1,10 @@
-"""Registry for Task 2 estimators."""
+"""Registry for the Task 2 estimator."""
 
-from .linear_svc import build_linear_svc
+from .task2_cnn import build_task2_cnn
 
 
 REGISTRY = {
-    "linear_svc": build_linear_svc,
+    "task2_cnn": build_task2_cnn,
 }
 
 

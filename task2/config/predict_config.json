@@ -3,9 +3,7 @@
   "MODEL_PATH": "./artifacts/season_model.joblib",
   "TEST_IMAGE_DIR": "../FashionDataset/test/images_test",
   "TEST_CSV_PATH": "../FashionDataset/test/styles_prediction.csv",
-  "TEST_FEATURE_CACHE": "./artifacts/features/test_features.npz",
   "SAVE_DIR": "./results",
   "OUTPUT_FILENAME": "styles_prediction.csv",
-  "STABLE_OUTPUT_PATH": "./task2_predictions.csv",
-  "FORCE_REBUILD_FEATURES": false
+  "STABLE_OUTPUT_PATH": "./task2_predictions.csv"
 }

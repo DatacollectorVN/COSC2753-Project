@@ -16,5 +16,4 @@ build/
 results/
 *.DS_Store
 artifacts/
-
 FashionDataset/

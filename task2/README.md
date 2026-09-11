@@ -1,111 +1,140 @@
 # Task 2 — Fashion Season Classification
 
-Task 2 predicts the `season` label from a fashion-item image. The implementation is a complete, configuration-driven scikit-learn workflow: validated metadata loading, deterministic image preprocessing, HOG and HSV feature extraction, an untouched stratified holdout, a majority baseline, five-fold `GridSearchCV`, final refitting, saved models, repeatable evaluation, and prediction in the supplied CSV format.
+Task 2 predicts `season` from each fashion-product image with `Task2CNN`, a
+convolutional neural network trained from scratch on the supplied
+FashionDataset. A scikit-learn-compatible wrapper lets `GridSearchCV` tune the
+PyTorch network. No pretrained weights, external training data, or metadata
+predictors are used.
 
-The classifier is trained entirely on the supplied FashionDataset. It does not use pretrained weights or metadata predictors. `GridSearchCV` is the model-selection procedure; `LinearSVC` is the learning algorithm it tunes.
+## Task2CNN design
 
-## Features
+- Input: 60 × 80 RGB image, padded when necessary to preserve aspect ratio
+- Feature learner: three Conv2d–BatchNorm–ReLU–MaxPool blocks
+- Head: fixed average pooling, a 128-unit ReLU layer, dropout, and four logits
+- Training: AdamW, class-aware cross-entropy, augmentation, and early stopping
+- Selection metric: mean cross-validation macro-F1
+- Classes: `Spring`, `Summer`, `Fall`, and `Winter`
 
-- Preserves the original 3:4 product-image ratio while padding unusual dimensions
-- Uses 48 × 64 RGB images to limit memory and grid-search runtime
-- Combines HOG shape descriptors with normalized HSV colour histograms
-- Caches validated feature matrices so later runs do not reopen every image
-- Removes rows with no `season` or no matching image without changing the source data
-- Uses a fixed 80/20 stratified development/holdout split
-- Compares against a majority-class `DummyClassifier`
-- Tunes `LinearSVC` regularization and class weighting with five-fold stratified `GridSearchCV`
-- Selects hyperparameters by macro-F1 and also records accuracy and weighted-F1
-- Saves a development-only model for honest holdout evaluation
-- Refits the selected pipeline on every usable labelled image for final prediction
-- Preserves the five-column prediction template and original test-ID order
-- Writes timestamped logs, parameters, metrics, confusion matrices, and predictions
+The model loads images lazily from their paths. It does not use `articleType`,
+`baseColour`, `productDisplayName`, or any other metadata predictor.
 
-## Quick start
+## Run the workflow
 
-Run all commands from `task2` because configuration paths are relative to this directory:
+Run all commands from `task2`, because configuration paths are relative to this
+folder:
 
 ```bash
 cd task2
 uv sync
-uv run jupyter execute --inplace notebooks/task2_season_eda.ipynb
 uv run python train.py
 uv run python evaluate.py
 uv run python predict.py
 ```
 
-Training creates stable model files in `artifacts/`, as well as a complete timestamped run under `results/train/`. Evaluation reads `artifacts/holdout_model.joblib`; prediction reads `artifacts/season_model.joblib`.
+`train.py` performs four parameter combinations across three folds, followed by
+a development-model refit and an all-data refit. Keep the terminal running
+until the final model path is printed. PyTorch automatically uses CUDA, Apple
+MPS, or CPU. Set `MODEL_PARAMS.device` to `"cpu"` only when CPU execution is
+required.
 
-The final Task 2 prediction file is written to:
+## Training and GridSearchCV
+
+The workflow:
+
+1. Validates the training CSV and matching images.
+2. Creates a fixed stratified 80/20 development/holdout split.
+3. Runs three-fold `GridSearchCV` on the development rows only.
+4. Selects the parameters with the highest mean CV macro-F1.
+5. Evaluates the selected development model once on the untouched holdout.
+6. Refits the selected Task2CNN settings on all usable labelled rows.
+7. Saves separate holdout and all-data model bundles.
+
+The unlabelled assignment test set is used only for final prediction.
+
+The configured grid searches:
+
+| Parameter | Values |
+| --- | --- |
+| `classifier__channels` | `[24, 48, 96]`, `[32, 64, 128]` |
+| `classifier__dropout_rate` | `0.25`, `0.40` |
+| `classifier__learning_rate` | `0.001` |
+
+Keep `N_JOBS=1` for GPU training so multiple CNN fits do not compete for GPU
+memory.
+
+## Epoch graphs
+
+Training produces only these two learning-curve figures:
 
 ```text
+docs/figures/task2_cnn_epoch_accuracy.png
+docs/figures/task2_cnn_epoch_error.png
+```
+
+Each graph contains training and internal-validation values over epochs. Its
+legend is below the graph. Error is `1 - accuracy`. The underlying values are
+in `docs/task2_cnn_epoch_history.csv`. These validation curves do not use the
+assignment test set, which has no season labels.
+
+## Completed result
+
+The completed run at `results/train/20260911_104332` selected channels
+`[32, 64, 128]`, dropout `0.25`, and learning rate `0.001`. It achieved:
+
+| Metric | Score |
+| --- | ---: |
+| Mean CV macro-F1 | 0.7155 |
+| Holdout accuracy | 0.7257 |
+| Holdout macro-F1 | 0.7249 |
+| Holdout balanced accuracy | 0.7029 |
+
+This result is below the requested 80% holdout-accuracy target and should be
+reported as 72.57%, without rounding it to 80%.
+
+## Outputs
+
+Stable files are:
+
+```text
+artifacts/grid_search_results.csv
+artifacts/holdout_model.joblib
+artifacts/season_model.joblib
+artifacts/latest_train_run.json
 task2_predictions.csv
 ```
 
-It retains these columns exactly:
+`evaluate.py` reproduces the holdout evaluation from the saved development
+model. `predict.py` loads the all-data model and preserves the required output
+columns and test-row order.
 
-```text
-id,gender,articleType,season,usage
+The Task 2 EDA notebook remains in the shared folder:
+
+```bash
+uv run jupyter execute --inplace ../eda/task2_season_eda.ipynb
 ```
 
-Only `season` is filled by Task 2. Merge this column with the final Task 1 and Task 3 outputs when preparing the assignment-wide Canvas prediction submission.
-
-## EDA evidence
-
-The executed [season EDA notebook](notebooks/task2_season_eda.ipynb) found:
-
-- 38,617 metadata rows and 38,612 training images
-- 20 rows without a season label
-- 5 metadata rows without an image
-- 38,592 usable labelled examples
-- no corrupt JPEG files
-- 5,829 correctly aligned test rows and images
-- Summer at 49.583% of usable data and Spring at only 4.058%
-- a majority baseline of 0.4958 accuracy and 0.1657 macro-F1
-
-These results justify stratification, macro-F1 model selection, class-weight tuning, and per-class reporting.
-
-## Verified model results
-
-The completed 40-fit search selected `classifier__C=0.01` and `classifier__class_weight=null`:
-
-| Result | Value |
-| --- | ---: |
-| Mean five-fold CV macro-F1 | 0.6720 |
-| Holdout accuracy | 0.6867 |
-| Holdout balanced accuracy | 0.6299 |
-| Holdout macro-F1 | 0.6684 |
-| Holdout weighted-F1 | 0.6820 |
-| Majority baseline macro-F1 | 0.1657 |
-
-The saved holdout report contains per-class precision, recall, and F1. The final model was refitted on all 38,592 usable rows, and the generated 5,829-row prediction CSV passed schema, ID-order, missing-value, and class-label validation.
+EDA reads and describes the data; it does not alter the supplied dataset.
 
 ## Project structure
 
 ```text
 task2/
 ├── config/
-│   ├── eda_config.json
-│   ├── train_config.json
-│   ├── eval_config.json
-│   └── predict_config.json
 ├── docs/
-│   ├── architecture.md
-│   └── installation.md
-├── notebooks/
-│   └── task2_season_eda.ipynb
 ├── src/
 │   ├── models/
-│   │   ├── linear_svc.py
+│   │   ├── task2_cnn.py
 │   │   └── model_zoo.py
 │   ├── custom_dataset.py
+│   ├── data_fingerprint.py
 │   ├── evaluator.py
-│   ├── features.py
 │   ├── metric_evaluation.py
 │   ├── trainer.py
 │   ├── transforms.py
-│   └── utils.py
-├── artifacts/                 # Stable models, feature caches, and grid results
-├── results/                   # EDA and timestamped workflow outputs
+│   ├── utils.py
+│   └── visualization.py
+├── artifacts/
+├── results/
 ├── train.py
 ├── evaluate.py
 ├── predict.py
@@ -113,20 +142,6 @@ task2/
 └── uv.lock
 ```
 
-## Default GridSearchCV investigation
-
-The default grid contains eight candidates and five folds, producing 40 cross-validation fits:
-
-| Parameter | Values | Purpose |
-| --- | --- | --- |
-| `classifier__C` | `0.01`, `0.1`, `1.0`, `10.0` | Compare regularization strengths. |
-| `classifier__class_weight` | `null`, `balanced` | Measure the tradeoff between aggregate and minority-class performance. |
-
-The scaler remains inside the scikit-learn `Pipeline`, so it is fitted separately in every cross-validation fold. The supplied test images are used only after model selection and final refitting.
-
-## Documentation
-
-- [Installation and usage](docs/installation.md)
-- [Architecture and evaluation design](docs/architecture.md)
-- [Task 2 report evidence and literature comparison](docs/report_notes.md)
-- [Generated EDA findings](results/eda/eda_findings.md)
+More detail is available in [installation.md](docs/installation.md),
+[architecture.md](docs/architecture.md), and
+[report_notes.md](docs/report_notes.md).

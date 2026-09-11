@@ -12,55 +12,53 @@
   "_comment_output": "=== Output ===",
   "SAVE_MODEL_DIR": "./results",
   "ARTIFACT_DIR": "./artifacts",
-  "TRAIN_FEATURE_CACHE": "./artifacts/features/train_features.npz",
   "HOLDOUT_MODEL_PATH": "./artifacts/holdout_model.joblib",
   "FINAL_MODEL_PATH": "./artifacts/season_model.joblib",
   "CV_RESULTS_PATH": "./artifacts/grid_search_results.csv",
+  "FIGURE_DIR": "./docs/figures",
 
   "_comment_reproducibility": "=== Reproducibility and evaluation ===",
   "SEED": 42,
   "VAL_RATIO": 0.2,
-  "CV_FOLDS": 5,
+  "CV_FOLDS": 3,
   "REFIT_METRIC": "macro_f1",
 
-  "_comment_features": "=== Deterministic image features ===",
-  "FORCE_REBUILD_FEATURES": false,
-  "FEATURE_PARAMS": {
-    "width": 48,
-    "height": 64,
-    "pad_value": 255,
-    "hog_orientations": 9,
-    "hog_pixels_per_cell": [
-      8,
-      8
-    ],
-    "hog_cells_per_block": [
-      2,
-      2
-    ],
-    "hog_block_norm": "L2-Hys",
-    "hsv_bins": 16
-  },
-
-  "_comment_model": "=== LinearSVC selected by GridSearchCV ===",
-  "MODEL_NAME": "linear_svc",
+  "_comment_model": "=== Task2CNN trained from scratch and selected by GridSearchCV ===",
+  "MODEL_NAME": "task2_cnn",
   "MODEL_PARAMS": {
-    "max_iter": 10000,
-    "tol": 0.0001
+    "width": 60,
+    "height": 80,
+    "pad_value": 255,
+    "channels": [32, 64, 128],
+    "dropout_rate": 0.3,
+    "hidden_units": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 128,
+    "max_epochs": 30,
+    "patience": 5,
+    "min_delta": 0.0001,
+    "validation_fraction": 0.1,
+    "class_weight_power": 0.5,
+    "augment": true,
+    "num_workers": 0,
+    "device": "auto",
+    "verbose": 1
   },
   "PARAM_GRID": {
-    "classifier__C": [
-      0.01,
-      0.1,
-      1.0,
-      10.0
+    "classifier__channels": [
+      [24, 48, 96],
+      [32, 64, 128]
     ],
-    "classifier__class_weight": [
-      null,
-      "balanced"
+    "classifier__dropout_rate": [
+      0.25,
+      0.4
+    ],
+    "classifier__learning_rate": [
+      0.001
     ]
   },
-  "N_JOBS": 4,
+  "N_JOBS": 1,
   "PARALLEL_BACKEND": "threading",
   "VERBOSE": 2
 }

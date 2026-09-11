@@ -64,3 +64,12 @@ def save_json(payload: dict, output_path: str | Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as output_file:
         json.dump(payload, output_file, indent=2, cls=NumpyJSONEncoder)
+
+
+def prediction_confidence(model, features) -> np.ndarray | None:
+    """Return the winning class probability or decision score when available."""
+    if hasattr(model, "predict_proba"):
+        return np.max(model.predict_proba(features), axis=1)
+    if hasattr(model, "decision_function"):
+        return np.max(model.decision_function(features), axis=1)
+    return None

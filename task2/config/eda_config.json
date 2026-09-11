@@ -18,15 +18,15 @@
     "results": "results"
   },
   "data": {
-    "image_width": 48,
-    "image_height": 64,
+    "image_width": 60,
+    "image_height": 80,
     "holdout_ratio": 0.2,
     "random_seed": 42
   },
   "model_selection": {
     "procedure": "GridSearchCV",
-    "estimator": "LinearSVC",
-    "cross_validation_folds": 5,
+    "estimator": "Task2CNNClassifier",
+    "cross_validation_folds": 3,
     "primary_metric": "f1_macro",
     "secondary_metrics": [
       "accuracy",

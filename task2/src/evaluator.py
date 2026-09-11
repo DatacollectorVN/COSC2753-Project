@@ -9,9 +9,15 @@ import numpy as np
 import pandas as pd
 
 from .custom_dataset import PREDICTION_COLUMNS, load_prediction_metadata, load_training_metadata
-from .features import load_or_extract_features
+from .data_fingerprint import dataset_fingerprint
 from .metric_evaluation import compute_metrics, save_evaluation_artifacts
-from .utils import SettingConfig, create_run_dir, save_json, setup_logger
+from .utils import (
+    SettingConfig,
+    create_run_dir,
+    prediction_confidence,
+    save_json,
+    setup_logger,
+)
 
 
 class FashionEvaluator(SettingConfig):
@@ -26,14 +32,26 @@ class FashionEvaluator(SettingConfig):
             "model",
             "target_column",
             "expected_labels",
-            "feature_params",
-            "feature_fingerprint",
             "training_scope",
+            "input_kind",
+            "input_params",
+            "data_fingerprint",
         }
         missing = required - set(bundle)
         if missing:
             raise ValueError(f"Model bundle is missing fields: {sorted(missing)}")
+        if bundle["input_kind"] != "image_paths":
+            raise ValueError("Task 2 supports only Task2CNN image-path model bundles.")
         return bundle
+
+    @staticmethod
+    def _prepare_inputs(metadata, bundle):
+        inputs = metadata["image_path"].astype(str).to_numpy(dtype=object)
+        fingerprint = dataset_fingerprint(
+            metadata,
+            {"input_kind": "image_paths", **bundle["input_params"]},
+        )
+        return inputs, fingerprint
 
     def evaluate(self) -> dict:
         run_dir = create_run_dir(self.SAVE_DIR, "eval")
@@ -48,14 +66,8 @@ class FashionEvaluator(SettingConfig):
             label_col=bundle["target_column"],
             expected_labels=bundle["expected_labels"],
         )
-        features, fingerprint = load_or_extract_features(
-            metadata,
-            feature_params=bundle["feature_params"],
-            cache_path=self.TRAIN_FEATURE_CACHE,
-            force_rebuild=self.FORCE_REBUILD_FEATURES,
-            logger=logger,
-        )
-        if fingerprint != bundle["feature_fingerprint"]:
+        inputs, fingerprint = self._prepare_inputs(metadata, bundle)
+        if fingerprint != bundle["data_fingerprint"]:
             raise ValueError("The current training data does not match the evaluated model bundle.")
 
         id_to_index = {image_id: index for index, image_id in enumerate(metadata["id"].astype(str))}
@@ -63,13 +75,12 @@ class FashionEvaluator(SettingConfig):
         if missing_ids:
             raise ValueError(f"Holdout IDs are absent from the current data: {missing_ids[:10]}")
         holdout_indices = np.asarray([id_to_index[image_id] for image_id in bundle["holdout_ids"]])
-        holdout_features = features[holdout_indices]
+        holdout_inputs = inputs[holdout_indices]
         holdout_labels = metadata.iloc[holdout_indices][bundle["target_column"]].astype(str).to_numpy()
 
         evaluation_start = perf_counter()
-        predictions = bundle["model"].predict(holdout_features)
-        decision_values = bundle["model"].decision_function(holdout_features)
-        prediction_scores = np.max(decision_values, axis=1)
+        predictions = bundle["model"].predict(holdout_inputs)
+        prediction_scores = prediction_confidence(bundle["model"], holdout_inputs)
         evaluation_seconds = perf_counter() - evaluation_start
         metrics = compute_metrics(holdout_labels, predictions, bundle["expected_labels"])
         metrics["evaluation_seconds"] = evaluation_seconds
@@ -100,18 +111,11 @@ class FashionEvaluator(SettingConfig):
             raise ValueError("Prediction requires the final model fitted on all usable rows.")
 
         metadata = load_prediction_metadata(self.TEST_CSV_PATH, self.TEST_IMAGE_DIR)
-        features, _ = load_or_extract_features(
-            metadata,
-            feature_params=bundle["feature_params"],
-            cache_path=self.TEST_FEATURE_CACHE,
-            force_rebuild=self.FORCE_REBUILD_FEATURES,
-            logger=logger,
-        )
+        inputs, _ = self._prepare_inputs(metadata, bundle)
 
         prediction_start = perf_counter()
-        predictions = bundle["model"].predict(features)
-        decision_values = bundle["model"].decision_function(features)
-        prediction_scores = np.max(decision_values, axis=1)
+        predictions = bundle["model"].predict(inputs)
+        prediction_scores = prediction_confidence(bundle["model"], inputs)
         prediction_seconds = perf_counter() - prediction_start
         unexpected = sorted(set(predictions) - set(bundle["expected_labels"]))
         if unexpected:
@@ -133,9 +137,10 @@ class FashionEvaluator(SettingConfig):
             {
                 "id": metadata["id"].astype(str),
                 "predicted_season": predictions,
-                "decision_score": prediction_scores,
             }
         )
+        if prediction_scores is not None:
+            diagnostics["confidence_score"] = prediction_scores
         diagnostics.to_csv(run_dir / "season_predictions.csv", index=False)
 
         stable_output = Path(self.STABLE_OUTPUT_PATH)
