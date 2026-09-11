@@ -14,7 +14,7 @@ def plot_task2_cnn_epoch_curves(
     history: pd.DataFrame,
     output_dir: str | Path,
 ) -> dict[str, Path]:
-    """Plot Task2CNN accuracy and error with legends below each graph."""
+    """Plot Task2CNN accuracy and loss with legends below each graph."""
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -42,28 +42,28 @@ def plot_task2_cnn_epoch_curves(
     figure.savefig(accuracy_path, dpi=180, bbox_inches="tight")
     plt.close(figure)
 
-    error_path = output_dir / "task2_cnn_epoch_error.png"
+    loss_path = output_dir / "task2_cnn_epoch_loss.png"
     figure, axis = plt.subplots(figsize=(9, 5.5))
     axis.plot(
         history["epoch"],
-        history["train_error"],
+        history["train_loss"],
         marker="o",
-        label="Training error",
+        label="Training loss",
     )
     axis.plot(
         history["epoch"],
-        history["validation_error"],
+        history["validation_loss"],
         marker="s",
-        label="Validation error",
+        label="Validation loss",
     )
     axis.set_xlabel("Epoch")
-    axis.set_ylabel("Classification error (1 - accuracy)")
-    axis.set_title("Task2CNN error by epoch")
+    axis.set_ylabel("Cross-entropy loss")
+    axis.set_title("Task2CNN loss by epoch")
     axis.grid(True, alpha=0.25)
     axis.legend(loc="upper center", bbox_to_anchor=(0.5, -0.18), ncol=2)
     axis.xaxis.get_major_locator().set_params(integer=True)
     figure.tight_layout(rect=(0, 0.1, 1, 1))
-    figure.savefig(error_path, dpi=180, bbox_inches="tight")
+    figure.savefig(loss_path, dpi=180, bbox_inches="tight")
     plt.close(figure)
 
-    return {"accuracy": accuracy_path, "error": error_path}
+    return {"accuracy": accuracy_path, "loss": loss_path}

@@ -66,7 +66,7 @@ This supports reporting macro-F1 and per-class measures alongside accuracy.
 
 The selected development fit ran for 28 epochs and restored its best internal
 validation checkpoint. The final all-data fit ran for 30 epochs. The two epoch
-figures show training and validation accuracy and error; both legends appear
+figures show training and validation accuracy and cross-entropy loss; both legends appear
 below the graph. No model-comparison visualization is part of Task 2.
 
 ## Evidence files
@@ -75,7 +75,7 @@ below the graph. No model-comparison visualization is part of Task 2.
 - Full CV table: `artifacts/grid_search_results.csv`
 - Training summary: `artifacts/latest_train_run.json`
 - Accuracy graph: `docs/figures/task2_cnn_epoch_accuracy.png`
-- Error graph: `docs/figures/task2_cnn_epoch_error.png`
+- Loss graph: `docs/figures/task2_cnn_epoch_loss.png`
 - Epoch data: `docs/task2_cnn_epoch_history.csv`
 - Holdout metrics: `results/train/20260911_104332/metrics.json`
 - Classification report: `results/train/20260911_104332/classification_report.csv`

@@ -62,7 +62,7 @@ The two generated epoch figures are:
 
 ```text
 docs/figures/task2_cnn_epoch_accuracy.png
-docs/figures/task2_cnn_epoch_error.png
+docs/figures/task2_cnn_epoch_loss.png
 ```
 
 Both legends appear below their graphs.

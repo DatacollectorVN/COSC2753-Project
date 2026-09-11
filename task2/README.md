@@ -68,11 +68,12 @@ Training produces only these two learning-curve figures:
 
 ```text
 docs/figures/task2_cnn_epoch_accuracy.png
-docs/figures/task2_cnn_epoch_error.png
+docs/figures/task2_cnn_epoch_loss.png
 ```
 
 Each graph contains training and internal-validation values over epochs. Its
-legend is below the graph. Error is `1 - accuracy`. The underlying values are
+legend is below the graph. The loss graph shows the class-weighted
+cross-entropy optimized during training. The underlying values are
 in `docs/task2_cnn_epoch_history.csv`. These validation curves do not use the
 assignment test set, which has no season labels.
 

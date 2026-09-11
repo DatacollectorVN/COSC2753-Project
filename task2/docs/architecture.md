@@ -65,7 +65,7 @@ usable data. Evaluation also records accuracy, weighted-F1, balanced accuracy,
 per-class precision, recall and F1, and a confusion matrix.
 
 The selected development model produces two figures: accuracy by epoch and
-error by epoch, where error is `1 - accuracy`. Each contains training and
+cross-entropy loss by epoch. Each contains training and
 internal-validation curves, with the legend below the graph. No model-comparison
 visualization is generated.
 
