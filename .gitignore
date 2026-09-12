@@ -14,6 +14,7 @@ dist/
 build/
 *.egg
 results/
+*.pth
 *.DS_Store
 artifacts/
 FashionDataset/
