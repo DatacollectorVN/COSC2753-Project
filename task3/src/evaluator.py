@@ -2,11 +2,14 @@ import csv
 import json
 from pathlib import Path
 
+import cv2
+import pandas as pd
 import torch
 
 from .custom_dataset import create_test_loader, create_train_val_loaders
 from .metric_evaluation import compute_metrics
 from .models import build_model
+from .transforms import get_val_transforms
 from .utils import SettingConfig, create_run_dir, setup_logger
 
 
@@ -191,3 +194,56 @@ class FashionEvaluator(SettingConfig):
 
         logger.info(f"Saved {len(results)} predictions to {predictions_path}")
         logger.info(f"Prediction complete. Artifacts saved to: {run_dir}")
+
+    def predict_single(self, image_path: str, csv_path: str | None = None) -> dict:
+        """Run inference on a single image. Returns dict with gender, usage and confidences."""
+        model, gender_label_map, occasion_label_map, meta_vocabs, _, transform_params = self._load_model()
+        g_idx_to_class = {v: k for k, v in gender_label_map.items()}
+        o_idx_to_class = {v: k for k, v in occasion_label_map.items()}
+
+        transform = get_val_transforms(transform_params)
+
+        image = cv2.imread(str(image_path))
+        if image is None:
+            raise FileNotFoundError(f"Cannot read image: {image_path}")
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        image = transform(image).unsqueeze(0).to(self.device)
+
+        # Encode metadata from CSV if available
+        meta_article, meta_master, meta_colour = 0, 0, 0
+        image_id = Path(image_path).stem
+        if csv_path is not None and Path(csv_path).exists():
+            df = pd.read_csv(csv_path)
+            df["id"] = df["id"].astype(str)
+            row = df[df["id"] == image_id]
+            if not row.empty:
+                row = row.iloc[0]
+                for col, vocab_key in [("articleType", "articleType"), ("masterCategory", "masterCategory"), ("baseColour", "baseColour")]:
+                    vocab = meta_vocabs.get(vocab_key, {})
+                    val = row.get(col, None)
+                    idx_val = vocab.get(val, 0) if pd.notna(val) else 0
+                    if col == "articleType":
+                        meta_article = idx_val
+                    elif col == "masterCategory":
+                        meta_master = idx_val
+                    else:
+                        meta_colour = idx_val
+
+        m_art = torch.tensor([[meta_article]], dtype=torch.long).to(self.device)
+        m_mst = torch.tensor([[meta_master]], dtype=torch.long).to(self.device)
+        m_col = torch.tensor([[meta_colour]], dtype=torch.long).to(self.device)
+
+        with torch.no_grad():
+            g_logits, o_logits = model(image, m_art, m_mst, m_col)
+            g_probs = torch.softmax(g_logits, dim=1)
+            o_probs = torch.softmax(o_logits, dim=1)
+            g_conf, g_pred = torch.max(g_probs, dim=1)
+            o_conf, o_pred = torch.max(o_probs, dim=1)
+
+        return {
+            "image_id": image_id,
+            "gender": g_idx_to_class[g_pred.item()],
+            "gender_confidence": g_conf.item(),
+            "usage": o_idx_to_class[o_pred.item()],
+            "usage_confidence": o_conf.item(),
+        }
