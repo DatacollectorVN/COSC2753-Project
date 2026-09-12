@@ -1,5 +1,5 @@
 {
-    "CHECKPOINT_PATH": "./results/train/<run_timestamp>/best_model.pth",
+    "CHECKPOINT_PATH": "./results/train/20260907_234357/best_model.pth",
     "DATA_DIR_TRAIN": "../data/FashionDataset/train",
     "LABEL_COL": "articleType",
     "SAVE_DIR": "./results",

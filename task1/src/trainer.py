@@ -6,7 +6,7 @@ import torch.nn as nn
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 from .custom_dataset import create_train_val_loaders
-from .metric_evaluation import compute_accuracy
+from .metric_evaluation import compute_accuracy, compute_metrics
 from .models import build_model
 from .utils import EarlyStopping, SettingConfig, create_run_dir, plot_training_curves, set_seed, setup_logger
 
@@ -197,10 +197,61 @@ class FashionTrainer(SettingConfig):
                 logger.info(f"Early stopping at epoch {epoch+1}")
                 break
 
+        # --- Final validation metrics on best model ---
+        logger.info("Computing final validation metrics from best checkpoint...")
+        best_ckpt = torch.load(run_dir / "best_model.pth", map_location=self.device)
+        model.load_state_dict(best_ckpt["state"])
+        model.eval()
+
+        class_names = [name for name, _ in sorted(label_map.items(), key=lambda x: x[1])]
+
+        all_preds, all_targets = [], []
+        with torch.no_grad():
+            for images, labels in val_loader:
+                images = images.to(self.device)
+                outputs = model(images)
+                _, predicted = torch.max(outputs, dim=1)
+                all_preds.extend(predicted.cpu().tolist())
+                all_targets.extend(labels.tolist())
+
+        val_metrics = compute_metrics(all_preds, all_targets, class_names, num_classes)
+
+        logger.info(f"Overall Accuracy: {val_metrics['overall_accuracy']:.4f}")
+        logger.info(
+            f"Macro    — P: {val_metrics['macro_precision']:.4f} | "
+            f"R: {val_metrics['macro_recall']:.4f} | F1: {val_metrics['macro_f1']:.4f}"
+        )
+        logger.info(
+            f"Weighted — P: {val_metrics['weighted_precision']:.4f} | "
+            f"R: {val_metrics['weighted_recall']:.4f} | F1: {val_metrics['weighted_f1']:.4f}"
+        )
+
+        # Find lowest-F1 classes (with support > 0)
+        per_class = val_metrics["per_class"]
+        classes_with_support = {n: m for n, m in per_class.items() if m["support"] > 0}
+        lowest_f1 = sorted(classes_with_support.items(), key=lambda x: x[1]["f1"])[:5]
+        logger.info("Lowest-F1 classes:")
+        for name, m in lowest_f1:
+            logger.info(
+                f"  {name:30s} | F1: {m['f1']:.4f} | P: {m['precision']:.4f} | "
+                f"R: {m['recall']:.4f} | Support: {m['support']}"
+            )
+
         # Save scores.json (all epoch metrics for later visualization)
         scores["best_epoch"] = (early_stopping.best is not None) and {
             "metric": save_best,
             "value": round(early_stopping.best, 6),
+        }
+        scores["val_metrics"] = {
+            "overall_accuracy": val_metrics["overall_accuracy"],
+            "macro_precision": val_metrics["macro_precision"],
+            "macro_recall": val_metrics["macro_recall"],
+            "macro_f1": val_metrics["macro_f1"],
+            "weighted_precision": val_metrics["weighted_precision"],
+            "weighted_recall": val_metrics["weighted_recall"],
+            "weighted_f1": val_metrics["weighted_f1"],
+            "per_class": val_metrics["per_class"],
+            "confusion_matrix": val_metrics["confusion_matrix"].tolist(),
         }
         with open(run_dir / "scores.json", "w") as f:
             json.dump(scores, f, indent=2)
