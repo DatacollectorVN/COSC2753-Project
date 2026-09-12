@@ -1,0 +1,5830 @@
+id,predicted_class,confidence
+52003,Watches,0.7852
+52007,Dresses,0.9926
+52017,Trousers,0.8685
+52021,Stoles,0.8485
+52023,Tshirts,0.7494
+52026,Sweatshirts,0.5728
+52027,Sweatshirts,0.6014
+52028,Shirts,0.5158
+52029,Jackets,0.6587
+52030,Sweatshirts,0.3198
+52031,Scarves,0.2805
+52032,Sweatshirts,0.9475
+52034,Jackets,0.9809
+52042,Sweatshirts,0.6347
+52043,Jackets,0.9864
+52044,Jackets,0.8811
+52045,Jackets,0.86
+52049,Tshirts,0.8845
+52050,Tshirts,0.9525
+52051,Tshirts,0.6298
+52052,Shirts,0.55
+52053,Tshirts,0.9911
+52054,Tshirts,0.9309
+52055,Tshirts,0.84
+52056,Tshirts,0.979
+52057,Tshirts,0.9695
+52058,Tshirts,0.7959
+52059,Tshirts,0.9992
+52060,Tshirts,0.996
+52061,Tshirts,0.9966
+52062,Tshirts,0.9647
+52063,Tshirts,0.9989
+52064,Tshirts,0.9978
+52065,Tshirts,0.9999
+52066,Tshirts,0.7834
+52067,Tshirts,0.997
+52068,Tshirts,0.9996
+52069,Tshirts,0.9999
+52070,Tshirts,0.9646
+52071,Tshirts,0.9914
+52072,Tshirts,0.9949
+52073,Tshirts,0.6009
+52074,Tshirts,0.9929
+52075,Tshirts,0.8227
+52076,Shirts,0.799
+52077,Shirts,0.548
+52078,Tshirts,0.7071
+52079,Tshirts,0.8311
+52080,Tshirts,0.4336
+52081,Tshirts,0.8639
+52082,Tshirts,0.868
+52083,Tshirts,0.9095
+52084,Tops,0.5554
+52085,Tops,0.5958
+52086,Tops,0.7746
+52087,Tops,0.991
+52088,Tops,0.8659
+52089,Tops,0.3559
+52090,Tops,0.7966
+52091,Kurtis,0.707
+52092,Tops,0.9172
+52093,Tops,0.9493
+52094,Tops,0.9731
+52095,Tops,0.7222
+52096,Tops,0.9617
+52097,Tops,0.7069
+52098,Tops,0.9359
+52099,Tops,0.774
+52100,Kurtas,0.9886
+52101,Other,0.5682
+52102,Kurtas,0.8518
+52103,Socks,0.3169
+52104,Kurtas,0.8608
+52105,Kurtas,0.9892
+52106,Dresses,0.4877
+52107,Kurtas,0.9605
+52108,Kurtas,0.5053
+52109,Dresses,0.7842
+52110,Kurtas,1.0
+52111,Tops,0.8564
+52112,Stoles,0.534
+52113,Tops,0.5022
+52114,Tops,0.8189
+52115,Tops,0.6733
+52116,Tops,0.9811
+52117,Tops,0.9003
+52118,Other,0.6616
+52119,Tops,0.8515
+52120,Tshirts,0.8137
+52121,Tshirts,0.8906
+52122,Tshirts,0.8579
+52123,Dresses,0.9785
+52124,Dresses,0.9906
+52125,Dresses,0.9953
+52126,Tops,0.97
+52127,Tshirts,0.9309
+52128,Dresses,0.958
+52129,Tshirts,0.9435
+52130,Dresses,0.9943
+52131,Dresses,0.9888
+52132,Tshirts,0.9293
+52133,Leggings,0.9978
+52134,Track Pants,0.7237
+52135,Tops,0.5522
+52136,Tops,0.4961
+52137,Tops,0.5586
+52138,Tshirts,0.5392
+52139,Tshirts,0.5552
+52140,Tshirts,0.669
+52141,Tops,0.9714
+52142,Tshirts,0.7169
+52143,Tops,0.7404
+52144,Tshirts,0.9647
+52145,Tshirts,0.5601
+52146,Tops,0.5294
+52147,Tshirts,0.9684
+52148,Tshirts,0.7864
+52149,Tops,0.5391
+52150,Tshirts,0.9795
+52151,Tshirts,0.9253
+52153,Tops,0.6374
+52154,Kurtis,0.7904
+52155,Tops,0.9809
+52156,Tops,0.4031
+52157,Other,0.8749
+52158,Tops,0.7301
+52159,Tops,0.6171
+52160,Tops,0.618
+52161,Jeans,0.2401
+52162,Tops,0.5899
+52163,Tops,0.9337
+52164,Tops,0.7694
+52165,Necklace and Chains,0.5699
+52166,Trunk,0.4656
+52168,Perfume and Body Mist,0.7291
+52169,Sandals,0.4338
+52172,Belts,0.4551
+52173,Handbags,0.9682
+52176,Sports Shoes,0.3104
+52177,Sports Shoes,0.5543
+52178,Pendant,0.4109
+52179,Flip Flops,0.5285
+52180,Earrings,0.9991
+52181,Earrings,0.9406
+52182,Tshirts,0.2407
+52183,Earrings,0.9809
+52185,Sports Shoes,0.3731
+52186,Sports Shoes,0.2165
+52187,Earrings,0.9325
+52190,Casual Shoes,0.3354
+52191,Sports Shoes,0.5636
+52193,Shirts,0.9303
+52195,Casual Shoes,0.2334
+52198,Pendant,1.0
+52200,Necklace and Chains,0.5818
+52202,Shirts,0.2587
+52204,Shorts,0.5125
+52205,Necklace and Chains,0.658
+52209,Flip Flops,0.2046
+52210,Flip Flops,0.4048
+52211,Flip Flops,0.5246
+52214,Flip Flops,0.2903
+52220,Necklace and Chains,1.0
+52221,Necklace and Chains,0.7005
+52222,Socks,0.2927
+52223,Bra,0.6595
+52224,Heels,0.3724
+52225,Tops,0.5416
+52228,Shirts,0.5648
+52230,Handbags,0.3005
+52235,Jeans,0.9403
+52254,Briefs,0.9439
+52255,Trunk,0.9609
+52256,Trunk,0.963
+52257,Trunk,0.9204
+52299,Shorts,0.833
+52303,Pendant,0.8275
+52304,Pendant,0.8857
+52305,Necklace and Chains,0.9934
+52306,Necklace and Chains,0.9987
+52307,Necklace and Chains,0.9997
+52308,Necklace and Chains,1.0
+52309,Necklace and Chains,0.9822
+52310,Necklace and Chains,0.3572
+52311,Necklace and Chains,0.9955
+52312,Necklace and Chains,0.9878
+52313,Belts,0.9344
+52314,Other,0.5916
+52315,Ring,0.3263
+52316,Belts,0.3857
+52317,Belts,0.6043
+52318,Belts,0.7496
+52320,Belts,0.7374
+52322,Belts,0.8491
+52323,Bracelet,0.9305
+52324,Other,0.3464
+52325,Bangle,0.3554
+52326,Bangle,0.2363
+52327,Belts,0.6475
+52328,Belts,0.4757
+52329,Belts,0.7367
+52330,Wallets,0.9947
+52331,Wallets,0.9578
+52332,Wallets,0.9898
+52333,Clutches,0.9957
+52334,Clutches,0.9949
+52335,Clutches,0.989
+52336,Clutches,0.9916
+52337,Clutches,0.9966
+52338,Clutches,0.9962
+52339,Clutches,0.7859
+52340,Dresses,0.6661
+52341,Dresses,0.912
+52342,Dresses,0.5854
+52343,Kurtas,0.8193
+52344,Kurtas,0.8976
+52345,Dresses,0.9997
+52346,Dresses,0.3552
+52347,Dresses,0.5649
+52348,Dresses,0.9937
+52349,Dresses,0.5062
+52350,Kurtas,0.5369
+52351,Other,0.7583
+52352,Dresses,0.9906
+52353,Tops,0.7363
+52354,Sarees,0.8128
+52355,Other,0.2797
+52356,Dresses,0.4788
+52357,Dresses,0.5494
+52358,Dresses,0.9535
+52359,Watches,0.4102
+52360,Other,0.7444
+52361,Dresses,0.916
+52362,Dresses,0.5402
+52363,Dresses,0.9453
+52364,Dresses,0.8813
+52366,Dresses,0.8188
+52367,Kurtas,0.8371
+52368,Dresses,0.5512
+52369,Kurtas,0.8369
+52370,Kurtas,0.4842
+52371,Kurtas,0.9288
+52372,Dresses,0.5857
+52373,Kurtas,0.6722
+52374,Dresses,0.9962
+52375,Other,0.8671
+52376,Dresses,0.5224
+52377,Dresses,0.9978
+52378,Kurtas,0.7457
+52379,Dresses,0.7025
+52380,Dresses,0.9818
+52381,Kurtas,0.5017
+52382,Kurta Sets,0.5024
+52383,Night suits,0.6237
+52384,Dresses,0.4031
+52385,Dresses,0.8491
+52386,Dresses,0.9326
+52387,Dresses,0.561
+52390,Tshirts,0.2634
+52391,Dresses,0.8759
+52392,Kurtas,0.5947
+52393,Kurtas,0.7186
+52394,Dresses,0.8477
+52395,Dresses,0.9668
+52396,Socks,0.6556
+52397,Dresses,0.9659
+52398,Dresses,0.9502
+52399,Dresses,0.591
+52400,Dresses,0.4968
+52401,Tops,0.4121
+52402,Dresses,0.6419
+52403,Dresses,0.955
+52404,Dresses,0.9088
+52405,Skirts,0.6632
+52406,Dresses,0.9988
+52407,Dresses,0.9975
+52408,Dresses,0.8949
+52409,Dresses,0.9025
+52410,Dresses,0.7955
+52411,Dresses,0.8073
+52412,Dresses,0.8397
+52413,Dresses,0.9968
+52414,Tops,0.4665
+52415,Dresses,0.9411
+52416,Tops,0.9619
+52417,Other,0.7723
+52418,Dresses,0.9988
+52419,Dresses,0.9981
+52420,Dresses,0.4229
+52421,Kurtas,0.6919
+52422,Dresses,0.9508
+52423,Dresses,0.9992
+52424,Dresses,1.0
+52425,Dresses,0.9981
+52426,Dresses,0.9721
+52427,Kurtas,0.4354
+52428,Dresses,0.8501
+52429,Kurtas,0.9942
+52430,Other,0.7143
+52431,Dresses,0.6787
+52432,Tops,0.6115
+52434,Dresses,0.9988
+52435,Dresses,0.7529
+52436,Dresses,0.9958
+52437,Other,0.9329
+52438,Other,0.3982
+52439,Dresses,0.9944
+52440,Dresses,0.9808
+52441,Tops,0.5269
+52442,Dresses,0.769
+52443,Other,0.5776
+52444,Tops,0.4043
+52445,Other,0.6133
+52446,Dresses,0.5757
+52447,Dresses,0.8297
+52448,Dresses,0.8368
+52449,Other,0.5515
+52450,Tops,0.4892
+52451,Other,0.7759
+52452,Dresses,0.9411
+52453,Dresses,0.8255
+52454,Dresses,0.7034
+52455,Dresses,0.9301
+52456,Dresses,0.9921
+52457,Dresses,0.4393
+52458,Dresses,0.9892
+52459,Bra,0.5134
+52460,Other,0.7373
+52461,Dresses,0.7751
+52462,Dresses,0.5183
+52463,Night suits,0.7589
+52464,Kurtas,0.4339
+52465,Bra,0.9998
+52466,Bra,0.996
+52467,Tops,0.6408
+52468,Tops,0.8931
+52469,Tops,0.7191
+52470,Tops,0.7815
+52472,Dresses,0.5167
+52473,Kurtas,0.7496
+52474,Tshirts,0.2259
+52475,Trousers,0.3289
+52476,Dresses,0.3947
+52477,Other,0.7091
+52478,Other,0.8238
+52479,Socks,0.605
+52480,Tops,0.3913
+52481,Dupatta,0.98
+52482,Other,0.9048
+52483,Bra,0.9977
+52484,Bra,0.9998
+52485,Bra,0.9984
+52486,Bra,1.0
+52487,Bra,1.0
+52488,Bra,0.9991
+52489,Bra,1.0
+52490,Bra,0.9999
+52491,Innerwear Vests,0.6789
+52492,Tops,0.8321
+52493,Tops,0.9391
+52494,Other,0.1837
+52495,Other,0.4973
+52496,Kurtas,0.4705
+52497,Other,0.6655
+52498,Kurtas,0.7342
+52499,Dresses,0.9208
+52500,Dresses,0.7436
+52501,Other,0.3602
+52502,Dresses,0.5102
+52503,Night suits,0.2557
+52504,Dresses,0.5044
+52505,Sweaters,0.3088
+52506,Kurta Sets,0.6267
+52507,Kurta Sets,0.7794
+52508,Tshirts,0.2641
+52509,Tops,0.7835
+52510,Kurtas,0.809
+52511,Dresses,0.9991
+52512,Kurtas,0.6557
+52513,Other,0.4968
+52514,Bra,1.0
+52515,Bra,1.0
+52516,Bra,1.0
+52517,Dresses,0.6564
+52518,Tops,0.4592
+52519,Other,0.4607
+52520,Shorts,0.9994
+52522,Jeans,0.9941
+52523,Leggings,0.9882
+52524,Other,0.8542
+52525,Trousers,0.7378
+52528,Jeans,0.9999
+52529,Capris,0.5418
+52536,Trousers,0.6467
+52539,Leggings,0.7979
+52547,Jeans,0.9989
+52548,Jeans,0.9979
+52553,Other,0.8091
+52554,Jeans,0.9873
+52555,Jeans,0.9975
+52556,Jeans,0.9923
+52557,Other,0.5395
+52558,Wallets,0.8509
+52559,Clutches,0.7362
+52560,Wallets,0.5426
+52561,Clutches,0.9781
+52563,Wallets,0.5271
+52564,Handbags,0.7225
+52565,Clutches,0.4356
+52568,Clutches,0.9311
+52569,Clutches,0.951
+52570,Clutches,0.9938
+52574,Clutches,0.9999
+52575,Clutches,0.9071
+52576,Clutches,0.9127
+52577,Clutches,0.9431
+52579,Clutches,0.5012
+52581,Clutches,0.7844
+52582,Backpacks,0.811
+52585,Clutches,0.9529
+52586,Clutches,0.9455
+52588,Wallets,0.9552
+52589,Handbags,0.8643
+52593,Clutches,0.8111
+52594,Clutches,0.4262
+52599,Clutches,0.9156
+52602,Clutches,0.772
+52603,Wallets,0.6994
+52604,Clutches,0.6238
+52609,Handbags,0.992
+52616,Handbags,0.9998
+52618,Handbags,1.0
+52622,Handbags,0.9998
+52623,Handbags,0.9978
+52626,Other,0.494
+52632,Handbags,0.9916
+52633,Handbags,0.9994
+52634,Handbags,0.9998
+52635,Handbags,0.9953
+52636,Handbags,0.7642
+52637,Handbags,0.9987
+52638,Handbags,0.9601
+52639,Handbags,0.9917
+52641,Handbags,0.9727
+52642,Handbags,0.9959
+52643,Handbags,0.9962
+52647,Handbags,0.9965
+52648,Handbags,0.7427
+52649,Handbags,0.9567
+52650,Handbags,0.9975
+52651,Handbags,0.9716
+52652,Handbags,0.9459
+52653,Handbags,0.9957
+52654,Handbags,0.9975
+52655,Handbags,0.9956
+52656,Handbags,0.9994
+52657,Handbags,0.9952
+52658,Handbags,0.9993
+52659,Handbags,0.6994
+52660,Handbags,0.9026
+52661,Handbags,0.9995
+52665,Watches,0.9992
+52670,Watches,0.9999
+52671,Watches,0.9936
+52673,Watches,0.9966
+52675,Watches,0.9998
+52676,Watches,0.9987
+52677,Watches,0.9943
+52678,Watches,0.986
+52679,Watches,0.9187
+52680,Watches,0.9993
+52681,Watches,0.9932
+52682,Watches,0.992
+52683,Watches,0.9991
+52684,Watches,0.9758
+52686,Watches,0.9781
+52687,Watches,0.9537
+52688,Watches,0.9907
+52690,Watches,0.9892
+52691,Free Gifts,0.9325
+52692,Free Gifts,0.5673
+52693,Watches,0.9982
+52694,Watches,0.9684
+52695,Watches,0.622
+52749,Deodorant,0.9993
+52751,Deodorant,0.9992
+52754,Handbags,0.9716
+52756,Handbags,0.9982
+52758,Handbags,0.9792
+52759,Handbags,0.9996
+52766,Handbags,1.0
+52767,Handbags,0.9792
+52768,Handbags,0.9996
+52772,Wallets,0.867
+52773,Wallets,0.9806
+52774,Wallets,0.8189
+52775,Wallets,0.9217
+52776,Wallets,0.9762
+52777,Wallets,0.9337
+52778,Wallets,0.9434
+52779,Wallets,0.8878
+52780,Wallets,0.762
+52781,Wallets,0.788
+52782,Wallets,0.9719
+52784,Wallets,0.699
+52785,Other,0.4303
+52786,Wallets,0.9988
+52789,Wallets,0.9165
+52791,Wallets,0.9982
+52792,Wallets,0.9996
+52793,Wallets,0.9983
+52794,Wallets,0.9999
+52795,Wallets,1.0
+52796,Wallets,1.0
+52797,Wallets,1.0
+52798,Wallets,0.9999
+52799,Wallets,0.9999
+52800,Wallets,0.9999
+52801,Wallets,1.0
+52802,Wallets,0.9999
+52803,Wallets,0.998
+52804,Wallets,0.9986
+52805,Wallets,0.9999
+52806,Wallets,0.9999
+52807,Wallets,0.9999
+52808,Wallets,0.9999
+52809,Wallets,0.9992
+52810,Wallets,0.998
+52811,Wallets,1.0
+52812,Wallets,1.0
+52813,Wallets,1.0
+52814,Wallets,1.0
+52816,Watches,1.0
+52817,Earrings,1.0
+52818,Earrings,1.0
+52819,Earrings,1.0
+52820,Earrings,0.9999
+52822,Tops,0.1428
+52823,Earrings,1.0
+52825,Earrings,0.9995
+52827,Earrings,0.9556
+52828,Earrings,1.0
+52831,Earrings,0.8805
+52834,Earrings,0.9999
+52835,Earrings,0.9996
+52836,Sports Shoes,0.5702
+52837,Earrings,0.9991
+52839,Earrings,0.9993
+52840,Earrings,0.9999
+52841,Earrings,0.993
+52842,Earrings,0.8208
+52846,Earrings,1.0
+52847,Earrings,0.9929
+52848,Earrings,0.9995
+52850,Earrings,0.9895
+52851,Earrings,1.0
+52852,Earrings,0.9997
+52854,Earrings,0.9607
+52855,Earrings,0.9757
+52859,Earrings,1.0
+52860,Earrings,0.999
+52862,Earrings,0.9995
+52863,Earrings,1.0
+52864,Earrings,0.9999
+52868,Earrings,0.977
+52869,Earrings,0.6292
+52871,Fragrance Gift Set,0.9393
+52874,Sarees,0.9608
+52875,Sarees,0.9924
+52876,Sarees,0.8929
+52877,Sarees,0.9731
+52878,Sarees,0.9996
+52879,Sarees,0.9992
+52880,Sarees,0.6734
+52881,Sarees,0.9999
+52882,Sarees,0.999
+52883,Sarees,0.9999
+52884,Sarees,0.9858
+52885,Sarees,0.9987
+52886,Backpacks,0.296
+52887,Sarees,0.9958
+52888,Sarees,0.9988
+52889,Sarees,0.9988
+52890,Free Gifts,0.7727
+52891,Sarees,0.9897
+52892,Sports Shoes,0.3234
+52893,Sarees,0.9923
+52894,Sarees,1.0
+52895,Sarees,0.9978
+52896,Sarees,0.5233
+52897,Free Gifts,0.6901
+52898,Sarees,0.9456
+52899,Sarees,0.8873
+52901,Sarees,1.0
+52902,Sarees,0.997
+52903,Sarees,1.0
+52904,Sarees,0.9992
+52905,Sarees,0.9944
+52906,Sarees,0.9795
+52907,Sarees,0.9973
+52908,Sarees,0.9203
+52909,Sarees,0.9997
+52910,Sarees,0.9244
+52911,Sarees,0.9996
+52912,Stoles,0.5213
+52913,Sarees,0.9999
+52914,Sarees,0.998
+52915,Sarees,0.8765
+52916,Sarees,0.9981
+52917,Sarees,0.9941
+52918,Sarees,0.9999
+52919,Sarees,0.9973
+52920,Sarees,1.0
+52921,Sarees,0.8508
+52922,Sarees,0.9984
+52923,Sarees,0.9999
+52924,Watches,0.3394
+52925,Sarees,0.9985
+52926,Backpacks,0.9902
+52927,Sarees,0.9792
+52928,Sarees,0.9917
+52929,Sarees,0.998
+52930,Sarees,0.9931
+52931,Sarees,0.9996
+52934,Watches,0.5104
+52935,Free Gifts,0.7423
+52936,Sarees,1.0
+52937,Sarees,0.9984
+52938,Sarees,0.9977
+52940,Sarees,0.9996
+52941,Sarees,0.9933
+52942,Sarees,0.9998
+52943,Sarees,0.999
+52944,Sarees,0.9949
+52945,Sarees,0.9987
+52946,Sarees,0.9994
+52947,Sarees,0.9771
+52948,Sarees,0.9674
+52949,Sarees,0.9158
+52950,Sarees,0.964
+52951,Sarees,0.9958
+52952,Sarees,0.9948
+52953,Sarees,0.9992
+52954,Sarees,1.0
+52955,Sarees,0.971
+52956,Sarees,0.9966
+52957,Sarees,0.7348
+52958,Sarees,0.9989
+52959,Sarees,0.999
+52960,Sarees,0.9943
+52961,Sarees,0.9882
+52962,Sarees,0.9939
+52963,Sarees,0.9981
+52964,Sarees,0.9936
+52965,Sarees,0.9992
+52966,Watches,0.6031
+52967,Sarees,0.4517
+52968,Sarees,0.8919
+52969,Sarees,0.9995
+52970,Sarees,0.9999
+52971,Sarees,0.9996
+52972,Sarees,0.952
+52973,Sarees,0.9989
+52975,Sarees,0.9317
+52976,Sarees,0.9824
+52978,Sarees,0.9999
+52979,Sarees,0.972
+52980,Sarees,0.9987
+52981,Sarees,0.9991
+52982,Free Gifts,0.5769
+52983,Sarees,0.998
+52986,Sarees,0.9992
+52987,Sarees,0.9526
+52988,Sarees,0.9473
+52989,Sarees,0.9895
+52990,Free Gifts,0.9503
+52991,Sarees,0.9929
+52992,Sarees,0.995
+52993,Sarees,0.9988
+52996,Sarees,0.9977
+52998,Sarees,0.9272
+52999,Sarees,1.0
+53000,Sarees,0.9973
+53001,Dresses,0.9976
+53002,Bra,0.3211
+53003,Dresses,0.9649
+53004,Sports Shoes,0.8473
+53006,Handbags,0.706
+53007,Other,0.7831
+53008,Sarees,0.9994
+53009,Sarees,0.9929
+53010,Sarees,0.9302
+53011,Sarees,0.9723
+53013,Sarees,0.9942
+53014,Sarees,0.8478
+53015,Sarees,0.9999
+53016,Sarees,0.9993
+53017,Sarees,1.0
+53019,Sarees,0.9984
+53020,Sarees,0.9991
+53021,Sarees,1.0
+53023,Free Gifts,0.9506
+53024,Sarees,0.9995
+53025,Sarees,1.0
+53026,Sarees,0.997
+53027,Sarees,0.913
+53029,Sarees,0.9986
+53030,Sarees,0.9982
+53031,Sarees,1.0
+53032,Sarees,0.9999
+53033,Sarees,0.9534
+53034,Sarees,0.9013
+53035,Sarees,0.9976
+53036,Sarees,0.9998
+53037,Sarees,0.99
+53038,Sarees,1.0
+53039,Sarees,1.0
+53040,Sarees,1.0
+53041,Sarees,0.9992
+53042,Sarees,0.9991
+53043,Sarees,0.999
+53044,Sarees,0.9391
+53045,Sarees,0.9989
+53046,Sarees,0.9998
+53047,Sarees,0.9931
+53048,Sarees,0.9212
+53049,Sarees,0.9934
+53050,Sarees,0.9815
+53051,Sarees,0.9994
+53052,Sarees,1.0
+53053,Sarees,0.996
+53054,Sarees,1.0
+53055,Free Gifts,0.7057
+53056,Sarees,0.996
+53057,Sarees,0.9828
+53058,Handbags,0.8947
+53059,Handbags,0.9968
+53060,Handbags,0.9654
+53061,Handbags,0.9979
+53062,Handbags,0.9969
+53063,Handbags,0.9977
+53064,Handbags,0.9999
+53065,Handbags,1.0
+53066,Handbags,0.9985
+53067,Handbags,0.9999
+53068,Handbags,1.0
+53069,Handbags,1.0
+53070,Handbags,0.9993
+53071,Clutches,0.999
+53072,Clutches,0.9792
+53073,Clutches,0.9997
+53075,Handbags,0.9903
+53076,Handbags,0.9917
+53077,Duffel Bag,0.5708
+53078,Wallets,0.4159
+53079,Clutches,0.5927
+53080,Clutches,0.9879
+53081,Clutches,0.8947
+53082,Clutches,0.9602
+53083,Perfume and Body Mist,0.4579
+53084,Perfume and Body Mist,0.8056
+53085,Necklace and Chains,0.9526
+53086,Necklace and Chains,0.9673
+53087,Necklace and Chains,0.9844
+53088,Pendant,0.9587
+53089,Pendant,0.9928
+53090,Kurta Sets,0.2951
+53091,Necklace and Chains,0.77
+53092,Pendant,0.8933
+53093,Pendant,0.8658
+53094,Earrings,0.9997
+53095,Earrings,1.0
+53096,Earrings,1.0
+53097,Earrings,1.0
+53098,Earrings,0.9941
+53099,Earrings,1.0
+53100,Earrings,0.9953
+53101,Handbags,0.407
+53102,Earrings,0.9999
+53103,Earrings,1.0
+53104,Earrings,1.0
+53105,Earrings,0.9996
+53106,Earrings,0.9999
+53107,Earrings,1.0
+53108,Earrings,1.0
+53109,Earrings,1.0
+53110,Earrings,0.9998
+53111,Tshirts,0.9971
+53112,Tshirts,0.99
+53113,Tshirts,0.9816
+53114,Tshirts,0.9292
+53115,Tshirts,0.9993
+53116,Tshirts,0.9928
+53117,Tops,0.8998
+53118,Tshirts,0.5078
+53119,Tops,0.981
+53120,Tops,0.5117
+53121,Tops,0.9614
+53122,Kurtas,0.6308
+53123,Tops,0.6611
+53124,Tops,0.7747
+53125,Tops,0.8924
+53126,Tops,0.598
+53127,Casual Shoes,0.8147
+53128,Heels,0.9971
+53129,Flats,0.7914
+53130,Flats,0.9855
+53131,Heels,0.992
+53132,Flats,0.8666
+53133,Heels,0.9393
+53134,Flats,0.9366
+53135,Heels,0.9514
+53136,Heels,0.9674
+53137,Heels,0.8651
+53138,Heels,0.9999
+53139,Heels,0.9783
+53140,Heels,0.9619
+53141,Flats,0.8145
+53142,Flats,0.5267
+53143,Heels,1.0
+53144,Flats,0.8503
+53145,Heels,0.5893
+53146,Heels,0.8609
+53147,Heels,0.98
+53148,Heels,0.9997
+53149,Heels,1.0
+53150,Heels,1.0
+53152,Shirts,0.5085
+53159,Shirts,0.829
+53211,Shirts,0.9811
+53215,Shirts,0.9632
+53226,Shirts,0.9447
+53228,Trousers,0.9928
+53248,Lounge Pants,0.6285
+53252,Jeans,0.998
+53264,Tshirts,0.8913
+53269,Tshirts,0.9891
+53278,Tshirts,0.7604
+53282,Tshirts,0.9907
+53286,Jeans,0.9997
+53287,Other,0.8404
+53296,Jeans,0.9997
+53303,Tshirts,0.9972
+53307,Tshirts,0.9919
+53312,Tshirts,0.932
+53313,Innerwear Vests,0.6018
+53314,Tshirts,0.9997
+53318,Tshirts,0.9947
+53319,Tshirts,0.999
+53328,Trunk,0.4291
+53329,Other,0.9209
+53332,Other,0.9972
+53338,Other,0.5037
+53345,Briefs,0.9971
+53348,Other,0.9032
+53357,Other,0.9968
+53358,Belts,0.9992
+53360,Perfume and Body Mist,0.3817
+53361,Backpacks,0.9999
+53362,Backpacks,0.9999
+53363,Duffel Bag,1.0
+53364,Backpacks,0.9952
+53365,Backpacks,1.0
+53366,Backpacks,0.9996
+53367,Backpacks,1.0
+53368,Backpacks,0.9999
+53369,Handbags,0.9992
+53370,Handbags,0.9741
+53371,Backpacks,0.9897
+53372,Backpacks,0.9921
+53373,Backpacks,0.9979
+53374,Wallets,0.9972
+53376,Handbags,0.7584
+53377,Handbags,0.6693
+53378,Flip Flops,0.9848
+53379,Sandals,0.629
+53380,Sports Sandals,0.9166
+53381,Sandals,0.9341
+53382,Sports Sandals,0.9849
+53383,Sports Sandals,0.9346
+53384,Casual Shoes,0.9989
+53386,Casual Shoes,0.9994
+53387,Casual Shoes,0.7406
+53388,Kurtas,0.9923
+53389,Kurtas,0.9589
+53390,Kurtas,1.0
+53391,Kurtas,0.5706
+53392,Tops,0.8728
+53393,Stoles,0.5308
+53394,Kurtas,0.9925
+53395,Kurtas,0.9992
+53396,Kurtas,0.9996
+53397,Kurtas,0.996
+53398,Kurtas,0.9744
+53399,Kurtas,0.9935
+53401,Kurtas,0.9735
+53402,Tops,0.926
+53403,Kurtas,0.9704
+53404,Kurtas,0.9163
+53405,Kurtas,0.9716
+53406,Kurtas,1.0
+53408,Kurtas,0.9967
+53409,Kurtas,0.9989
+53410,Kurtas,0.9741
+53411,Kurtas,0.9917
+53412,Tops,0.4084
+53413,Kurtas,0.9754
+53414,Kurtas,0.8907
+53415,Kurtas,0.9821
+53416,Kurtas,0.9994
+53417,Kurtas,0.9989
+53418,Kurtas,0.9993
+53419,Kurtas,0.444
+53420,Kurtas,0.9952
+53421,Kurtas,0.9986
+53422,Kurtas,0.9915
+53423,Kurtas,1.0
+53424,Kurtas,1.0
+53425,Kurtas,0.9826
+53426,Kurtas,0.9827
+53427,Kurtas,1.0
+53428,Kurtas,0.9997
+53429,Kurtas,0.9444
+53430,Kurtas,0.9995
+53431,Kurtis,0.7232
+53432,Tshirts,0.6317
+53433,Tshirts,0.8818
+53434,Tshirts,0.9515
+53435,Jackets,0.95
+53436,Sports Shoes,0.9557
+53437,Sports Shoes,0.9255
+53438,Sports Shoes,0.7983
+53439,Flip Flops,0.9921
+53440,Sports Shoes,0.9359
+53441,Sports Shoes,0.9787
+53442,Flip Flops,0.4737
+53444,Sandals,0.8458
+53445,Flip Flops,0.5226
+53446,Flip Flops,0.9991
+53447,Flip Flops,0.9464
+53448,Flip Flops,0.9977
+53449,Flip Flops,0.9877
+53450,Flip Flops,0.981
+53452,Flats,0.3637
+53453,Casual Shoes,0.5291
+53454,Heels,0.891
+53455,Flip Flops,0.7983
+53456,Casual Shoes,0.8561
+53457,Heels,1.0
+53458,Heels,0.9991
+53459,Heels,1.0
+53460,Heels,1.0
+53461,Bra,0.978
+53462,Tshirts,0.4722
+53463,Bra,1.0
+53464,Bra,0.9721
+53465,Bra,0.9998
+53466,Bra,0.9999
+53467,Bra,1.0
+53468,Bra,1.0
+53469,Briefs,0.9867
+53470,Bra,0.9939
+53473,Bra,1.0
+53474,Bra,0.9988
+53475,Briefs,0.7518
+53476,Bra,1.0
+53477,Bra,0.9996
+53478,Bra,1.0
+53479,Bra,1.0
+53480,Tshirts,0.6449
+53484,Tshirts,0.3609
+53485,Tshirts,0.8761
+53486,Tshirts,0.6986
+53487,Bra,0.9991
+53488,Tshirts,0.8301
+53489,Other,0.2495
+53490,Bra,0.7255
+53491,Briefs,0.8256
+53492,Bra,0.9992
+53493,Bra,0.9999
+53498,Briefs,0.789
+53506,Bra,0.9979
+53507,Bra,0.9999
+53508,Bra,0.9918
+53520,Briefs,0.9996
+53525,Bra,1.0
+53526,Briefs,0.9928
+53527,Briefs,0.986
+53528,Briefs,0.9548
+53529,Briefs,0.9995
+53530,Bra,0.5133
+53531,Briefs,0.9338
+53532,Briefs,0.9804
+53533,Briefs,0.6368
+53534,Other,0.3514
+53535,Bra,0.4655
+53536,Briefs,0.992
+53537,Briefs,0.9973
+53538,Briefs,0.9991
+53539,Briefs,0.9975
+53540,Briefs,0.9993
+53541,Briefs,0.6075
+53542,Briefs,0.9998
+53543,Briefs,0.9594
+53545,Briefs,0.9384
+53546,Briefs,0.9999
+53547,Briefs,0.9147
+53548,Briefs,0.9814
+53554,Other,0.7583
+53555,Other,0.7867
+53556,Other,0.9836
+53557,Other,0.9299
+53558,Other,0.5665
+53559,Other,0.6213
+53560,Watches,0.9933
+53561,Watches,0.918
+53562,Watches,0.8846
+53563,Watches,0.9834
+53564,Watches,0.9542
+53565,Watches,0.9998
+53566,Watches,0.9933
+53567,Watches,0.9954
+53568,Watches,0.999
+53569,Watches,0.9992
+53570,Watches,0.9998
+53571,Watches,0.9798
+53572,Watches,0.9996
+53573,Watches,0.9977
+53574,Watches,0.9996
+53575,Watches,0.9987
+53576,Watches,0.9953
+53577,Watches,0.9984
+53578,Watches,0.9967
+53579,Watches,0.8968
+53580,Watches,0.882
+53581,Watches,0.9958
+53582,Watches,0.9976
+53583,Watches,0.9983
+53584,Watches,0.87
+53585,Watches,0.999
+53586,Watches,0.9582
+53587,Watches,0.9973
+53588,Watches,0.9974
+53589,Watches,0.9993
+53590,Watches,0.9856
+53591,Watches,0.9986
+53592,Watches,0.9989
+53593,Watches,1.0
+53594,Watches,0.9998
+53595,Watches,1.0
+53596,Watches,0.9997
+53597,Watches,0.9999
+53598,Watches,1.0
+53599,Watches,0.9999
+53600,Watches,1.0
+53601,Watches,0.9999
+53602,Watches,0.999
+53603,Watches,0.9997
+53604,Watches,0.9999
+53605,Watches,0.9995
+53606,Watches,1.0
+53608,Watches,0.998
+53609,Watches,0.9987
+53611,Watches,0.9999
+53612,Watches,1.0
+53613,Watches,0.9988
+53614,Watches,0.9998
+53615,Watches,0.9997
+53616,Watches,1.0
+53617,Watches,0.8297
+53618,Watches,0.8207
+53619,Watches,0.8536
+53620,Watches,0.9988
+53621,Watches,0.9837
+53622,Watches,0.9939
+53623,Watches,0.9931
+53624,Watches,0.9995
+53625,Watches,0.9999
+53626,Watches,0.9997
+53627,Watches,0.9999
+53628,Watches,0.9983
+53629,Watches,0.9997
+53630,Tshirts,0.749
+53631,Bra,0.9999
+53632,Sandals,0.9085
+53633,Casual Shoes,0.9848
+53634,Casual Shoes,0.9999
+53635,Casual Shoes,0.9978
+53636,Casual Shoes,0.7967
+53637,Casual Shoes,0.9314
+53638,Casual Shoes,0.9973
+53639,Casual Shoes,0.9867
+53640,Casual Shoes,0.9883
+53648,Handbags,0.9984
+53649,Handbags,0.9993
+53651,Handbags,0.9993
+53652,Handbags,0.9975
+53653,Handbags,0.9998
+53654,Handbags,0.9478
+53655,Handbags,0.9916
+53656,Handbags,0.9995
+53657,Handbags,0.7318
+53659,Handbags,0.9996
+53660,Handbags,0.9997
+53661,Handbags,0.9983
+53663,Handbags,0.9996
+53665,Handbags,0.9805
+53666,Handbags,1.0
+53667,Handbags,1.0
+53668,Handbags,0.9999
+53669,Handbags,1.0
+53670,Handbags,0.9997
+53671,Handbags,0.6096
+53672,Handbags,0.9331
+53673,Handbags,0.981
+53674,Handbags,0.8845
+53675,Handbags,0.972
+53676,Handbags,0.9854
+53677,Handbags,0.7523
+53678,Handbags,0.6816
+53679,Handbags,0.7637
+53680,Handbags,0.6109
+53681,Handbags,0.5168
+53682,Clutches,0.6543
+53683,Wallets,0.9417
+53684,Handbags,0.9797
+53685,Handbags,0.7349
+53686,Handbags,0.99
+53687,Handbags,0.9869
+53688,Handbags,0.9954
+53689,Handbags,0.997
+53692,Handbags,0.9511
+53695,Handbags,0.9977
+53696,Handbags,0.9949
+53698,Handbags,0.9995
+53702,Handbags,0.9994
+53706,Handbags,0.9913
+53708,Handbags,0.9955
+53710,Handbags,0.9966
+53715,Handbags,0.9988
+53719,Handbags,0.9998
+53720,Handbags,0.9997
+53723,Flip Flops,0.9959
+53724,Flip Flops,0.9476
+53725,Flip Flops,0.4764
+53726,Flip Flops,0.8206
+53727,Flats,0.4519
+53729,Casual Shoes,0.6896
+53731,Casual Shoes,0.8117
+53732,Casual Shoes,0.9388
+53734,Casual Shoes,0.9841
+53735,Casual Shoes,0.9969
+53737,Shorts,0.9905
+53738,Other,0.3475
+53740,Track Pants,0.9979
+53741,Other,0.7244
+53742,Jeans,0.5757
+53743,Trousers,0.5531
+53744,Shorts,0.9233
+53745,Shorts,0.4593
+53747,Trousers,0.9178
+53748,Track Pants,0.9722
+53749,Jeans,0.7863
+53750,Jeans,0.9058
+53751,Trousers,0.5794
+53752,Shorts,0.9956
+53753,Shorts,0.9993
+53754,Jackets,0.3778
+53755,Shorts,0.9968
+53756,Handbags,0.8845
+53757,Sports Shoes,0.762
+53759,Shirts,0.9893
+53760,Tshirts,0.9932
+53761,Tshirts,0.9354
+53762,Tshirts,0.9983
+53763,Tshirts,0.9698
+53764,Tshirts,0.9991
+53765,Tshirts,0.8961
+53766,Tshirts,0.5581
+53767,Tshirts,0.5429
+53768,Tshirts,0.9992
+53770,Tshirts,0.9933
+53771,Tshirts,0.9961
+53772,Tshirts,0.791
+53773,Tshirts,0.8416
+53774,Shirts,0.5582
+53775,Tshirts,0.8699
+53776,Shorts,0.7441
+53777,Sports Shoes,0.9884
+53778,Tshirts,0.9623
+53779,Tshirts,0.7404
+53780,Innerwear Vests,0.9685
+53781,Tshirts,0.8623
+53782,Tshirts,0.9147
+53783,Shirts,0.998
+53784,Shirts,0.9015
+53785,Kurtas,0.7609
+53786,Tshirts,0.9941
+53787,Tshirts,0.9793
+53788,Tshirts,0.8365
+53791,Tshirts,0.7605
+53793,Tshirts,0.99
+53794,Tshirts,0.9874
+53795,Tshirts,0.9968
+53796,Tshirts,0.9928
+53797,Tshirts,0.9793
+53798,Tshirts,0.9964
+53799,Tshirts,0.9663
+53800,Tshirts,0.9948
+53801,Tshirts,0.9988
+53802,Tshirts,0.9972
+53803,Tshirts,0.9996
+53804,Tshirts,0.999
+53805,Socks,0.9983
+53806,Socks,0.7469
+53807,Lounge Pants,0.5791
+53808,Tunics,0.3773
+53809,Dresses,0.9625
+53810,Kurtas,0.9985
+53811,Kurtas,0.4424
+53812,Kurta Sets,0.8266
+53813,Kurtis,0.6031
+53814,Kurta Sets,0.9999
+53815,Kurtas,1.0
+53816,Kurtas,0.9494
+53817,Kurta Sets,0.9977
+53818,Kurtis,0.8862
+53819,Kurtis,0.8843
+53820,Kurtis,0.9511
+53822,Tops,0.7034
+53823,Kurtas,0.996
+53824,Tops,0.8538
+53825,Kurta Sets,0.8213
+53826,Kurtas,0.9731
+53829,Kurtas,0.9935
+53830,Kurtas,0.9403
+53832,Dresses,0.9414
+53833,Kurtas,0.9972
+53834,Kurtas,0.9757
+53835,Stoles,0.4287
+53836,Kurtas,0.5324
+53837,Kurtas,0.9929
+53838,Kurtas,0.9848
+53839,Kurtas,0.9574
+53840,Kurtas,0.8522
+53841,Other,0.709
+53842,Kurtas,0.9999
+53843,Kurtas,0.8317
+53849,Kurtas,0.9414
+53850,Kurtas,0.999
+53851,Kurtas,0.9824
+53852,Kurtas,0.3679
+53856,Kurtas,0.9873
+53857,Kurtas,0.9376
+53859,Kurtas,0.998
+53861,Kurtas,0.9986
+53863,Kurtas,0.6858
+53864,Other,0.3827
+53866,Tshirts,0.2381
+53867,Flats,0.6576
+53868,Flats,0.679
+53869,Flats,0.6578
+53870,Flats,0.9803
+53871,Watches,0.9996
+53872,Sports Shoes,0.9979
+53873,Sports Shoes,0.9297
+53874,Sports Shoes,0.8733
+53875,Flip Flops,0.9997
+53876,Flip Flops,1.0
+53877,Flip Flops,0.9998
+53878,Flip Flops,0.9975
+53879,Flip Flops,0.9982
+53880,Flip Flops,0.9936
+53881,Flip Flops,0.9877
+53882,Flip Flops,0.993
+53883,Flip Flops,0.9997
+53884,Handbags,0.9682
+53886,Handbags,0.9999
+53887,Handbags,0.9408
+53888,Handbags,0.9989
+53889,Handbags,0.9956
+53890,Handbags,0.9129
+53891,Handbags,0.9658
+53892,Handbags,0.4154
+53893,Handbags,0.9957
+53894,Handbags,0.8146
+53895,Handbags,0.928
+53896,Handbags,0.992
+53897,Handbags,0.9996
+53900,Handbags,0.8222
+53902,Handbags,0.9995
+53905,Handbags,0.9233
+53907,Handbags,1.0
+53911,Laptop Bag,0.612
+53914,Handbags,0.9993
+53918,Handbags,1.0
+53921,Handbags,1.0
+53927,Handbags,0.9099
+53928,Handbags,0.9998
+53930,Handbags,1.0
+53931,Handbags,1.0
+53934,Handbags,1.0
+53935,Handbags,0.9656
+53941,Handbags,0.9994
+53942,Handbags,0.7946
+53943,Duffel Bag,0.8647
+53944,Handbags,0.9995
+53946,Handbags,0.9999
+53961,Handbags,0.9999
+53963,Handbags,0.9997
+53964,Handbags,0.9999
+53979,Handbags,0.9303
+53981,Handbags,0.9993
+53985,Handbags,0.9995
+53990,Handbags,0.9229
+53991,Handbags,0.9999
+53994,Handbags,0.9499
+53997,Handbags,0.9998
+53999,Handbags,0.9976
+54000,Handbags,0.9999
+54002,Handbags,0.9994
+54003,Handbags,0.9997
+54007,Handbags,0.9993
+54008,Handbags,0.9987
+54009,Handbags,0.9881
+54014,Handbags,0.992
+54016,Handbags,0.9579
+54017,Handbags,0.9863
+54018,Handbags,0.9309
+54019,Handbags,0.6361
+54020,Handbags,0.9711
+54031,Handbags,0.5976
+54032,Handbags,0.8125
+54033,Handbags,0.7754
+54035,Handbags,0.9199
+54036,Handbags,0.9635
+54040,Handbags,0.9946
+54041,Handbags,0.9965
+54049,Leggings,0.9655
+54050,Jeans,0.6645
+54051,Trousers,0.9359
+54052,Leggings,0.7316
+54053,Leggings,0.9974
+54054,Skirts,0.9166
+54055,Other,0.3312
+54056,Skirts,0.8889
+54057,Leggings,0.9955
+54058,Trousers,0.8278
+54059,Capris,0.787
+54060,Capris,0.4291
+54061,Deodorant,1.0
+54062,Deodorant,0.9999
+54063,Deodorant,0.9999
+54064,Deodorant,1.0
+54065,Casual Shoes,0.9916
+54066,Casual Shoes,0.9931
+54068,Casual Shoes,0.616
+54069,Sandals,0.9694
+54070,Sports Shoes,0.9988
+54071,Sports Shoes,0.9607
+54072,Sports Shoes,0.6452
+54073,Casual Shoes,0.53
+54076,Casual Shoes,0.9885
+54077,Flats,0.3862
+54078,Casual Shoes,0.8966
+54079,Jackets,0.2622
+54080,Kurtas,0.8742
+54081,Kurtas,0.5648
+54082,Kurtis,0.6429
+54083,Kurtis,0.845
+54084,Kurtis,0.927
+54086,Kurtis,0.9521
+54087,Kurtis,0.8075
+54088,Tunics,0.4508
+54089,Tshirts,0.8687
+54090,Tops,0.349
+54095,Caps,0.9905
+54103,Heels,0.9684
+54104,Heels,0.981
+54105,Heels,0.9885
+54106,Heels,0.7228
+54107,Heels,0.6994
+54108,Flats,0.5892
+54109,Flats,0.814
+54110,Flats,0.8091
+54111,Flats,0.7222
+54112,Flats,0.6601
+54113,Flats,0.7042
+54114,Flats,0.9684
+54115,Flats,0.9393
+54116,Flats,0.9971
+54117,Flats,0.694
+54118,Flats,0.9853
+54119,Flats,0.8034
+54120,Flats,0.6275
+54121,Flats,0.86
+54122,Flats,0.8859
+54123,Flats,0.9882
+54124,Flats,0.9953
+54125,Heels,0.7882
+54126,Heels,0.9994
+54127,Flats,0.9939
+54128,Heels,0.9669
+54129,Flats,0.8987
+54130,Flats,0.8526
+54131,Flats,0.851
+54132,Flats,0.7793
+54133,Heels,0.8463
+54134,Heels,0.9794
+54135,Heels,0.8312
+54136,Heels,0.8896
+54137,Heels,0.9979
+54138,Flats,0.9737
+54139,Flats,0.9072
+54140,Flats,0.9374
+54141,Flats,0.8693
+54142,Flats,0.5264
+54143,Heels,0.8205
+54144,Heels,0.9377
+54145,Flats,0.8567
+54146,Tops,0.9365
+54147,Necklace and Chains,0.9906
+54148,Necklace and Chains,0.9589
+54149,Pendant,0.9469
+54150,Necklace and Chains,0.9871
+54151,Necklace and Chains,0.9676
+54152,Necklace and Chains,0.9998
+54153,Necklace and Chains,0.9999
+54154,Other,0.755
+54155,Necklace and Chains,0.9993
+54156,Necklace and Chains,0.9413
+54157,Necklace and Chains,1.0
+54158,Necklace and Chains,0.999
+54159,Necklace and Chains,1.0
+54160,Other,0.9114
+54161,Other,0.9557
+54162,Necklace and Chains,0.9406
+54163,Necklace and Chains,0.7533
+54164,Necklace and Chains,0.629
+54165,Necklace and Chains,0.9934
+54166,Necklace and Chains,0.998
+54167,Necklace and Chains,0.6891
+54168,Flats,0.4797
+54169,Necklace and Chains,0.9816
+54170,Necklace and Chains,0.9999
+54171,Other,0.9719
+54172,Necklace and Chains,0.9995
+54173,Other,0.9406
+54174,Necklace and Chains,0.4088
+54175,Pendant,0.553
+54176,Pendant,0.7204
+54177,Handbags,0.9993
+54178,Duffel Bag,0.9235
+54182,Handbags,0.9807
+54183,Handbags,0.6498
+54185,Backpacks,0.9378
+54186,Briefs,1.0
+54187,Briefs,1.0
+54188,Briefs,0.9698
+54189,Briefs,1.0
+54192,Trousers,0.9995
+54194,Trousers,0.776
+54200,Shorts,1.0
+54202,Shirts,0.9924
+54225,Trousers,0.9992
+54226,Jeans,0.6058
+54228,Flats,0.9762
+54229,Handbags,0.9995
+54252,Shirts,0.582
+54280,Shirts,0.9343
+54302,Bra,0.9998
+54303,Briefs,0.8231
+54304,Briefs,0.9999
+54305,Bra,0.9994
+54306,Briefs,0.9846
+54307,Briefs,0.7143
+54311,Briefs,0.9989
+54318,Bra,0.9997
+54319,Briefs,0.9996
+54320,Briefs,0.9998
+54325,Bra,0.9926
+54326,Briefs,0.973
+54327,Bra,0.9995
+54328,Briefs,0.9956
+54329,Briefs,0.9999
+54330,Briefs,0.9647
+54332,Briefs,0.9995
+54334,Other,0.7118
+54338,Tops,0.4005
+54339,Socks,0.9999
+54340,Socks,0.9999
+54341,Socks,0.9999
+54342,Other,0.8709
+54343,Casual Shoes,0.8184
+54344,Socks,0.4309
+54345,Socks,1.0
+54346,Socks,1.0
+54375,Earrings,0.8843
+54380,Handbags,0.9962
+54381,Wallets,0.9211
+54382,Handbags,0.9732
+54383,Wallets,0.9866
+54384,Handbags,0.9994
+54385,Clutches,0.9247
+54386,Handbags,0.955
+54387,Handbags,1.0
+54388,Handbags,0.7341
+54389,Wallets,0.9496
+54390,Wallets,0.9916
+54391,Handbags,0.9296
+54392,Handbags,1.0
+54393,Handbags,1.0
+54394,Handbags,0.9994
+54395,Wallets,0.9515
+54396,Clutches,0.7546
+54397,Handbags,0.9996
+54398,Handbags,1.0
+54399,Wallets,0.9214
+54400,Wallets,0.8585
+54401,Wallets,0.9017
+54402,Wallets,0.9299
+54403,Wallets,0.9805
+54404,Wallets,0.9789
+54405,Wallets,0.9935
+54406,Handbags,0.9999
+54407,Handbags,0.9897
+54408,Handbags,0.5188
+54409,Handbags,0.9372
+54410,Wallets,0.5327
+54411,Wallets,0.9975
+54412,Wallets,0.9635
+54475,Handbags,0.9971
+54476,Handbags,0.7539
+54477,Briefs,1.0
+54478,Briefs,1.0
+54479,Briefs,0.9999
+54480,Briefs,1.0
+54481,Briefs,1.0
+54482,Briefs,0.9996
+54483,Briefs,0.9995
+54484,Briefs,0.9996
+54485,Briefs,0.9963
+54486,Briefs,0.9924
+54487,Handbags,0.8359
+54488,Handbags,0.549
+54489,Other,0.4757
+54490,Handbags,0.8512
+54491,Handbags,0.9999
+54492,Handbags,0.9971
+54493,Handbags,0.9972
+54494,Handbags,0.6906
+54495,Handbags,0.9987
+54496,Handbags,1.0
+54497,Laptop Bag,0.8516
+54498,Handbags,0.992
+54499,Laptop Bag,0.9476
+54500,Handbags,0.9621
+54501,Laptop Bag,0.5622
+54502,Backpacks,0.4791
+54503,Backpacks,0.9921
+54504,Handbags,0.9998
+54505,Handbags,0.9982
+54506,Handbags,0.999
+54507,Handbags,0.9743
+54508,Handbags,0.9999
+54509,Handbags,0.9987
+54510,Handbags,0.9999
+54511,Handbags,0.9995
+54512,Handbags,0.9873
+54513,Casual Shoes,0.9493
+54514,Casual Shoes,0.9505
+54515,Casual Shoes,0.9903
+54516,Sports Shoes,0.7007
+54517,Casual Shoes,0.9779
+54518,Casual Shoes,0.7816
+54519,Casual Shoes,0.9988
+54520,Casual Shoes,0.7977
+54521,Casual Shoes,0.77
+54522,Casual Shoes,0.864
+54523,Casual Shoes,0.4781
+54524,Sports Shoes,0.9799
+54525,Sports Shoes,0.7114
+54526,Sports Shoes,0.779
+54527,Casual Shoes,0.9105
+54528,Casual Shoes,0.9166
+54529,Casual Shoes,0.7545
+54530,Sports Shoes,0.9823
+54533,Sports Shoes,0.547
+54534,Sports Shoes,0.5563
+54535,Sports Shoes,0.9124
+54536,Casual Shoes,0.9145
+54537,Sports Shoes,0.5753
+54538,Casual Shoes,0.5871
+54539,Sports Shoes,0.9215
+54540,Sports Shoes,0.876
+54541,Casual Shoes,0.8013
+54542,Casual Shoes,0.5353
+54543,Sports Shoes,0.9737
+54544,Casual Shoes,0.7688
+54545,Handbags,0.8923
+54546,Backpacks,0.6575
+54547,Tunics,0.7268
+54548,Kurtas,0.7419
+54549,Kurtis,0.5213
+54550,Kurtas,0.9999
+54551,Kurtis,0.558
+54553,Kurtas,0.596
+54554,Tops,0.5085
+54555,Kurtas,0.6745
+54556,Stoles,0.402
+54557,Tops,0.3054
+54558,Tops,0.7451
+54559,Kurtis,0.4925
+54561,Kurtas,0.9719
+54562,Kurtas,0.6181
+54563,Kurtas,0.962
+54564,Kurtas,0.9948
+54565,Kurtas,0.9999
+54566,Kurtas,0.9541
+54567,Kurtas,0.9907
+54568,Kurtas,0.9999
+54569,Kurtas,0.971
+54570,Kurtas,0.9242
+54571,Kurtas,0.9999
+54572,Kurtas,0.9293
+54573,Kurtis,0.889
+54574,Tops,0.8974
+54575,Kurtis,0.8333
+54576,Kurtas,0.9774
+54577,Kurtas,0.921
+54578,Kurtas,0.8397
+54579,Kurtas,0.9973
+54580,Kurtas,0.9327
+54581,Kurtas,0.9994
+54582,Kurtas,1.0
+54584,Kurtas,1.0
+54585,Kurtas,0.9982
+54586,Kurtas,0.9966
+54587,Kurtas,0.9964
+54588,Kurtas,0.9568
+54589,Kurtas,0.9907
+54590,Kurtas,0.7994
+54595,Kurtas,0.9995
+54596,Kurtas,0.9998
+54597,Kurtas,0.9985
+54598,Kurtas,0.9999
+54599,Kurtas,0.9384
+54600,Briefs,0.9991
+54601,Briefs,0.999
+54602,Briefs,0.999
+54603,Briefs,1.0
+54604,Briefs,1.0
+54605,Briefs,1.0
+54606,Briefs,0.9999
+54607,Briefs,1.0
+54608,Briefs,0.9993
+54609,Briefs,0.9995
+54610,Briefs,0.9997
+54611,Briefs,1.0
+54612,Briefs,0.9972
+54613,Briefs,0.9972
+54614,Briefs,0.9774
+54615,Briefs,0.9993
+54616,Briefs,1.0
+54617,Briefs,0.7403
+54618,Briefs,1.0
+54619,Watches,0.9995
+54620,Watches,0.9371
+54621,Watches,0.9985
+54622,Watches,0.7838
+54623,Tops,0.3857
+54625,Watches,0.9989
+54626,Watches,0.9999
+54627,Watches,0.9997
+54628,Watches,0.9999
+54629,Watches,0.9809
+54630,Watches,0.9998
+54631,Watches,0.9994
+54632,Watches,0.9994
+54633,Watches,0.9837
+54634,Watches,0.9976
+54635,Watches,0.9981
+54636,Watches,0.9996
+54637,Watches,0.9994
+54638,Watches,0.9993
+54639,Watches,0.9992
+54640,Watches,0.9999
+54641,Watches,0.9984
+54642,Watches,0.9998
+54643,Watches,0.9999
+54644,Watches,1.0
+54645,Watches,0.9993
+54646,Watches,0.9941
+54647,Watches,0.9984
+54648,Watches,0.9956
+54649,Watches,0.9779
+54650,Watches,0.939
+54651,Watches,0.9892
+54652,Watches,0.9871
+54653,Watches,0.9969
+54654,Watches,0.9998
+54655,Watches,0.9982
+54656,Watches,0.9799
+54657,Watches,0.9985
+54658,Watches,0.9991
+54659,Watches,0.9975
+54660,Watches,0.9997
+54661,Watches,0.93
+54662,Watches,0.9998
+54663,Watches,0.9997
+54664,Watches,1.0
+54665,Watches,0.9996
+54666,Watches,0.9983
+54667,Watches,0.9985
+54668,Watches,0.9914
+54669,Watches,0.9953
+54670,Watches,0.9997
+54671,Watches,0.9993
+54672,Watches,0.9997
+54674,Watches,0.9978
+54675,Watches,0.9966
+54676,Watches,0.9798
+54677,Watches,0.9948
+54678,Free Gifts,0.683
+54679,Watches,1.0
+54680,Kurtas,0.5195
+54681,Tops,0.8749
+54682,Tunics,0.7839
+54683,Dresses,0.6587
+54684,Kurtas,0.9153
+54685,Kurtas,0.9981
+54686,Other,0.4666
+54687,Kurtas,0.9782
+54688,Other,0.8439
+54689,Night suits,0.7594
+54690,Tshirts,0.4912
+54691,Shirts,0.5843
+54692,Tunics,0.8713
+54693,Kurtas,0.9998
+54694,Tunics,0.7244
+54695,Tunics,0.6351
+54696,Kurtas,0.3363
+54697,Tunics,0.6956
+54698,Tops,0.959
+54699,Kurtis,0.5164
+54700,Shirts,0.7823
+54702,Kurtas,0.7657
+54703,Kurta Sets,0.7376
+54704,Track Pants,0.408
+54705,Night suits,0.9399
+54706,Kurtas,0.9934
+54708,Kurtas,0.5104
+54710,Kurtas,0.999
+54711,Kurtas,0.746
+54712,Night suits,0.8283
+54713,Other,0.4691
+54714,Sarees,0.8759
+54715,Night suits,0.7854
+54716,Kurtas,0.9824
+54717,Kurtas,0.5514
+54718,Shirts,0.4647
+54719,Kurtas,0.9841
+54720,Kurtas,0.8872
+54721,Other,0.593
+54722,Socks,0.3178
+54723,Other,0.9757
+54724,Other,0.9031
+54725,Kurtas,0.9794
+54726,Kurtas,0.7376
+54727,Kurtas,0.6782
+54728,Casual Shoes,0.9997
+54729,Casual Shoes,0.8702
+54730,Casual Shoes,0.9913
+54731,Casual Shoes,0.9969
+54732,Casual Shoes,0.9809
+54733,Casual Shoes,0.9969
+54734,Casual Shoes,0.9905
+54735,Casual Shoes,0.9988
+54736,Casual Shoes,0.9875
+54737,Casual Shoes,0.9993
+54738,Casual Shoes,0.9312
+54739,Casual Shoes,0.816
+54740,Casual Shoes,0.9779
+54741,Casual Shoes,0.9996
+54742,Casual Shoes,0.9989
+54744,Kurtas,0.9613
+54767,Kurtas,0.9886
+54792,Jeans,0.9996
+54794,Jeans,0.9903
+54796,Jeans,0.9845
+54800,Jeans,0.9962
+54804,Handbags,0.9985
+54805,Handbags,0.9711
+54807,Handbags,0.9794
+54808,Wallets,0.5548
+54812,Handbags,0.9999
+54813,Backpacks,0.6785
+54819,Handbags,0.5301
+54823,Handbags,0.9008
+54827,Handbags,0.9023
+54828,Wallets,0.8651
+54829,Handbags,0.9261
+54831,Clutches,0.3633
+54834,Handbags,0.7715
+54836,Handbags,0.6175
+54838,Clutches,0.9643
+54842,Belts,0.954
+54849,Necklace and Chains,0.6201
+54850,Necklace and Chains,0.9766
+54851,Tshirts,0.7293
+54852,Necklace and Chains,0.9997
+54853,Necklace and Chains,0.9839
+54854,Necklace and Chains,0.9176
+54856,Necklace and Chains,0.9793
+54857,Pendant,0.3568
+54858,Necklace and Chains,0.7577
+54859,Necklace and Chains,0.9682
+54860,Pendant,0.3164
+54861,Other,0.4947
+54862,Necklace and Chains,0.5043
+54863,Necklace and Chains,1.0
+54864,Other,0.9656
+54865,Pendant,0.4168
+54866,Necklace and Chains,0.9995
+54867,Pendant,0.9995
+54868,Necklace and Chains,0.7983
+54869,Necklace and Chains,0.9986
+54870,Necklace and Chains,0.9785
+54871,Other,0.62
+54872,Necklace and Chains,0.9861
+54873,Necklace and Chains,0.9055
+54874,Bra,0.5045
+54875,Necklace and Chains,0.9923
+54876,Necklace and Chains,0.9424
+54877,Bracelet,0.3863
+54878,Handbags,0.5209
+54879,Necklace and Chains,1.0
+54880,Handbags,0.8216
+54881,Necklace and Chains,0.9851
+54882,Necklace and Chains,0.917
+54883,Earrings,0.3564
+54884,Necklace and Chains,0.9293
+54885,Necklace and Chains,0.7508
+54886,Other,0.7843
+54888,Necklace and Chains,0.9999
+54889,Shirts,0.5052
+54890,Sweatshirts,0.7923
+54891,Tops,0.8747
+54894,Lounge Pants,0.9495
+54896,Capris,0.8799
+54897,Tshirts,0.9751
+54899,Tops,0.8964
+54900,Tshirts,0.4434
+54901,Kurtas,0.6528
+54902,Shirts,0.7263
+54903,Shirts,0.5773
+54904,Tshirts,0.9884
+54905,Shirts,0.9816
+54906,Tshirts,0.657
+54907,Tshirts,0.9978
+54908,Tshirts,0.8666
+54909,Tshirts,0.8693
+54911,Tops,0.6296
+54913,Shirts,0.518
+54914,Tops,0.3473
+54915,Shirts,0.9361
+54918,Other,0.3644
+54919,Lounge Pants,0.9716
+54921,Shorts,0.8893
+54923,Other,0.4369
+54924,Other,0.9596
+54925,Other,0.483
+54926,Tshirts,0.7631
+54927,Tshirts,0.986
+54928,Tshirts,0.9699
+54929,Shirts,0.7108
+54930,Tshirts,0.9801
+54931,Tshirts,0.5624
+54932,Tops,0.6069
+54933,Tops,0.5162
+54934,Tops,0.8507
+54935,Tshirts,0.9793
+54936,Tops,0.5274
+54937,Tops,0.8328
+54938,Tops,0.9402
+54939,Tops,0.7738
+54940,Tshirts,0.8556
+54941,Tops,0.9211
+54942,Shirts,0.5724
+54943,Shirts,0.7575
+54944,Kurtas,0.3808
+54945,Tshirts,0.9769
+54946,Tshirts,0.8697
+54947,Shirts,0.6475
+54948,Shirts,0.4475
+54949,Jackets,0.6371
+54950,Tshirts,0.8492
+54951,Tshirts,0.9922
+54953,Tshirts,0.5057
+54954,Tshirts,0.7575
+54955,Shirts,0.6466
+54957,Tshirts,0.56
+54958,Tshirts,0.9633
+54959,Jackets,0.6017
+54960,Shirts,0.8093
+54961,Tshirts,0.8827
+54964,Tops,0.7468
+54965,Shirts,0.8
+54966,Casual Shoes,0.8891
+54967,Deodorant,1.0
+54968,Deodorant,1.0
+54969,Deodorant,1.0
+54970,Perfume and Body Mist,0.9801
+54971,Dresses,0.9001
+54972,Dresses,0.9949
+54973,Dresses,0.6092
+54974,Dresses,0.9985
+54975,Shirts,0.4588
+54976,Tshirts,0.7713
+54977,Capris,0.444
+54978,Capris,0.8686
+54979,Shirts,0.9976
+54980,Sarees,0.9514
+54981,Kurtas,0.5073
+54982,Jeans,0.9591
+54983,Leggings,0.9878
+54984,Jeans,0.8165
+54985,Jeans,0.7495
+54986,Tshirts,0.6206
+54987,Tops,0.595
+54988,Tops,0.8921
+54989,Tops,0.7969
+54990,Dresses,0.3817
+54991,Tops,0.583
+54992,Tops,0.6041
+54993,Shirts,0.7304
+54995,Other,0.9838
+54997,Other,0.9765
+55000,Other,0.9768
+55001,Other,0.9924
+55002,Other,0.979
+55003,Other,0.9756
+55004,Wallets,0.6705
+55005,Other,0.9429
+55006,Other,0.9834
+55007,Other,0.9768
+55008,Other,0.9698
+55009,Other,0.971
+55010,Other,0.9739
+55012,Other,0.9975
+55013,Other,0.9992
+55015,Other,0.9977
+55016,Other,0.9994
+55018,Other,0.9976
+55020,Other,0.9975
+55021,Other,0.3859
+55022,Other,0.3468
+55023,Perfume and Body Mist,0.3581
+55024,Perfume and Body Mist,0.4057
+55025,Other,0.444
+55026,Perfume and Body Mist,0.3667
+55027,Perfume and Body Mist,0.3457
+55028,Perfume and Body Mist,0.3526
+55029,Perfume and Body Mist,0.3862
+55030,Perfume and Body Mist,0.3529
+55031,Other,0.3396
+55032,Other,0.2415
+55033,Perfume and Body Mist,0.4057
+55034,Other,0.6382
+55035,Perfume and Body Mist,0.4004
+55036,Other,0.3859
+55037,Perfume and Body Mist,0.3651
+55038,Perfume and Body Mist,0.3639
+55039,Other,0.9794
+55040,Kurtas,0.3318
+55041,Other,0.997
+55042,Perfume and Body Mist,0.3803
+55043,Perfume and Body Mist,0.342
+55044,Perfume and Body Mist,0.3565
+55045,Other,0.9841
+55046,Other,0.9839
+55047,Fragrance Gift Set,0.3099
+55048,Other,0.9588
+55049,Other,0.7733
+55050,Other,0.9355
+55051,Other,0.9843
+55052,Other,0.9144
+55053,Other,0.9593
+55054,Other,0.8814
+55055,Other,0.8317
+55056,Other,0.9864
+55057,Other,0.8792
+55058,Other,0.9794
+55059,Other,0.9885
+55060,Other,0.9663
+55061,Other,0.9888
+55062,Other,0.9905
+55063,Other,0.6729
+55064,Other,0.8944
+55065,Other,0.9646
+55066,Other,0.9844
+55067,Other,0.4891
+55068,Other,0.9882
+55069,Perfume and Body Mist,0.7879
+55070,Other,0.9974
+55071,Other,0.9998
+55072,Other,0.4962
+55073,Other,0.9996
+55074,Other,0.8181
+55075,Pendant,0.8115
+55078,Other,0.5942
+55079,Other,0.6633
+55080,Other,0.4496
+55081,Other,0.7577
+55083,Backpacks,0.4533
+55086,Other,0.9824
+55087,Other,0.5584
+55089,Tshirts,0.5251
+55090,Tshirts,0.5218
+55093,Watches,0.7823
+55094,Deodorant,0.511
+55095,Other,0.9812
+55097,Other,0.9817
+55098,Other,0.6617
+55099,Other,0.9859
+55100,Sweaters,0.2262
+55101,Other,0.988
+55107,Backpacks,0.7572
+55108,Other,0.3586
+55109,Other,0.8137
+55110,Other,0.2297
+55111,Shirts,0.2194
+55112,Other,0.2026
+55113,Tshirts,0.8595
+55114,Tshirts,0.8633
+55115,Tshirts,0.8001
+55116,Other,0.602
+55117,Other,0.618
+55118,Other,0.6099
+55119,Wallets,0.828
+55120,Other,0.9966
+55121,Perfume and Body Mist,0.7002
+55122,Other,0.9976
+55123,Other,0.9988
+55124,Other,0.9949
+55125,Other,0.9964
+55126,Other,0.9963
+55127,Other,0.9996
+55128,Other,0.9977
+55129,Other,0.9976
+55130,Other,0.9971
+55131,Other,0.991
+55132,Other,0.773
+55133,Other,0.9744
+55134,Other,0.986
+55135,Other,0.9938
+55136,Perfume and Body Mist,0.9687
+55137,Other,0.9981
+55138,Other,0.948
+55139,Other,0.9617
+55140,Other,0.783
+55141,Other,0.9987
+55142,Other,0.9657
+55143,Other,0.9985
+55144,Other,0.9544
+55145,Other,0.9649
+55146,Other,0.9696
+55147,Other,0.9962
+55148,Other,0.991
+55149,Other,0.994
+55150,Other,0.9921
+55151,Other,0.9849
+55152,Other,0.9952
+55153,Perfume and Body Mist,0.8724
+55154,Other,0.9931
+55155,Perfume and Body Mist,0.6952
+55156,Perfume and Body Mist,0.8521
+55157,Other,0.9949
+55158,Other,0.989
+55159,Other,0.9957
+55160,Other,0.99
+55161,Other,0.9925
+55162,Other,0.9941
+55163,Other,0.9883
+55164,Perfume and Body Mist,0.9958
+55165,Perfume and Body Mist,0.8721
+55166,Other,0.9852
+55168,Perfume and Body Mist,0.9914
+55170,Perfume and Body Mist,0.7742
+55172,Perfume and Body Mist,0.765
+55173,Perfume and Body Mist,0.752
+55175,Perfume and Body Mist,0.9396
+55177,Perfume and Body Mist,0.9237
+55179,Perfume and Body Mist,0.9187
+55180,Perfume and Body Mist,0.9419
+55181,Perfume and Body Mist,0.8078
+55184,Perfume and Body Mist,0.8147
+55185,Perfume and Body Mist,0.9137
+55186,Perfume and Body Mist,0.6723
+55187,Jeans,0.2965
+55190,Perfume and Body Mist,0.9851
+55191,Perfume and Body Mist,0.6528
+55192,Perfume and Body Mist,0.974
+55194,Deodorant,0.4869
+55195,Perfume and Body Mist,0.9876
+55196,Other,0.3384
+55197,Perfume and Body Mist,0.9463
+55198,Other,0.5427
+55200,Perfume and Body Mist,0.6323
+55201,Perfume and Body Mist,0.6202
+55202,Other,0.7177
+55203,Other,0.4801
+55205,Earrings,0.4349
+55206,Other,0.8413
+55208,Other,0.8813
+55209,Earrings,0.7875
+55210,Earrings,0.7666
+55211,Earrings,0.5777
+55212,Handbags,0.5906
+55213,Other,0.8378
+55214,Other,0.8811
+55215,Jackets,0.371
+55216,Other,0.8591
+55217,Perfume and Body Mist,0.3423
+55218,Other,0.9947
+55219,Other,0.9857
+55220,Other,0.9867
+55221,Other,0.9857
+55222,Other,0.9992
+55223,Other,0.9979
+55224,Other,0.9984
+55225,Other,0.9534
+55226,Other,0.6432
+55227,Other,0.9875
+55228,Fragrance Gift Set,0.9472
+55229,Other,0.8366
+55230,Scarves,0.7733
+55231,Scarves,0.7754
+55232,Scarves,0.7758
+55233,Socks,0.8341
+55234,Perfume and Body Mist,0.9672
+55235,Perfume and Body Mist,0.9854
+55236,Other,0.7012
+55237,Perfume and Body Mist,0.5635
+55238,Other,0.6874
+55239,Other,0.6454
+55240,Perfume and Body Mist,0.7627
+55241,Perfume and Body Mist,0.8436
+55242,Perfume and Body Mist,0.7375
+55243,Perfume and Body Mist,0.8055
+55244,Other,0.6259
+55245,Other,0.7226
+55246,Other,0.7322
+55247,Bra,0.5658
+55248,Bra,0.7399
+55249,Bra,0.5198
+55250,Kurta Sets,0.4701
+55251,Other,0.4507
+55252,Other,0.9505
+55253,Other,0.9969
+55254,Other,0.997
+55255,Other,0.9968
+55256,Other,0.9996
+55257,Other,0.99
+55258,Other,0.998
+55259,Other,0.9985
+55260,Other,0.9908
+55261,Other,0.995
+55262,Other,0.9977
+55263,Other,0.4712
+55264,Pendant,0.625
+55265,Pendant,0.538
+55266,Other,0.9811
+55267,Other,0.9903
+55268,Other,0.9993
+55269,Other,0.9996
+55270,Pendant,0.9996
+55271,Pendant,0.4261
+55272,Other,0.9991
+55273,Other,0.9837
+55274,Other,0.9729
+55275,Caps,0.7399
+55276,Caps,0.7107
+55277,Wallets,0.9566
+55278,Wallets,0.96
+55280,Wallets,0.8858
+55281,Other,0.5215
+55282,Accessory Gift Set,0.1572
+55283,Accessory Gift Set,0.156
+55284,Accessory Gift Set,0.1579
+55285,Other,0.9732
+55286,Wallets,0.9799
+55287,Handbags,0.7571
+55288,Handbags,0.7972
+55289,Handbags,0.7972
+55290,Other,0.5622
+55291,Other,0.4595
+55292,Other,0.4928
+55293,Scarves,0.7993
+55294,Scarves,0.8164
+55295,Scarves,0.5174
+55296,Perfume and Body Mist,0.4061
+55297,Wallets,0.4666
+55298,Wallets,0.5453
+55299,Wallets,0.4098
+55300,Other,0.9923
+55301,Other,0.9914
+55306,Socks,0.9307
+55307,Socks,0.9352
+55314,Socks,0.9979
+55315,Socks,0.9993
+55316,Socks,1.0
+55317,Watches,0.8308
+55318,Other,0.9497
+55319,Other,0.9639
+55320,Other,0.8437
+55321,Perfume and Body Mist,0.5031
+55322,Other,0.7786
+55323,Watches,0.392
+55324,Perfume and Body Mist,0.643
+55325,Wallets,0.6185
+55326,Deodorant,0.561
+55328,Jeans,0.3733
+55329,Backpacks,0.3326
+55330,Other,0.3962
+55331,Perfume and Body Mist,0.3923
+55332,Backpacks,0.5385
+55333,Backpacks,0.3076
+55334,Bra,0.3694
+55335,Tshirts,0.9026
+55336,Backpacks,0.407
+55337,Perfume and Body Mist,0.6048
+55338,Other,0.4314
+55339,Perfume and Body Mist,0.6045
+55344,Perfume and Body Mist,1.0
+55347,Perfume and Body Mist,0.9999
+55349,Wallets,0.6255
+55350,Wallets,0.8104
+55351,Perfume and Body Mist,0.777
+55352,Tshirts,0.2771
+55354,Other,0.9539
+55357,Other,0.7161
+55358,Other,0.6956
+55359,Other,0.7085
+55361,Other,0.7633
+55362,Other,0.8043
+55363,Other,0.7353
+55364,Other,0.6865
+55365,Other,0.755
+55366,Other,0.9419
+55368,Other,0.8716
+55369,Other,0.7457
+55370,Other,0.6706
+55373,Other,0.8277
+55375,Other,0.588
+55376,Other,0.9875
+55377,Other,0.6276
+55378,Other,0.5811
+55379,Other,0.7172
+55380,Other,0.9925
+55381,Other,0.7164
+55382,Other,0.8432
+55383,Other,0.615
+55384,Other,0.6701
+55385,Socks,0.5226
+55387,Other,0.3829
+55388,Other,0.6743
+55389,Perfume and Body Mist,0.9992
+55390,Other,0.7986
+55391,Other,0.5337
+55392,Other,0.8223
+55394,Other,0.9585
+55395,Other,0.7801
+55396,Other,0.9907
+55397,Other,0.9996
+55398,Other,0.9475
+55399,Other,0.9939
+55400,Other,0.9891
+55402,Other,0.9865
+55407,Other,0.9793
+55408,Other,0.9993
+55409,Other,0.9379
+55410,Other,0.9424
+55418,Other,0.8471
+55419,Other,0.9496
+55420,Other,0.9916
+55421,Other,0.8573
+55423,Other,0.9923
+55424,Other,0.9044
+55425,Other,0.8427
+55426,Other,0.9607
+55427,Other,0.8641
+55428,Other,0.9945
+55429,Other,0.9932
+55430,Tops,0.6458
+55431,Tops,0.6417
+55432,Tops,0.6988
+55433,Tops,0.7115
+55434,Tops,0.6316
+55436,Tops,0.6893
+55437,Tops,0.5949
+55438,Tops,0.7118
+55439,Tops,0.6989
+55440,Tops,0.6927
+55441,Tops,0.6599
+55442,Tops,0.6787
+55443,Other,0.7551
+55444,Other,0.9933
+55445,Pendant,0.8629
+55446,Other,0.9959
+55447,Pendant,0.9112
+55448,Pendant,0.8517
+55449,Other,0.9947
+55450,Other,0.5648
+55451,Pendant,0.866
+55454,Other,0.8703
+55455,Other,0.4554
+55456,Trousers,0.3556
+55457,Other,0.9916
+55458,Other,0.9915
+55459,Trousers,0.345
+55460,Other,0.9781
+55461,Trousers,0.3388
+55462,Other,0.9825
+55463,Other,0.9196
+55464,Other,0.9281
+55465,Other,0.9631
+55466,Trousers,0.6642
+55467,Trousers,0.335
+55468,Other,0.951
+55469,Other,0.9275
+55470,Other,0.9589
+55471,Trousers,0.3671
+55472,Trousers,0.3565
+55473,Other,0.9897
+55474,Other,0.9779
+55475,Other,0.9687
+55476,Other,0.9779
+55477,Other,0.9738
+55478,Other,0.9958
+55479,Other,0.9799
+55480,Other,0.9799
+55482,Other,0.9567
+55485,Other,0.9973
+55486,Other,0.9986
+55487,Other,0.9688
+55488,Other,0.9624
+55489,Other,0.9949
+55490,Other,0.989
+55491,Other,0.9735
+55492,Other,0.9975
+55493,Other,0.9979
+55494,Other,0.9874
+55495,Other,0.9569
+55496,Other,0.9643
+55497,Other,0.9925
+55498,Other,0.9795
+55499,Other,0.9837
+55500,Other,0.9818
+55501,Other,0.9725
+55502,Other,0.8986
+55503,Other,0.7095
+55504,Other,0.961
+55505,Other,0.8535
+55506,Other,0.293
+55507,Other,0.9477
+55508,Other,0.9515
+55509,Leggings,0.5101
+55510,Jeans,0.261
+55511,Leggings,0.3488
+55512,Jeans,0.3361
+55513,Wallets,0.6119
+55514,Backpacks,0.9082
+55516,Perfume and Body Mist,0.5
+55517,Handbags,0.601
+55518,Perfume and Body Mist,0.578
+55519,Tshirts,0.3776
+55520,Other,0.8584
+55521,Other,0.9272
+55522,Other,0.9237
+55523,Other,0.7933
+55524,Other,0.4918
+55525,Handbags,0.4785
+55526,Other,0.717
+55527,Other,0.9926
+55528,Other,0.9951
+55529,Perfume and Body Mist,0.8956
+55530,Perfume and Body Mist,0.9003
+55531,Perfume and Body Mist,0.8025
+55532,Perfume and Body Mist,0.9264
+55533,Perfume and Body Mist,0.9939
+55534,Other,0.9819
+55535,Other,0.8776
+55536,Other,0.8148
+55537,Other,0.8558
+55538,Other,0.4082
+55539,Other,0.3727
+55540,Tshirts,0.4605
+55541,Other,0.9891
+55542,Other,0.9987
+55543,Other,0.8289
+55544,Other,0.8916
+55545,Other,0.8612
+55546,Other,0.814
+55547,Other,0.9991
+55548,Other,0.9991
+55549,Other,0.9959
+55550,Other,0.999
+55551,Other,0.9946
+55553,Other,0.9982
+55556,Other,0.9986
+55557,Other,0.9821
+55558,Other,0.9542
+55559,Other,0.8671
+55560,Other,0.902
+55561,Other,0.8841
+55564,Other,0.7785
+55565,Deodorant,0.9964
+55568,Deodorant,0.9076
+55569,Other,0.9814
+55570,Deodorant,0.9975
+55571,Deodorant,0.9982
+55572,Other,0.9986
+55573,Other,0.9982
+55574,Tops,0.4175
+55575,Backpacks,0.4192
+55576,Tops,0.4942
+55577,Flip Flops,0.4386
+55578,Other,0.9961
+55579,Other,0.9959
+55580,Other,0.4239
+55581,Wallets,0.9532
+55582,Wallets,0.9478
+55583,Other,0.8951
+55584,Tops,0.4852
+55585,Tops,0.4982
+55586,Tops,0.5092
+55587,Other,0.9667
+55590,Shirts,0.9944
+55591,Shirts,0.814
+55595,Shirts,0.9999
+55597,Shirts,0.9576
+55599,Shirts,0.9996
+55608,Shirts,0.9569
+55612,Formal Shoes,0.9639
+55613,Formal Shoes,0.9737
+55614,Formal Shoes,0.9972
+55615,Formal Shoes,0.9952
+55616,Formal Shoes,0.9999
+55617,Formal Shoes,0.9996
+55618,Formal Shoes,0.9999
+55619,Formal Shoes,0.9926
+55620,Formal Shoes,0.9967
+55621,Formal Shoes,0.9997
+55622,Formal Shoes,0.9993
+55623,Formal Shoes,0.9985
+55624,Formal Shoes,0.989
+55625,Formal Shoes,0.6565
+55626,Formal Shoes,0.9119
+55627,Formal Shoes,0.8648
+55628,Formal Shoes,0.6576
+55629,Formal Shoes,0.9347
+55630,Heels,0.9646
+55631,Heels,0.7155
+55632,Flats,0.7734
+55633,Heels,1.0
+55634,Heels,0.9997
+55635,Heels,0.9989
+55636,Heels,0.9768
+55637,Flats,0.8616
+55638,Heels,0.9997
+55639,Heels,0.98
+55640,Heels,0.9998
+55641,Heels,0.8067
+55642,Heels,0.9962
+55643,Heels,0.9999
+55644,Heels,0.9977
+55645,Heels,0.9798
+55646,Sandals,0.9496
+55647,Heels,0.5776
+55648,Heels,0.9255
+55649,Heels,0.9999
+55650,Heels,1.0
+55651,Heels,0.6216
+55652,Heels,0.8665
+55653,Flats,0.6116
+55654,Heels,0.984
+55655,Heels,0.9518
+55656,Heels,0.995
+55657,Heels,1.0
+55783,Casual Shoes,0.9974
+55784,Casual Shoes,0.9181
+55785,Casual Shoes,0.7036
+55786,Backpacks,0.9832
+55787,Dresses,0.9899
+55788,Dresses,0.9699
+55789,Sarees,0.9864
+55790,Sarees,0.9082
+55791,Night suits,0.5071
+55794,Night suits,0.9996
+55795,Night suits,0.996
+55796,Other,0.9669
+55797,Dresses,0.8231
+55798,Tops,0.7836
+55799,Dresses,0.8692
+55800,Dresses,0.8008
+55801,Other,0.8065
+55802,Night suits,0.9999
+55803,Night suits,0.9911
+55804,Night suits,0.9046
+55805,Night suits,0.9909
+55806,Other,0.9452
+55807,Night suits,0.9994
+55809,Night suits,0.8266
+55810,Night suits,0.6033
+55811,Other,0.7771
+55812,Night suits,0.7196
+55813,Other,0.8897
+55814,Other,0.9249
+55817,Night suits,0.88
+55818,Other,0.6232
+55819,Night suits,0.9851
+55821,Trousers,0.6722
+55822,Night suits,0.6448
+55823,Kurta Sets,0.6583
+55824,Night suits,0.9361
+55825,Kurta Sets,0.6445
+55826,Kurta Sets,0.9867
+55827,Kurta Sets,0.934
+55828,Night suits,0.9308
+55829,Kurta Sets,0.7084
+55830,Kurta Sets,0.9899
+55831,Other,0.616
+55832,Night suits,0.9997
+55833,Other,0.9961
+55834,Perfume and Body Mist,0.9759
+55835,Other,0.7128
+55836,Other,0.9085
+55837,Dresses,0.5061
+55838,Other,0.4814
+55839,Dresses,0.4984
+55840,Perfume and Body Mist,0.6385
+55841,Other,0.6651
+55842,Dresses,0.6521
+55843,Other,0.3981
+55844,Perfume and Body Mist,0.4342
+55845,Dresses,0.4386
+55846,Other,0.4361
+55847,Other,0.5515
+55848,Other,0.3491
+55849,Dresses,0.4373
+55850,Perfume and Body Mist,0.3543
+55851,Dresses,0.5071
+55852,Other,0.5987
+55853,Dresses,0.6284
+55854,Other,0.4105
+55855,Other,0.6025
+55856,Dresses,0.4692
+55857,Dresses,0.5565
+55858,Perfume and Body Mist,0.6696
+55859,Perfume and Body Mist,0.8387
+55860,Other,0.4957
+55861,Other,0.5569
+55862,Other,0.4457
+55863,Kurtas,0.3314
+55864,Dresses,0.3311
+55865,Other,0.4326
+55866,Kurtas,0.3839
+55867,Other,0.805
+55868,Dresses,0.319
+55869,Other,0.8981
+55870,Dresses,0.3577
+55871,Other,0.384
+55872,Dresses,0.3767
+55873,Dresses,0.372
+55874,Other,0.3668
+55875,Perfume and Body Mist,0.4675
+55876,Other,0.6455
+55877,Other,0.5954
+55878,Dresses,0.3744
+55879,Dresses,0.483
+55880,Other,0.5609
+55881,Other,0.4275
+55882,Other,0.383
+55883,Other,0.7294
+55884,Perfume and Body Mist,0.505
+55885,Other,0.6733
+55886,Dresses,0.4294
+55887,Other,0.3766
+55888,Dresses,0.3641
+55889,Dresses,0.3491
+55890,Other,0.3998
+55891,Other,0.3845
+55892,Perfume and Body Mist,0.4683
+55893,Other,0.5481
+55894,Other,0.3662
+55895,Other,0.4171
+55896,Other,0.6304
+55897,Dresses,0.2296
+55898,Tops,0.3914
+55899,Dresses,0.3502
+55900,Perfume and Body Mist,0.693
+55901,Other,0.983
+55902,Dresses,0.3936
+55903,Perfume and Body Mist,0.7089
+55904,Dresses,0.3793
+55905,Other,0.9909
+55906,Dresses,0.3427
+55907,Perfume and Body Mist,0.5182
+55909,Perfume and Body Mist,0.8569
+55910,Perfume and Body Mist,0.2932
+55911,Perfume and Body Mist,0.9848
+55912,Perfume and Body Mist,0.8348
+55913,Perfume and Body Mist,0.602
+55914,Perfume and Body Mist,0.5076
+55915,Other,0.5549
+55916,Perfume and Body Mist,0.2058
+55917,Perfume and Body Mist,0.9825
+55918,Other,0.3602
+55919,Dresses,0.4331
+55920,Other,0.5216
+55921,Perfume and Body Mist,0.8965
+55922,Perfume and Body Mist,0.4155
+55923,Perfume and Body Mist,0.4609
+55924,Perfume and Body Mist,0.6896
+55925,Perfume and Body Mist,0.51
+55926,Perfume and Body Mist,0.7499
+55927,Perfume and Body Mist,0.6225
+55928,Perfume and Body Mist,0.5455
+55929,Perfume and Body Mist,0.7617
+55930,Perfume and Body Mist,0.6881
+55931,Other,0.5701
+55932,Perfume and Body Mist,0.8163
+55933,Perfume and Body Mist,0.6656
+55935,Perfume and Body Mist,0.5053
+55936,Other,0.4381
+55937,Perfume and Body Mist,0.3746
+55938,Perfume and Body Mist,0.6915
+55939,Perfume and Body Mist,0.5332
+55940,Perfume and Body Mist,0.5523
+55941,Perfume and Body Mist,0.8437
+55942,Perfume and Body Mist,0.4628
+55943,Perfume and Body Mist,0.529
+55944,Perfume and Body Mist,0.5328
+55945,Perfume and Body Mist,0.6672
+55946,Perfume and Body Mist,0.5258
+55947,Perfume and Body Mist,0.7855
+55948,Perfume and Body Mist,0.6587
+55949,Perfume and Body Mist,0.6736
+55950,Perfume and Body Mist,0.6546
+55951,Perfume and Body Mist,0.4113
+55952,Perfume and Body Mist,0.6892
+55953,Perfume and Body Mist,0.6687
+55954,Other,0.3642
+55955,Perfume and Body Mist,0.3537
+55956,Other,0.4151
+55957,Other,0.8897
+55958,Other,0.9392
+55959,Other,0.8677
+55960,Other,0.9338
+55961,Other,0.84
+55962,Other,0.9269
+55963,Other,0.9282
+55964,Other,0.7117
+55965,Other,0.6168
+55966,Other,0.5207
+55967,Perfume and Body Mist,0.4835
+55968,Perfume and Body Mist,0.9287
+55969,Other,0.7194
+55970,Other,0.7628
+55971,Other,0.8044
+55972,Other,0.8937
+55973,Perfume and Body Mist,0.5116
+55974,Other,0.5259
+55975,Other,0.6044
+55976,Other,0.7958
+55977,Fragrance Gift Set,0.5872
+55978,Other,0.8698
+55979,Other,0.9819
+55980,Perfume and Body Mist,0.9313
+55981,Perfume and Body Mist,0.5462
+55982,Other,0.4913
+55983,Other,0.7477
+55984,Other,0.7407
+55985,Other,0.599
+55986,Other,0.5808
+55987,Perfume and Body Mist,0.4947
+55988,Perfume and Body Mist,0.977
+55989,Other,0.9946
+55990,Perfume and Body Mist,0.9779
+55991,Other,0.8352
+55992,Perfume and Body Mist,0.4935
+55993,Other,0.5589
+55994,Other,0.6043
+55995,Other,0.8571
+55996,Other,0.5388
+55997,Perfume and Body Mist,0.4948
+55998,Other,0.623
+55999,Other,0.7124
+56000,Other,0.708
+56001,Other,0.5024
+56002,Other,0.6999
+56003,Perfume and Body Mist,0.5503
+56004,Perfume and Body Mist,0.8874
+56005,Perfume and Body Mist,0.9852
+56006,Perfume and Body Mist,0.9322
+56007,Other,0.9952
+56008,Other,0.6188
+56009,Other,0.7198
+56010,Other,0.7717
+56011,Other,0.9906
+56012,Other,0.9958
+56013,Other,0.9951
+56014,Other,0.9945
+56015,Other,0.9893
+56016,Other,0.4578
+56017,Other,0.842
+56018,Other,0.9968
+56019,Other,0.9878
+56020,Other,0.9842
+56021,Other,0.9972
+56022,Other,0.994
+56023,Other,0.9654
+56024,Other,0.7931
+56025,Other,0.9951
+56026,Other,0.9946
+56027,Other,0.978
+56028,Other,0.9962
+56029,Other,0.9978
+56030,Other,0.8405
+56031,Other,0.9923
+56032,Other,0.9948
+56033,Other,0.9709
+56034,Other,0.9916
+56035,Other,0.9818
+56036,Other,0.9876
+56037,Other,0.9968
+56038,Other,0.9981
+56039,Other,0.9585
+56040,Other,0.746
+56041,Other,0.7416
+56042,Other,0.7745
+56043,Other,0.8616
+56044,Other,0.8545
+56045,Other,0.8343
+56046,Other,0.691
+56047,Other,0.8302
+56048,Other,0.8312
+56049,Other,0.6353
+56050,Other,0.7778
+56051,Other,0.9967
+56052,Other,0.9194
+56053,Other,0.7879
+56054,Other,0.9236
+56055,Other,0.8845
+56056,Other,0.8752
+56057,Other,0.9028
+56058,Other,0.9073
+56059,Other,0.8631
+56060,Other,0.9732
+56061,Other,0.913
+56062,Other,0.7172
+56063,Other,0.9184
+56064,Other,0.8914
+56065,Other,0.9115
+56066,Other,0.4542
+56067,Other,0.5336
+56068,Other,0.9967
+56069,Other,0.7113
+56070,Necklace and Chains,0.772
+56071,Other,0.6159
+56072,Other,0.9482
+56073,Other,0.8987
+56074,Other,0.9996
+56075,Other,0.9992
+56076,Perfume and Body Mist,0.3403
+56077,Other,0.9057
+56078,Other,0.9353
+56079,Other,0.8183
+56080,Other,0.996
+56081,Other,0.9639
+56082,Other,0.9934
+56083,Other,0.9875
+56084,Other,0.9742
+56085,Other,0.9669
+56086,Other,0.3895
+56087,Other,0.9544
+56088,Other,0.9846
+56089,Other,0.9986
+56090,Other,0.9403
+56091,Other,0.9928
+56092,Other,0.9862
+56093,Other,0.9775
+56094,Other,0.7332
+56095,Other,0.9962
+56096,Other,0.9573
+56097,Other,0.8656
+56098,Earrings,0.4947
+56099,Other,0.9224
+56100,Other,0.9836
+56101,Other,0.9879
+56102,Other,0.9766
+56103,Other,0.9874
+56104,Other,0.9671
+56105,Other,0.9754
+56106,Other,0.9952
+56107,Other,0.9233
+56108,Other,0.9977
+56109,Other,0.9497
+56110,Other,0.9245
+56111,Other,0.9748
+56112,Other,0.9393
+56113,Other,0.9463
+56114,Other,0.9745
+56115,Other,0.9813
+56116,Other,0.9866
+56117,Other,0.971
+56118,Other,0.9757
+56119,Other,0.9811
+56120,Other,0.9599
+56121,Other,0.9357
+56122,Other,0.9875
+56123,Other,0.9876
+56124,Other,0.9306
+56125,Perfume and Body Mist,0.9335
+56126,Perfume and Body Mist,0.9495
+56127,Other,0.9908
+56128,Other,0.9761
+56129,Other,0.9482
+56133,Other,0.6239
+56134,Other,0.6849
+56135,Other,0.8529
+56136,Other,0.3826
+56137,Tshirts,0.7178
+56138,Other,0.7414
+56139,Other,0.6336
+56140,Other,0.9665
+56141,Other,0.6479
+56142,Other,0.91
+56143,Other,0.8847
+56144,Other,0.9231
+56145,Other,0.1219
+56146,Other,0.7772
+56147,Other,0.9886
+56148,Shirts,0.5079
+56149,Other,0.9991
+56150,Other,0.8882
+56151,Other,0.9375
+56152,Other,0.9774
+56153,Other,1.0
+56154,Other,0.9972
+56155,Other,0.9998
+56156,Other,0.2625
+56157,Other,0.9972
+56158,Other,0.9257
+56159,Necklace and Chains,0.4628
+56160,Other,0.4794
+56161,Other,0.9876
+56162,Other,0.9998
+56164,Other,0.8417
+56165,Other,0.9168
+56166,Other,0.7525
+56167,Other,0.9938
+56168,Other,0.743
+56170,Perfume and Body Mist,0.7974
+56171,Other,0.9726
+56172,Other,0.8979
+56173,Other,0.962
+56174,Other,0.7761
+56175,Other,0.5862
+56176,Other,0.5559
+56177,Other,0.8221
+56178,Other,0.9406
+56179,Other,0.6315
+56180,Other,0.9839
+56181,Other,0.6312
+56182,Other,0.805
+56183,Tshirts,0.4539
+56184,Tshirts,0.4509
+56185,Other,0.3372
+56186,Other,0.4274
+56187,Other,0.3645
+56188,Other,0.3994
+56189,Other,0.5126
+56190,Other,0.9619
+56191,Other,0.9918
+56192,Other,0.9896
+56193,Other,0.8169
+56194,Other,0.5985
+56195,Other,0.9786
+56196,Other,0.9189
+56198,Bracelet,0.8481
+56199,Other,0.7975
+56201,Other,0.4914
+56202,Pendant,0.9993
+56203,Pendant,0.9994
+56205,Pendant,0.9906
+56206,Pendant,0.9749
+56207,Pendant,0.9998
+56208,Pendant,0.9988
+56209,Pendant,0.9997
+56210,Pendant,0.9989
+56211,Pendant,0.9995
+56212,Pendant,0.98
+56213,Earrings,1.0
+56214,Earrings,0.9998
+56215,Earrings,1.0
+56216,Earrings,0.9999
+56217,Other,0.8475
+56218,Pendant,0.2767
+56219,Pendant,0.5021
+56220,Other,0.4874
+56221,Night suits,0.9944
+56222,Night suits,0.9157
+56223,Kurta Sets,0.8925
+56224,Other,0.7819
+56225,Night suits,0.7407
+56226,Night suits,0.6809
+56227,Night suits,0.9879
+56228,Night suits,0.8457
+56229,Other,0.5723
+56230,Other,0.953
+56231,Kurta Sets,0.8536
+56232,Night suits,0.9191
+56233,Other,0.9208
+56234,Night suits,0.9355
+56235,Jeans,0.1749
+56236,Night suits,0.6567
+56237,Sarees,0.8822
+56238,Kurta Sets,0.9966
+56239,Night suits,0.9449
+56240,Night suits,0.5453
+56241,Night suits,0.9986
+56243,Night suits,0.9951
+56244,Other,0.6187
+56245,Other,0.6329
+56247,Night suits,0.9657
+56248,Shorts,0.9149
+56249,Night suits,0.9823
+56250,Night suits,0.7114
+56251,Other,0.7738
+56252,Other,0.582
+56253,Night suits,0.9999
+56254,Kurta Sets,0.9461
+56255,Kurta Sets,0.7558
+56256,Night suits,0.9995
+56257,Shorts,0.4346
+56258,Night suits,0.7252
+56260,Night suits,1.0
+56261,Night suits,0.9993
+56262,Night suits,0.9998
+56263,Night suits,0.545
+56265,Night suits,0.932
+56266,Night suits,0.9818
+56267,Night suits,0.9011
+56268,Night suits,0.9746
+56269,Night suits,0.9257
+56270,Bra,0.9999
+56271,Bra,0.9988
+56272,Bra,0.9162
+56273,Bra,0.9997
+56274,Bra,0.9888
+56275,Bra,1.0
+56276,Bra,0.9998
+56277,Bra,0.9943
+56278,Bra,0.9803
+56279,Bra,0.9814
+56280,Bra,0.9999
+56281,Bra,0.9998
+56282,Bra,0.9993
+56283,Bra,1.0
+56284,Bra,1.0
+56285,Bra,0.9994
+56286,Bra,0.4935
+56287,Bra,1.0
+56288,Bra,0.9873
+56289,Bra,0.9999
+56290,Briefs,0.9948
+56291,Briefs,0.9349
+56292,Bra,0.9992
+56293,Bra,1.0
+56294,Bra,0.9993
+56295,Bra,0.991
+56296,Briefs,0.9669
+56297,Briefs,0.9794
+56298,Tshirts,0.5826
+56299,Bra,0.9998
+56300,Bra,0.9999
+56301,Bra,0.9942
+56302,Bra,0.9997
+56303,Briefs,0.951
+56304,Briefs,0.8971
+56305,Briefs,0.9109
+56306,Bra,0.9999
+56307,Bra,1.0
+56308,Briefs,0.9996
+56309,Briefs,0.9914
+56310,Bra,1.0
+56311,Bra,0.9984
+56312,Watches,0.8838
+56313,Watches,1.0
+56314,Watches,0.9464
+56315,Watches,0.7676
+56316,Watches,0.9561
+56317,Watches,0.9992
+56318,Watches,0.9996
+56319,Watches,0.9981
+56320,Watches,0.5405
+56321,Watches,1.0
+56322,Watches,0.9613
+56323,Watches,0.9997
+56324,Watches,0.9965
+56326,Watches,0.9771
+56327,Watches,0.9922
+56329,Watches,0.9982
+56330,Watches,0.9413
+56331,Watches,0.9902
+56332,Watches,0.814
+56333,Watches,0.9997
+56335,Watches,0.9971
+56336,Watches,0.9943
+56337,Watches,0.9921
+56338,Watches,0.9979
+56339,Watches,0.9973
+56340,Watches,0.8995
+56341,Watches,0.9997
+56342,Watches,0.9884
+56343,Watches,0.869
+56344,Watches,0.9685
+56346,Watches,0.9983
+56348,Watches,0.9964
+56349,Deodorant,0.9263
+56351,Deodorant,0.7895
+56352,Deodorant,0.6948
+56353,Deodorant,0.5956
+56354,Deodorant,0.7401
+56355,Fragrance Gift Set,0.9956
+56356,Deodorant,0.7729
+56359,Perfume and Body Mist,0.9939
+56360,Perfume and Body Mist,0.9978
+56361,Perfume and Body Mist,0.9998
+56362,Perfume and Body Mist,0.9998
+56363,Perfume and Body Mist,1.0
+56364,Perfume and Body Mist,0.9994
+56365,Perfume and Body Mist,0.9985
+56366,Perfume and Body Mist,1.0
+56367,Perfume and Body Mist,1.0
+56368,Perfume and Body Mist,0.9977
+56375,Perfume and Body Mist,0.9904
+56376,Perfume and Body Mist,0.975
+56377,Perfume and Body Mist,0.7042
+56378,Perfume and Body Mist,0.9992
+56379,Perfume and Body Mist,0.9878
+56380,Perfume and Body Mist,0.9999
+56381,Perfume and Body Mist,0.9939
+56385,Perfume and Body Mist,0.9941
+56386,Perfume and Body Mist,0.9999
+56388,Other,0.5717
+56389,Perfume and Body Mist,0.6272
+56390,Perfume and Body Mist,0.9972
+56391,Perfume and Body Mist,0.7963
+56392,Perfume and Body Mist,0.9925
+56393,Perfume and Body Mist,0.8201
+56394,Perfume and Body Mist,0.7617
+56395,Perfume and Body Mist,0.8937
+56402,Flats,0.7106
+56403,Flats,0.8058
+56404,Heels,0.7567
+56405,Flats,0.9846
+56406,Flats,0.8938
+56407,Flats,0.981
+56410,Casual Shoes,0.9875
+56411,Sandals,0.8543
+56412,Heels,0.7045
+56413,Sandals,0.9854
+56414,Sandals,0.8846
+56415,Sandals,0.9964
+56416,Bra,1.0
+56417,Bra,1.0
+56418,Bra,1.0
+56419,Bra,1.0
+56420,Bra,0.9986
+56421,Bra,1.0
+56422,Bra,1.0
+56423,Bra,0.4844
+56424,Other,0.7942
+56425,Perfume and Body Mist,0.5343
+56427,Other,0.8511
+56428,Other,0.9947
+56429,Sports Shoes,0.7261
+56432,Perfume and Body Mist,0.8689
+56436,Other,0.9818
+56440,Other,0.9847
+56443,Deodorant,0.485
+56444,Deodorant,0.514
+56446,Perfume and Body Mist,0.448
+56447,Deodorant,0.4661
+56448,Other,0.9611
+56450,Other,0.5604
+56451,Other,0.6378
+56452,Other,0.6139
+56454,Other,0.7209
+56455,Perfume and Body Mist,0.8201
+56456,Perfume and Body Mist,0.583
+56458,Other,0.6093
+56460,Other,0.4718
+56461,Other,0.5832
+56462,Other,0.575
+56463,Other,0.2724
+56464,Other,0.786
+56465,Other,0.3657
+56466,Perfume and Body Mist,0.6749
+56467,Perfume and Body Mist,0.7435
+56468,Perfume and Body Mist,0.9139
+56469,Other,0.4526
+56470,Other,0.9674
+56471,Other,0.5336
+56472,Other,0.3382
+56473,Other,0.6917
+56474,Other,0.4753
+56475,Perfume and Body Mist,0.4369
+56476,Perfume and Body Mist,0.469
+56477,Other,0.5039
+56478,Perfume and Body Mist,0.7694
+56479,Other,0.5481
+56480,Other,0.8145
+56481,Other,0.7768
+56482,Perfume and Body Mist,0.3234
+56483,Other,0.4908
+56484,Other,0.4584
+56485,Other,0.9614
+56486,Other,0.7493
+56488,Perfume and Body Mist,0.8376
+56489,Other,0.4619
+56490,Other,0.3618
+56491,Other,0.4052
+56492,Other,0.7171
+56493,Other,0.6145
+56494,Other,0.4384
+56495,Other,0.4358
+56496,Kurtas,0.3576
+56497,Kurtas,0.3261
+56498,Kurtas,0.331
+56499,Other,0.4414
+56500,Other,0.5967
+56501,Other,0.5985
+56502,Other,0.4201
+56503,Other,0.4971
+56504,Perfume and Body Mist,0.3291
+56505,Other,0.5466
+56506,Other,0.9957
+56507,Other,0.9971
+56508,Tops,0.3114
+56509,Tops,0.2692
+56511,Tops,0.364
+56512,Tops,0.3376
+56513,Tops,0.3602
+56515,Earrings,0.4554
+56516,Earrings,0.4321
+56517,Tops,0.2957
+56518,Earrings,0.6369
+56519,Other,0.4417
+56520,Other,0.8773
+56521,Other,0.8735
+56522,Other,0.8629
+56523,Other,0.8263
+56524,Other,0.8163
+56525,Other,0.8744
+56526,Other,0.8825
+56527,Other,0.8397
+56528,Other,0.8146
+56529,Other,0.8842
+56530,Other,0.8216
+56531,Other,0.8669
+56532,Other,0.878
+56533,Other,0.8788
+56534,Other,0.8907
+56535,Other,0.8752
+56536,Other,0.8362
+56537,Other,0.7974
+56539,Other,0.8252
+56540,Other,0.8904
+56541,Other,0.8788
+56542,Other,0.9686
+56543,Other,0.9863
+56544,Other,0.9937
+56545,Other,0.9867
+56546,Other,0.9781
+56547,Other,0.993
+56548,Other,0.9978
+56549,Other,0.997
+56550,Other,0.9961
+56551,Pendant,0.935
+56553,Pendant,0.9339
+56554,Pendant,0.6241
+56555,Other,0.8605
+56556,Other,0.9849
+56558,Other,0.9989
+56559,Other,0.9605
+56560,Other,0.9578
+56561,Other,0.9846
+56562,Other,0.9927
+56563,Other,0.9252
+56564,Other,0.9634
+56565,Other,0.9578
+56566,Other,0.9829
+56568,Other,0.9477
+56569,Other,0.8586
+56570,Other,0.8586
+56571,Backpacks,0.5197
+56572,Perfume and Body Mist,0.3203
+56573,Backpacks,0.4795
+56574,Other,0.934
+56575,Tops,0.4281
+56576,Tops,0.4797
+56579,Pendant,0.3707
+56580,Other,0.9694
+56581,Bra,0.4145
+56582,Bra,0.5105
+56583,Other,0.6798
+56584,Other,0.4777
+56585,Other,0.5335
+56588,Other,0.9984
+56590,Perfume and Body Mist,0.739
+56591,Perfume and Body Mist,0.945
+56592,Perfume and Body Mist,0.8247
+56593,Perfume and Body Mist,0.5257
+56594,Other,0.8898
+56597,Other,0.9937
+56598,Other,0.9953
+56599,Other,0.9966
+56600,Other,0.999
+56601,Other,0.9966
+56602,Other,0.9994
+56603,Other,0.9992
+56604,Other,0.9884
+56605,Other,0.9884
+56606,Other,0.7753
+56607,Casual Shoes,0.4974
+56608,Casual Shoes,0.4426
+56609,Other,0.7987
+56610,Other,0.7671
+56611,Handbags,0.4612
+56612,Wallets,0.8901
+56613,Wallets,0.8998
+56614,Wallets,0.8914
+56615,Other,0.6448
+56616,Other,0.6304
+56617,Other,0.6835
+56618,Other,0.9647
+56619,Other,0.8007
+56620,Perfume and Body Mist,0.5542
+56622,Other,0.9467
+56624,Perfume and Body Mist,0.4071
+56626,Other,0.9629
+56627,Perfume and Body Mist,0.9351
+56631,Other,0.429
+56632,Perfume and Body Mist,0.6688
+56634,Deodorant,0.3649
+56638,Kurtis,0.7287
+56639,Kurtas,0.9807
+56640,Kurtis,0.5138
+56642,Tunics,0.692
+56643,Tops,0.3326
+56646,Other,0.4628
+56647,Tops,0.6056
+56649,Tops,0.9364
+56650,Tops,0.82
+56651,Tops,0.771
+56652,Formal Shoes,0.9871
+56653,Casual Shoes,0.9987
+56654,Casual Shoes,0.9927
+56655,Casual Shoes,0.8559
+56656,Casual Shoes,0.911
+56657,Casual Shoes,0.9538
+56658,Casual Shoes,0.9675
+56659,Formal Shoes,0.9975
+56660,Sandals,0.5911
+56661,Flip Flops,0.4151
+56662,Casual Shoes,0.9148
+56663,Casual Shoes,0.9216
+56664,Casual Shoes,0.9867
+56665,Casual Shoes,0.994
+56666,Casual Shoes,0.9826
+56667,Watches,0.9998
+56668,Watches,0.9996
+56669,Watches,0.9989
+56670,Watches,0.9999
+56671,Watches,0.9998
+56672,Watches,0.991
+56673,Watches,0.9685
+56674,Watches,0.9999
+56675,Watches,0.9997
+56676,Watches,0.9944
+56677,Watches,0.9998
+56678,Watches,0.9997
+56679,Heels,0.7425
+56680,Heels,0.5146
+56681,Watches,0.9981
+56682,Watches,0.9958
+56684,Sarees,0.9957
+56685,Sarees,0.9501
+56686,Sarees,0.9991
+56687,Dresses,0.4146
+56688,Kurtas,0.9849
+56689,Kurtas,0.9998
+56691,Kurtas,0.9175
+56692,Kurtas,0.9928
+56693,Shirts,0.9554
+56694,Kurtas,0.7943
+56695,Shirts,0.998
+56696,Sweatshirts,0.5682
+56697,Shirts,0.9949
+56698,Tshirts,0.7543
+56699,Shirts,0.936
+56700,Shirts,0.9197
+56701,Shirts,0.9948
+56702,Shirts,0.9925
+56703,Shirts,0.9993
+56704,Tshirts,0.9398
+56705,Kurtas,1.0
+56709,Tunics,0.6155
+56711,Kurtas,1.0
+56713,Kurtas,0.9621
+56714,Kurtas,0.9956
+56715,Kurtas,0.9918
+56718,Kurtas,0.9999
+56720,Casual Shoes,0.9986
+56721,Casual Shoes,0.7933
+56722,Casual Shoes,0.8955
+56723,Casual Shoes,0.9964
+56724,Flip Flops,0.9458
+56725,Tshirts,0.9995
+56733,Tshirts,0.9958
+56734,Tshirts,0.8946
+56736,Tshirts,0.9265
+56752,Tshirts,0.7638
+56753,Tshirts,0.9979
+56765,Tshirts,0.7856
+56769,Shirts,0.9265
+56770,Shirts,0.9984
+56771,Shirts,0.9999
+56787,Shirts,0.9993
+56795,Jeans,1.0
+56798,Jeans,0.9981
+56805,Kurta Sets,0.3432
+56806,Kurtas,0.9854
+56807,Kurtas,0.4753
+56808,Kurtas,0.7155
+56809,Kurtas,0.8531
+56810,Kurtas,0.8542
+56811,Kurtas,0.4679
+56812,Kurtas,0.9908
+56813,Kurtas,0.9137
+56814,Tops,0.921
+56815,Kurtas,0.7398
+56816,Shirts,0.998
+56817,Shirts,0.9713
+56818,Shirts,0.8186
+56819,Shirts,0.9877
+56820,Shirts,0.9649
+56821,Shorts,1.0
+56822,Shorts,0.9964
+56825,Tshirts,0.4167
+56827,Jeans,0.9993
+56828,Jeans,0.3548
+56829,Jeans,0.6672
+56843,Jeans,0.8856
+56844,Jeans,0.853
+56845,Trousers,0.9174
+56846,Track Pants,0.784
+56847,Jeans,0.9403
+56849,Jeans,0.6817
+56850,Trousers,0.8804
+56852,Jeans,0.9958
+56854,Shirts,0.4453
+56855,Tshirts,0.6115
+56856,Flip Flops,0.99
+56857,Flip Flops,0.9992
+56858,Flip Flops,0.9996
+56859,Heels,0.6661
+56860,Flats,0.6053
+56861,Flats,0.9814
+56862,Flats,0.995
+56863,Heels,0.9983
+56864,Heels,0.9998
+56865,Heels,0.971
+56866,Flats,0.7332
+56867,Flats,0.8118
+56868,Flats,0.9286
+56869,Flats,0.4963
+56870,Flats,0.4679
+56871,Heels,0.9589
+56872,Heels,0.942
+56873,Flats,0.484
+56874,Heels,0.9902
+56875,Heels,0.8869
+56876,Heels,0.9941
+56877,Heels,0.9996
+56878,Heels,0.9568
+56879,Heels,0.9988
+56880,Heels,0.9495
+56881,Heels,1.0
+56882,Heels,0.9998
+56883,Heels,0.999
+56884,Heels,0.8782
+56885,Heels,0.8788
+56886,Heels,0.9183
+56887,Heels,0.9693
+56888,Heels,0.7359
+56889,Flats,0.9945
+56890,Flats,0.8446
+56891,Flats,0.8471
+56893,Flats,0.8527
+56894,Heels,0.9983
+56895,Heels,0.9912
+56896,Heels,0.9875
+56897,Heels,0.9681
+56898,Heels,1.0
+56899,Heels,0.9993
+56900,Heels,0.9654
+56901,Heels,0.9982
+56902,Heels,0.8788
+56903,Heels,0.9868
+56904,Flats,0.9652
+56905,Flats,0.7999
+56906,Flats,0.8447
+56907,Heels,0.9659
+56908,Heels,0.9993
+56909,Heels,0.5066
+56910,Flats,0.6573
+56911,Flats,0.6624
+56912,Heels,0.9857
+56913,Heels,0.867
+56914,Flats,0.7263
+56915,Heels,0.9993
+56916,Flats,0.8971
+56917,Heels,0.6688
+56918,Flats,0.9728
+56919,Heels,0.9633
+56920,Heels,0.9996
+56921,Flats,0.9599
+56922,Heels,0.9966
+56923,Heels,0.9675
+56924,Heels,0.9987
+56925,Flats,0.5422
+56926,Heels,0.5551
+56927,Heels,0.7892
+56928,Heels,0.9506
+56929,Heels,0.9868
+56930,Flats,0.5602
+56931,Flats,0.748
+56932,Heels,0.7004
+56933,Heels,0.6495
+56934,Heels,0.9952
+56935,Heels,0.9897
+56936,Heels,0.9908
+56937,Heels,0.9838
+56938,Heels,0.7002
+56939,Heels,0.6731
+56940,Flats,0.5322
+56941,Heels,0.9902
+56942,Heels,0.9998
+56943,Heels,0.9926
+56944,Flats,0.5557
+56945,Flats,0.6211
+56946,Heels,1.0
+56947,Heels,0.5212
+56948,Flats,0.9779
+56949,Heels,0.8762
+56950,Heels,0.9607
+56951,Heels,0.6549
+56952,Heels,0.6479
+56953,Heels,0.8396
+56954,Heels,0.9972
+56955,Heels,0.9437
+56956,Heels,0.4176
+56957,Sunglasses,0.5213
+56958,Heels,0.3243
+56959,Heels,0.6361
+56960,Heels,0.9909
+56961,Heels,0.6107
+56962,Heels,0.9792
+56963,Heels,0.6156
+56964,Heels,0.974
+56965,Heels,0.6347
+56966,Heels,0.8736
+56967,Heels,0.8484
+56968,Heels,0.9374
+56969,Heels,0.9763
+56970,Heels,0.8929
+56971,Heels,0.7651
+56972,Heels,0.9982
+56973,Heels,0.8077
+56974,Heels,0.9971
+56975,Heels,0.8148
+56976,Heels,0.9166
+56977,Heels,0.998
+56978,Flats,0.9749
+56979,Flats,0.9931
+56980,Flats,0.5972
+56981,Heels,0.8514
+56982,Flats,0.9876
+56983,Heels,0.9892
+56984,Flats,0.5163
+56985,Heels,0.9994
+56986,Heels,0.93
+56987,Heels,0.9917
+56988,Heels,0.9778
+56989,Heels,0.754
+56990,Heels,0.994
+56991,Heels,0.7132
+56992,Flats,0.8633
+56993,Flats,0.8996
+56994,Heels,0.9337
+56995,Heels,0.9552
+56996,Heels,0.8675
+56997,Heels,0.7592
+56998,Sandals,0.6849
+56999,Heels,0.8421
+57000,Flats,0.6567
+57001,Heels,0.7016
+57002,Heels,0.5512
+57003,Flats,0.5332
+57004,Heels,0.7202
+57005,Flats,0.687
+57006,Flats,0.5076
+57007,Heels,0.9357
+57008,Flats,0.9453
+57009,Flats,0.9581
+57010,Flats,0.854
+57011,Flats,0.6365
+57012,Flats,0.8294
+57013,Heels,0.8289
+57014,Heels,0.8317
+57015,Briefs,1.0
+57016,Briefs,0.9999
+57017,Briefs,0.9999
+57018,Briefs,0.9995
+57019,Briefs,0.9998
+57021,Briefs,1.0
+57022,Briefs,0.9999
+57023,Briefs,1.0
+57024,Briefs,1.0
+57025,Briefs,1.0
+57026,Briefs,1.0
+57027,Briefs,1.0
+57028,Tshirts,0.9281
+57029,Tops,0.5637
+57030,Dresses,0.7238
+57031,Dresses,0.6081
+57032,Tops,0.9854
+57033,Tshirts,0.3967
+57034,Dresses,0.9163
+57035,Dresses,0.9831
+57036,Dupatta,0.4877
+57037,Dresses,0.7293
+57038,Dresses,0.7901
+57039,Dresses,0.9618
+57040,Dresses,0.9609
+57041,Dresses,0.7311
+57042,Dresses,0.7617
+57043,Other,0.6152
+57044,Dresses,0.995
+57045,Dresses,0.812
+57046,Dresses,0.9977
+57047,Dresses,0.654
+57048,Dresses,0.7299
+57049,Dresses,0.9906
+57050,Dresses,0.9914
+57051,Dresses,0.9227
+57052,Other,0.5731
+57053,Dresses,0.6634
+57054,Other,0.5902
+57055,Other,0.5029
+57056,Tops,0.4878
+57057,Dresses,0.8705
+57058,Dresses,0.9996
+57059,Tunics,0.7126
+57060,Dresses,0.9901
+57061,Dresses,0.9441
+57062,Shirts,0.3944
+57063,Shirts,0.4344
+57064,Sweaters,0.638
+57065,Tops,0.7683
+57066,Tops,0.4663
+57067,Dupatta,0.5831
+57068,Kurtas,0.9536
+57069,Tshirts,0.5168
+57070,Trousers,0.6512
+57071,Trousers,0.9839
+57072,Jeans,0.6471
+57073,Jeans,0.9547
+57074,Jeans,0.9553
+57075,Jeans,0.4168
+57076,Other,0.5678
+57077,Jeans,0.9955
+57078,Other,0.9901
+57079,Tops,0.572
+57080,Sweatshirts,0.4551
+57081,Tshirts,0.4468
+57082,Skirts,0.9575
+57083,Skirts,0.7135
+57084,Skirts,0.9954
+57085,Other,0.2566
+57086,Skirts,0.9453
+57087,Dresses,0.9082
+57088,Skirts,1.0
+57089,Skirts,0.9238
+57090,Shorts,0.7463
+57091,Skirts,0.985
+57092,Dresses,0.9993
+57093,Shorts,0.9756
+57094,Skirts,0.9945
+57095,Skirts,0.4866
+57096,Jeans,0.366
+57097,Capris,0.8734
+57099,Capris,0.8804
+57100,Tops,0.7899
+57101,Tops,0.8218
+57102,Other,0.5962
+57103,Tops,0.6767
+57104,Other,0.6441
+57105,Tops,0.6432
+57106,Tops,0.9582
+57107,Lounge Pants,0.4804
+57108,Tops,0.3879
+57109,Tops,0.9889
+57110,Shirts,0.9977
+57111,Tunics,0.3275
+57112,Tops,0.9343
+57114,Tops,0.6769
+57115,Kurtas,0.2886
+57116,Tops,0.5171
+57117,Tops,0.9503
+57118,Tops,0.9122
+57119,Tops,0.8156
+57120,Shirts,0.6226
+57121,Tshirts,0.5443
+57122,Tops,0.8401
+57123,Tops,0.8999
+57124,Tunics,0.5024
+57125,Tops,0.9745
+57126,Tops,0.9927
+57127,Tops,0.8889
+57128,Tops,0.8155
+57129,Tops,0.9567
+57130,Tops,0.3933
+57131,Tops,0.8053
+57132,Tops,0.7614
+57133,Tshirts,0.837
+57134,Tops,0.6766
+57135,Tops,0.7309
+57136,Jeans,0.6575
+57137,Trousers,0.9968
+57138,Trousers,0.3209
+57139,Trousers,0.4229
+57140,Shorts,0.6738
+57141,Leggings,0.924
+57142,Innerwear Vests,0.7933
+57143,Tops,0.9889
+57144,Dresses,0.7817
+57145,Tops,0.9874
+57146,Tops,0.9388
+57147,Tops,0.4023
+57148,Tops,0.8207
+57149,Tops,0.9421
+57150,Tshirts,0.443
+57151,Tops,0.7923
+57152,Tops,0.7787
+57153,Tops,0.5098
+57154,Tops,0.9524
+57155,Tops,0.8704
+57156,Tops,0.9642
+57157,Tops,0.9203
+57158,Tunics,0.9636
+57159,Tshirts,0.5516
+57160,Tops,0.835
+57161,Tops,0.8737
+57162,Tops,0.8845
+57163,Tops,0.6696
+57164,Tops,0.977
+57165,Tops,0.9211
+57166,Tops,0.9404
+57167,Innerwear Vests,0.9289
+57168,Tshirts,0.51
+57169,Tops,0.7369
+57170,Tops,0.924
+57171,Other,0.6114
+57172,Tops,0.6012
+57173,Tops,0.9883
+57174,Shirts,0.4934
+57175,Tops,0.9583
+57176,Tops,0.766
+57177,Dupatta,0.7129
+57178,Other,0.2761
+57179,Shirts,0.5761
+57180,Kurtis,0.8881
+57181,Dresses,0.9704
+57182,Dresses,0.8149
+57183,Innerwear Vests,0.9525
+57184,Tunics,0.4621
+57185,Dresses,0.9222
+57186,Dresses,0.9796
+57187,Tops,0.7452
+57188,Kurtas,0.6448
+57189,Kurtis,0.4384
+57190,Tshirts,0.6645
+57191,Shirts,0.5266
+57192,Dresses,0.7473
+57193,Kurtis,0.6083
+57194,Tops,0.7518
+57195,Tunics,0.7869
+57196,Dresses,0.4807
+57197,Tunics,0.5065
+57198,Tops,0.89
+57199,Tunics,0.3752
+57200,Dresses,0.9869
+57201,Innerwear Vests,0.5794
+57202,Dresses,0.4178
+57203,Dresses,0.3878
+57204,Jeans,0.8153
+57205,Capris,0.9838
+57207,Shorts,0.7537
+57208,Other,0.5076
+57209,Jeans,0.9907
+57210,Trousers,0.9872
+57211,Leggings,0.9912
+57212,Jeans,0.9773
+57213,Leggings,0.7563
+57214,Shorts,0.9965
+57215,Trousers,0.9257
+57216,Shorts,0.5574
+57217,Shorts,0.8643
+57218,Shorts,0.7906
+57225,Handbags,0.9995
+57226,Handbags,0.9997
+57229,Handbags,0.9993
+57230,Handbags,0.9993
+57231,Handbags,0.9919
+57235,Handbags,0.9999
+57236,Handbags,0.9985
+57237,Handbags,0.999
+57238,Handbags,0.9986
+57239,Handbags,0.9745
+57240,Handbags,0.9992
+57241,Handbags,0.9994
+57242,Handbags,0.6821
+57243,Handbags,1.0
+57244,Handbags,0.9999
+57246,Handbags,1.0
+57247,Handbags,1.0
+57252,Handbags,1.0
+57253,Handbags,0.9993
+57254,Handbags,0.9999
+57255,Handbags,0.986
+57256,Handbags,0.9184
+57258,Handbags,0.9892
+57259,Handbags,0.9999
+57261,Handbags,0.9979
+57262,Handbags,0.9998
+57263,Handbags,0.7449
+57264,Handbags,0.9993
+57266,Handbags,0.9925
+57268,Tshirts,0.4683
+57273,Shirts,0.9976
+57274,Shirts,0.9751
+57275,Shirts,0.709
+57276,Shirts,0.9822
+57277,Kurtas,0.8699
+57280,Shirts,0.9274
+57281,Shirts,0.5655
+57282,Shirts,0.9772
+57283,Shirts,0.8982
+57284,Shirts,0.9966
+57285,Shirts,0.8813
+57286,Shirts,0.9875
+57287,Shirts,0.9793
+57288,Tshirts,0.411
+57289,Kurtas,0.3792
+57290,Shirts,0.9813
+57291,Shirts,0.9936
+57292,Kurtas,0.4791
+57293,Shirts,0.9031
+57294,Shirts,0.9993
+57295,Shirts,0.8772
+57296,Shirts,0.9899
+57297,Shirts,0.9541
+57298,Heels,0.9747
+57299,Flats,0.9432
+57300,Flats,0.9562
+57301,Flats,0.991
+57302,Flats,0.7231
+57303,Heels,0.8957
+57304,Heels,1.0
+57305,Heels,1.0
+57306,Heels,0.9978
+57307,Heels,0.9386
+57308,Flats,0.9788
+57309,Heels,0.6486
+57310,Tshirts,0.9964
+57311,Bra,1.0
+57312,Bra,1.0
+57313,Bra,0.9984
+57316,Bra,0.9997
+57318,Bra,1.0
+57319,Bra,0.9996
+57320,Bra,1.0
+57321,Bra,0.9998
+57322,Bra,0.9995
+57323,Bra,1.0
+57324,Bra,1.0
+57325,Bra,1.0
+57326,Bra,1.0
+57327,Bra,1.0
+57328,Bra,0.9999
+57329,Bra,1.0
+57330,Bra,1.0
+57331,Bra,0.9988
+57333,Bra,0.9701
+57334,Bra,1.0
+57335,Bra,0.9993
+57336,Bra,1.0
+57338,Bra,0.9997
+57339,Bra,1.0
+57340,Bra,1.0
+57342,Bra,0.9999
+57343,Bra,1.0
+57344,Bra,1.0
+57345,Bra,0.9996
+57346,Bra,0.9734
+57347,Bra,1.0
+57348,Bra,1.0
+57349,Bra,1.0
+57350,Bra,0.9998
+57351,Bra,1.0
+57352,Bra,0.9998
+57353,Bra,1.0
+57354,Bra,0.9997
+57355,Bra,0.9999
+57356,Bra,1.0
+57357,Bra,0.9967
+57358,Bra,0.9999
+57359,Bra,0.9998
+57360,Bra,0.9964
+57361,Bra,1.0
+57362,Bra,0.9992
+57363,Bra,0.9995
+57365,Briefs,0.9629
+57366,Briefs,0.9892
+57367,Briefs,0.8355
+57368,Briefs,0.9918
+57369,Briefs,0.9994
+57370,Briefs,0.9935
+57371,Briefs,0.8779
+57372,Briefs,0.9996
+57373,Briefs,0.9934
+57374,Briefs,0.9993
+57375,Briefs,0.9975
+57376,Briefs,0.9887
+57378,Briefs,0.9956
+57379,Briefs,0.9933
+57380,Briefs,0.9972
+57382,Briefs,0.9844
+57383,Briefs,0.9986
+57384,Briefs,0.9755
+57388,Briefs,0.9997
+57389,Briefs,0.9942
+57390,Briefs,0.9
+57391,Briefs,0.9935
+57392,Briefs,0.9058
+57393,Briefs,0.397
+57395,Briefs,0.9983
+57397,Briefs,0.9991
+57398,Briefs,1.0
+57399,Bra,0.4455
+57400,Briefs,0.9527
+57401,Briefs,0.9996
+57402,Briefs,0.9987
+57403,Briefs,0.9284
+57404,Briefs,0.9979
+57405,Briefs,0.9999
+57406,Briefs,0.9913
+57407,Briefs,0.9883
+57408,Briefs,0.9999
+57409,Briefs,0.9829
+57410,Briefs,0.9999
+57411,Briefs,0.9998
+57412,Briefs,0.9995
+57413,Briefs,0.9634
+57414,Briefs,0.9993
+57415,Briefs,0.9857
+57416,Other,0.8811
+57418,Tunics,0.3505
+57419,Other,0.4516
+57420,Tshirts,0.6876
+57421,Tshirts,0.9491
+57422,Tshirts,0.6697
+57423,Tshirts,0.8967
+57424,Tshirts,0.928
+57425,Tshirts,0.9707
+57426,Tshirts,0.5114
+57427,Tshirts,0.9559
+57428,Tshirts,0.8099
+57429,Tops,0.3281
+57430,Tops,0.5744
+57431,Tshirts,0.8119
+57432,Tops,0.6116
+57433,Tops,0.5955
+57434,Tshirts,0.759
+57435,Tops,0.7109
+57436,Tshirts,0.842
+57437,Tops,0.7345
+57438,Tshirts,0.4804
+57439,Tops,0.6397
+57440,Tshirts,0.8287
+57441,Other,0.6065
+57442,Tops,0.9033
+57443,Tops,0.8922
+57444,Tops,0.9686
+57445,Tshirts,0.7634
+57446,Tops,0.8461
+57447,Tshirts,0.493
+57448,Tops,0.7969
+57449,Other,0.5701
+57450,Tops,0.985
+57457,Handbags,0.7665
+57458,Handbags,0.6545
+57459,Handbags,0.5435
+57462,Clutches,0.9995
+57463,Belts,0.9999
+57466,Flip Flops,0.9859
+57467,Casual Shoes,0.9868
+57468,Flip Flops,0.997
+57469,Casual Shoes,1.0
+57470,Casual Shoes,0.998
+57471,Casual Shoes,0.8856
+57475,Sandals,0.9657
+57476,Formal Shoes,0.9697
+57477,Casual Shoes,0.9932
+57478,Casual Shoes,0.9865
+57479,Casual Shoes,0.9227
+57480,Casual Shoes,0.4967
+57481,Casual Shoes,0.8934
+57482,Casual Shoes,0.9884
+57483,Casual Shoes,0.7747
+57484,Sandals,0.8529
+57487,Formal Shoes,0.9856
+57488,Casual Shoes,0.7581
+57489,Casual Shoes,0.7866
+57490,Formal Shoes,0.7392
+57491,Formal Shoes,0.9774
+57492,Formal Shoes,0.9999
+57493,Formal Shoes,0.9999
+57494,Formal Shoes,0.9894
+57495,Formal Shoes,0.9034
+57496,Formal Shoes,0.9995
+57497,Formal Shoes,0.8082
+57498,Formal Shoes,0.9998
+57499,Formal Shoes,1.0
+57500,Sandals,0.7346
+57501,Sandals,0.9609
+57502,Sandals,0.9073
+57503,Sandals,0.9988
+57504,Sandals,0.9995
+57505,Sandals,0.9727
+57506,Sandals,0.8928
+57507,Sandals,0.9497
+57508,Sandals,0.9978
+57509,Formal Shoes,0.9999
+57510,Formal Shoes,0.9996
+57511,Formal Shoes,0.9587
+57512,Formal Shoes,1.0
+57513,Formal Shoes,0.9965
+57514,Formal Shoes,0.9994
+57515,Formal Shoes,0.9743
+57516,Formal Shoes,0.9956
+57517,Formal Shoes,0.9995
+57518,Formal Shoes,0.9956
+57519,Formal Shoes,1.0
+57520,Formal Shoes,0.9987
+57521,Formal Shoes,0.9999
+57522,Formal Shoes,0.5011
+57523,Formal Shoes,0.7982
+57524,Formal Shoes,0.888
+57525,Casual Shoes,0.6982
+57526,Formal Shoes,0.9999
+57527,Formal Shoes,0.9999
+57528,Formal Shoes,0.9999
+57529,Formal Shoes,0.998
+57530,Formal Shoes,0.9998
+57531,Formal Shoes,0.9898
+57532,Formal Shoes,0.9192
+57533,Casual Shoes,0.8983
+57534,Belts,0.9996
+57536,Belts,0.9992
+57539,Belts,0.9999
+57543,Other,0.9239
+57544,Other,0.9038
+57545,Other,0.9105
+57547,Other,0.9875
+57548,Other,0.9279
+57549,Other,0.9762
+57550,Other,0.979
+57552,Other,0.9268
+57553,Other,0.9399
+57554,Other,0.9342
+57555,Other,0.9235
+57556,Other,0.9225
+57557,Other,0.9287
+57558,Other,0.932
+57559,Other,0.9199
+57560,Other,0.6016
+57561,Other,0.7035
+57562,Other,0.4513
+57563,Other,0.9892
+57566,Other,0.5124
+57567,Other,0.4076
+57568,Other,0.4756
+57569,Other,0.4575
+57570,Other,0.4541
+57571,Other,0.4669
+57572,Other,0.458
+57573,Other,0.4784
+57574,Other,0.4467
+57575,Other,0.8495
+57576,Other,0.9859
+57577,Other,0.4788
+57578,Other,0.5812
+57579,Perfume and Body Mist,0.42
+57580,Other,0.4229
+57581,Socks,0.2222
+57582,Other,0.8045
+57583,Other,0.9542
+57584,Other,0.9745
+57586,Other,0.972
+57587,Other,0.9727
+57588,Other,0.9902
+57589,Other,0.9768
+57591,Other,0.9815
+57592,Other,0.9839
+57593,Other,0.9706
+57594,Other,0.9687
+57595,Other,0.9742
+57596,Other,0.9878
+57597,Other,0.9665
+57598,Other,0.9677
+57599,Other,0.9838
+57600,Other,0.9812
+57601,Other,0.981
+57603,Other,0.9855
+57604,Other,0.7871
+57605,Other,0.973
+57606,Other,0.9863
+57607,Perfume and Body Mist,0.6792
+57608,Perfume and Body Mist,0.93
+57609,Other,0.4114
+57610,Other,0.3933
+57611,Other,0.9227
+57613,Other,0.3885
+57614,Other,0.487
+57615,Perfume and Body Mist,0.2879
+57616,Other,0.4584
+57617,Perfume and Body Mist,0.5835
+57619,Other,0.9758
+57620,Ring,0.6423
+57621,Other,0.9727
+57622,Other,0.9854
+57623,Tshirts,0.4161
+57624,Other,0.5926
+57625,Perfume and Body Mist,0.6439
+57627,Other,0.5739
+57628,Other,0.2393
+57629,Perfume and Body Mist,0.9445
+57630,Perfume and Body Mist,0.7733
+57631,Other,0.6511
+57632,Pendant,0.9595
+57633,Pendant,0.9712
+57634,Pendant,0.9439
+57635,Pendant,0.9493
+57636,Pendant,0.9669
+57637,Pendant,0.9677
+57638,Other,0.2737
+57639,Other,0.8565
+57640,Pendant,0.8336
+57642,Pendant,0.9671
+57643,Pendant,0.9508
+57644,Other,0.7102
+57645,Pendant,0.9354
+57646,Pendant,0.9628
+57647,Pendant,0.9509
+57649,Perfume and Body Mist,0.7157
+57650,Perfume and Body Mist,0.7376
+57651,Pendant,0.9595
+57652,Pendant,0.9709
+57653,Pendant,0.9139
+57654,Pendant,0.9644
+57655,Pendant,0.8308
+57656,Perfume and Body Mist,0.6346
+57657,Other,0.999
+57658,Pendant,0.9908
+57660,Other,0.7099
+57661,Pendant,0.7123
+57662,Pendant,0.5961
+57664,Other,0.9061
+57667,Perfume and Body Mist,0.8757
+57668,Pendant,0.8391
+57669,Pendant,0.9869
+57670,Pendant,0.968
+57671,Perfume and Body Mist,0.905
+57672,Pendant,0.9014
+57673,Other,0.8359
+57674,Pendant,0.8647
+57675,Perfume and Body Mist,0.8895
+57676,Other,0.4541
+57677,Other,0.3403
+57678,Other,0.9359
+57679,Perfume and Body Mist,0.9797
+57681,Perfume and Body Mist,0.976
+57683,Perfume and Body Mist,0.9735
+57685,Perfume and Body Mist,0.9924
+57687,Other,0.788
+57689,Other,0.4434
+57690,Perfume and Body Mist,0.5153
+57691,Perfume and Body Mist,0.8651
+57692,Tshirts,0.4431
+57694,Perfume and Body Mist,0.4107
+57696,Perfume and Body Mist,0.831
+57697,Handbags,0.7709
+57698,Perfume and Body Mist,0.3907
+57699,Perfume and Body Mist,0.9469
+57700,Wallets,0.618
+57701,Belts,0.3127
+57702,Other,0.6368
+57703,Watches,0.6163
+57704,Leggings,0.5617
+57705,Other,0.9842
+57706,Scarves,0.9322
+57707,Other,0.735
+57708,Other,0.9023
+57709,Other,0.7698
+57710,Other,0.9164
+57711,Other,0.8627
+57712,Other,0.9284
+57713,Other,0.5859
+57714,Other,0.9688
+57715,Other,0.8644
+57716,Other,0.9858
+57717,Other,0.9203
+57718,Perfume and Body Mist,0.8817
+57719,Other,0.909
+57720,Other,0.9845
+57721,Other,0.9853
+57724,Other,0.9731
+57725,Perfume and Body Mist,0.4519
+57727,Other,0.98
+57728,Perfume and Body Mist,0.5418
+57729,Perfume and Body Mist,0.4029
+57730,Wallets,0.3329
+57731,Handbags,0.8466
+57732,Wallets,0.6011
+57733,Handbags,0.3826
+57734,Perfume and Body Mist,0.9407
+57735,Perfume and Body Mist,0.415
+57736,Perfume and Body Mist,0.6873
+57737,Perfume and Body Mist,0.9605
+57738,Handbags,0.5427
+57739,Dresses,0.5643
+57740,Dresses,0.2639
+57741,Dresses,0.5893
+57742,Dresses,0.7226
+57743,Dresses,0.4372
+57744,Dresses,0.5747
+57745,Handbags,0.4187
+57746,Handbags,0.4192
+57747,Handbags,0.4204
+57749,Other,0.981
+57750,Other,0.9804
+57752,Other,0.994
+57753,Other,0.8093
+57754,Deodorant,0.7217
+57755,Perfume and Body Mist,0.9493
+57756,Deodorant,0.9996
+57757,Perfume and Body Mist,0.6428
+57758,Other,0.7977
+57759,Perfume and Body Mist,0.5525
+57760,Perfume and Body Mist,0.8579
+57761,Deodorant,0.9832
+57762,Jeans,0.4058
+57763,Wallets,0.7144
+57764,Other,0.851
+57765,Jeans,0.5522
+57766,Perfume and Body Mist,0.9774
+57767,Other,0.5882
+57768,Deodorant,0.9308
+57770,Wallets,0.5338
+57771,Jeans,0.5927
+57772,Deodorant,0.958
+57773,Wallets,0.5251
+57774,Perfume and Body Mist,0.8326
+57776,Perfume and Body Mist,0.4514
+57777,Tunics,0.4558
+57778,Tshirts,0.2527
+57779,Tshirts,0.3015
+57780,Other,0.9975
+57781,Other,0.4335
+57782,Other,0.7929
+57783,Other,0.9231
+57784,Wallets,0.7993
+57785,Wallets,0.8708
+57786,Wallets,0.7819
+57787,Handbags,0.7223
+57788,Handbags,0.8517
+57789,Handbags,0.7062
+57790,Handbags,0.8266
+57791,Other,0.9514
+57792,Other,0.887
+57793,Other,0.9311
+57794,Clutches,0.3611
+57795,Wallets,0.9415
+57796,Perfume and Body Mist,0.9221
+57798,Perfume and Body Mist,0.2505
+57800,Other,0.9525
+57801,Other,0.5371
+57802,Flats,0.6752
+57803,Other,0.9739
+57804,Perfume and Body Mist,0.3394
+57805,Other,0.3607
+57810,Tops,0.5088
+57811,Dresses,0.6763
+57812,Dresses,0.8022
+57815,Tops,0.4988
+57816,Tops,0.9181
+57817,Other,0.2438
+57818,Tops,0.8798
+57819,Skirts,0.3577
+57820,Tshirts,0.5529
+57823,Other,0.3563
+57824,Other,0.5361
+57832,Scarves,0.4847
+57833,Shirts,0.4961
+57834,Tshirts,0.5268
+57835,Clutches,0.6752
+57836,Other,0.7262
+57837,Other,0.5806
+57838,Clutches,0.7332
+57845,Other,0.7973
+57846,Handbags,0.6137
+57847,Other,0.4522
+57849,Heels,0.9995
+57850,Heels,0.971
+57851,Sports Shoes,0.5999
+57852,Heels,1.0
+57853,Heels,0.8984
+57854,Heels,0.5861
+57855,Heels,0.955
+57856,Heels,0.9932
+57857,Heels,0.9879
+57858,Flats,0.6158
+57859,Deodorant,0.901
+57860,Perfume and Body Mist,0.9105
+57861,Perfume and Body Mist,0.577
+57862,Perfume and Body Mist,0.2603
+57863,Perfume and Body Mist,0.328
+57864,Deodorant,0.7009
+57865,Perfume and Body Mist,0.6986
+57866,Briefs,0.4627
+57867,Perfume and Body Mist,0.8957
+57868,Perfume and Body Mist,0.9939
+57869,Other,0.7173
+57870,Perfume and Body Mist,0.9881
+57871,Perfume and Body Mist,0.9612
+57872,Perfume and Body Mist,0.9588
+57873,Sweaters,0.5052
+57874,Handbags,0.3944
+57875,Perfume and Body Mist,0.7169
+57876,Perfume and Body Mist,0.7584
+57877,Perfume and Body Mist,0.9804
+57878,Other,0.4858
+57879,Briefs,0.8221
+57880,Wallets,0.3735
+57881,Perfume and Body Mist,0.9243
+57883,Perfume and Body Mist,0.9715
+57884,Tshirts,0.4733
+57885,Perfume and Body Mist,0.6557
+57886,Tshirts,0.4764
+57887,Perfume and Body Mist,0.8412
+57888,Briefs,0.937
+57889,Perfume and Body Mist,0.9521
+57890,Wallets,0.4584
+57891,Other,0.9685
+57892,Perfume and Body Mist,0.2802
+57893,Other,0.7422
+57894,Leggings,0.7578
+57895,Kurtis,0.9613
+57896,Shorts,0.9142
+57897,Dresses,0.4756
+57898,Tops,0.974
+57899,Leggings,0.9919
+57906,Socks,0.9982
+57907,Socks,1.0
+57908,Socks,0.999
+57909,Socks,0.9962
+57910,Socks,1.0
+57911,Socks,0.9999
+57912,Socks,0.9981
+57913,Socks,0.9999
+57914,Socks,0.9267
+57915,Socks,0.9982
+57916,Socks,0.9997
+57917,Socks,0.9982
+57918,Socks,0.9999
+57919,Socks,0.9993
+57920,Socks,0.9997
+57921,Socks,1.0
+57922,Leggings,0.7294
+57923,Other,0.9333
+57924,Leggings,0.6572
+57925,Leggings,0.3834
+57930,Tshirts,0.5885
+57931,Tshirts,0.9905
+57932,Tshirts,0.8812
+57933,Tshirts,0.8856
+57934,Casual Shoes,0.5277
+57935,Casual Shoes,0.6485
+57936,Casual Shoes,0.7711
+57937,Sports Shoes,0.9842
+57938,Sports Sandals,0.701
+57939,Casual Shoes,0.9803
+57940,Flip Flops,0.6949
+57941,Casual Shoes,0.702
+57942,Casual Shoes,0.6522
+57943,Casual Shoes,0.981
+57944,Sandals,0.9806
+57945,Sandals,0.9688
+57946,Casual Shoes,0.9515
+57947,Casual Shoes,0.7258
+57948,Casual Shoes,0.9789
+57949,Casual Shoes,0.7517
+57950,Formal Shoes,0.9986
+57952,Sarees,0.9999
+57953,Sarees,0.7985
+57954,Sarees,0.6309
+57956,Sarees,0.9821
+57957,Sarees,0.9766
+57958,Sarees,0.9995
+57959,Backpacks,0.6074
+57960,Sarees,0.9834
+57961,Sarees,0.9827
+57962,Watches,0.2336
+57963,Sarees,0.8984
+57964,Dresses,0.5546
+57965,Sarees,0.9341
+57966,Sarees,0.9361
+57967,Sarees,0.9998
+57968,Sarees,0.6917
+57969,Sarees,0.9697
+57970,Heels,0.9362
+57971,Sarees,1.0
+57972,Free Gifts,0.5694
+57973,Sarees,0.9445
+57974,Sarees,0.8967
+57975,Sarees,0.6914
+57976,Dresses,0.988
+57980,Tops,0.8513
+57981,Tops,0.9698
+57982,Tops,0.6145
+57983,Tshirts,0.4365
+57985,Tops,0.7003
+57986,Dresses,0.9807
+57987,Dresses,0.9945
+57988,Tops,0.4779
+57989,Dresses,0.9968
+57990,Dresses,0.9995
+57991,Other,0.6705
+57992,Shirts,0.6839
+57993,Dresses,0.9993
+57994,Dresses,0.7713
+57995,Dresses,0.9737
+57996,Dupatta,0.3602
+57997,Dresses,0.8481
+57998,Dresses,0.988
+57999,Dresses,0.9531
+58000,Dresses,0.9178
+58001,Tunics,0.5773
+58002,Dresses,0.7924
+58003,Dresses,0.9997
+58004,Tops,0.6745
+58005,Tops,0.9513
+58006,Tops,0.9882
+58007,Tops,0.8038
+58008,Tops,0.8862
+58009,Tops,0.9764
+58010,Tops,0.845
+58011,Tops,0.5528
+58012,Tops,0.806
+58013,Tops,0.5447
+58014,Tops,0.9026
+58015,Tops,0.9794
+58016,Earrings,0.9998
+58017,Earrings,0.9999
+58018,Earrings,0.9999
+58020,Earrings,0.8068
+58022,Earrings,1.0
+58023,Earrings,0.999
+58024,Earrings,1.0
+58027,Earrings,0.9996
+58028,Earrings,1.0
+58030,Earrings,1.0
+58032,Earrings,0.9999
+58035,Casual Shoes,0.7277
+58037,Earrings,0.9995
+58039,Earrings,0.9063
+58041,Earrings,0.9985
+58042,Earrings,0.9996
+58044,Earrings,0.9985
+58045,Earrings,0.9991
+58046,Earrings,0.9996
+58049,Earrings,1.0
+58050,Earrings,0.9959
+58051,Earrings,0.9989
+58052,Earrings,0.9977
+58053,Earrings,0.9999
+58057,Earrings,0.9998
+58058,Caps,0.3147
+58059,Earrings,1.0
+58060,Earrings,0.9999
+58061,Earrings,0.9988
+58062,Earrings,0.9999
+58063,Earrings,0.9999
+58071,Earrings,0.996
+58072,Earrings,0.9927
+58073,Earrings,1.0
+58074,Earrings,1.0
+58075,Earrings,1.0
+58076,Earrings,1.0
+58078,Earrings,0.9997
+58085,Earrings,0.9999
+58086,Earrings,0.9998
+58087,Earrings,0.9998
+58093,Earrings,0.9908
+58096,Pendant,0.9995
+58097,Ring,0.5398
+58098,Pendant,0.9821
+58099,Pendant,0.7147
+58100,Shirts,0.5439
+58104,Ring,0.6133
+58107,Earrings,1.0
+58108,Earrings,0.974
+58109,Earrings,0.9999
+58110,Earrings,0.9959
+58111,Earrings,0.9749
+58112,Earrings,1.0
+58115,Other,0.4613
+58116,Other,0.9653
+58117,Pendant,0.8775
+58118,Other,0.8833
+58121,Earrings,0.9994
+58123,Earrings,0.9999
+58128,Earrings,0.9998
+58129,Earrings,1.0
+58131,Earrings,1.0
+58132,Earrings,0.9998
+58133,Earrings,1.0
+58135,Earrings,0.9999
+58136,Earrings,0.7261
+58137,Earrings,0.9999
+58138,Bangle,0.5744
+58139,Other,0.6469
+58140,Earrings,0.9999
+58141,Earrings,0.9486
+58143,Backpacks,0.9998
+58144,Backpacks,0.9998
+58145,Backpacks,1.0
+58146,Backpacks,0.9999
+58147,Socks,0.9986
+58148,Caps,0.9957
+58149,Caps,0.9997
+58150,Caps,0.9998
+58151,Caps,0.9997
+58152,Caps,0.9998
+58153,Caps,0.8687
+58154,Caps,0.9992
+58155,Handbags,0.946
+58156,Handbags,0.998
+58157,Handbags,0.9984
+58158,Kurta Sets,0.3134
+58159,Wallets,0.939
+58160,Clutches,0.7069
+58161,Wallets,0.9708
+58162,Wallets,0.4316
+58163,Wallets,0.6034
+58164,Wallets,0.9585
+58165,Wallets,0.6748
+58166,Wallets,0.9969
+58167,Clutches,0.7729
+58168,Clutches,0.4295
+58169,Clutches,0.9931
+58170,Clutches,0.6685
+58171,Handbags,0.9843
+58172,Handbags,0.8539
+58173,Handbags,0.9993
+58174,Handbags,0.9879
+58175,Handbags,1.0
+58176,Handbags,0.9998
+58177,Handbags,0.9999
+58178,Handbags,0.9995
+58179,Handbags,0.535
+58180,Handbags,0.999
+58181,Handbags,0.5035
+58182,Handbags,0.9986
+58183,Handbags,0.9973
+58184,Handbags,0.9996
+58185,Handbags,0.9999
+58186,Handbags,0.9999
+58187,Handbags,0.9997
+58188,Handbags,0.8957
+58189,Handbags,0.927
+58190,Handbags,1.0
+58191,Handbags,1.0
+58194,Handbags,0.9989
+58195,Handbags,0.995
+58196,Handbags,0.9998
+58200,Casual Shoes,0.8602
+58201,Wallets,0.7036
+58202,Belts,0.9985
+58203,Belts,0.9995
+58204,Belts,0.9997
+58205,Belts,0.9988
+58206,Belts,1.0
+58207,Belts,1.0
+58208,Belts,1.0
+58209,Other,0.4456
+58210,Other,0.8078
+58211,Shorts,0.8586
+58212,Other,0.5422
+58213,Other,0.659
+58214,Other,0.7867
+58215,Other,0.5533
+58216,Other,0.5907
+58218,Watches,0.4988
+58220,Other,0.9073
+58222,Jeans,0.9961
+58225,Tops,0.5847
+58226,Sandals,0.9991
+58227,Sandals,0.9999
+58229,Sandals,0.9707
+58231,Flats,0.9695
+58232,Flip Flops,0.9069
+58233,Wallets,0.9996
+58234,Wallets,0.5144
+58235,Wallets,0.9964
+58236,Wallets,0.4526
+58237,Wallets,0.7986
+58238,Wallets,0.9466
+58239,Clutches,0.9481
+58240,Clutches,0.7814
+58241,Wallets,0.8959
+58242,Wallets,0.9959
+58243,Wallets,0.9949
+58244,Wallets,0.9747
+58245,Wallets,0.8953
+58246,Wallets,0.9121
+58247,Wallets,0.9697
+58248,Wallets,0.9975
+58249,Wallets,0.9724
+58250,Wallets,0.9774
+58251,Wallets,0.8639
+58252,Wallets,0.9663
+58253,Wallets,0.9769
+58254,Wallets,0.9936
+58255,Wallets,0.8965
+58256,Clutches,0.7641
+58257,Wallets,0.9083
+58258,Wallets,0.9859
+58259,Wallets,0.958
+58260,Wallets,0.8675
+58261,Wallets,0.7538
+58262,Clutches,0.8661
+58263,Clutches,0.7789
+58264,Handbags,0.9992
+58265,Handbags,1.0
+58266,Handbags,0.9999
+58267,Handbags,0.9999
+58268,Handbags,0.9999
+58269,Handbags,0.9998
+58270,Clutches,0.9999
+58271,Handbags,0.6802
+58272,Wallets,0.6644
+58273,Handbags,1.0
+58274,Handbags,0.9999
+58275,Handbags,0.9111
+58276,Handbags,0.9675
+58277,Handbags,0.9685
+58278,Handbags,0.9996
+58279,Handbags,0.9739
+58280,Handbags,0.9824
+58281,Wallets,0.9143
+58282,Wallets,0.9504
+58283,Clutches,0.9329
+58284,Clutches,0.8905
+58286,Briefs,0.9727
+58291,Socks,0.9393
+58292,Socks,0.6756
+58293,Socks,0.9985
+58294,Socks,0.9782
+58295,Socks,0.8598
+58296,Socks,0.9565
+58297,Socks,0.9978
+58298,Socks,0.8999
+58299,Socks,0.9326
+58300,Socks,1.0
+58301,Socks,0.999
+58304,Socks,1.0
+58305,Socks,0.9973
+58306,Socks,1.0
+58307,Socks,0.9982
+58308,Socks,0.9999
+58309,Socks,0.9999
+58310,Socks,1.0
+58311,Socks,0.9998
+58312,Socks,1.0
+58313,Socks,1.0
+58314,Socks,0.9997
+58315,Socks,0.9998
+58316,Socks,0.9996
+58317,Socks,0.9997
+58318,Socks,0.9936
+58319,Socks,0.9999
+58320,Socks,0.9966
+58321,Socks,1.0
+58322,Socks,0.9993
+58323,Socks,0.9999
+58324,Flip Flops,0.9425
+58325,Flip Flops,0.8529
+58326,Heels,0.7232
+58327,Flip Flops,0.9939
+58328,Flip Flops,0.9754
+58329,Flip Flops,0.993
+58330,Flip Flops,0.982
+58331,Flip Flops,0.6866
+58332,Flip Flops,0.5966
+58333,Flip Flops,0.8633
+58334,Flip Flops,0.9992
+58335,Flip Flops,0.996
+58336,Flip Flops,0.9994
+58337,Heels,0.9892
+58338,Heels,0.4302
+58339,Flip Flops,0.8261
+58340,Flip Flops,0.954
+58349,Tshirts,0.9777
+58351,Tshirts,0.9935
+58357,Tshirts,0.9918
+58358,Tshirts,0.9971
+58372,Tshirts,0.7935
+58375,Tshirts,0.9952
+58381,Tshirts,0.9948
+58385,Tshirts,0.9967
+58394,Shirts,0.7405
+58395,Shirts,0.9479
+58411,Jeans,0.9976
+58418,Jeans,0.9997
+58425,Kurtas,0.9745
+58439,Kurtas,0.7586
+58444,Watches,0.9997
+58445,Watches,0.9998
+58446,Kurtis,0.5871
+58447,Watches,0.9999
+58448,Watches,0.9996
+58449,Watches,0.9999
+58450,Watches,1.0
+58451,Watches,0.9999
+58452,Watches,1.0
+58453,Watches,0.996
+58454,Watches,0.9982
+58455,Watches,0.9992
+58456,Watches,0.9993
+58458,Tshirts,0.9863
+58459,Tshirts,0.8606
+58460,Tshirts,0.864
+58463,Belts,1.0
+58464,Belts,1.0
+58465,Belts,1.0
+58466,Belts,1.0
+58467,Belts,1.0
+58468,Belts,1.0
+58470,Wallets,0.9847
+58471,Wallets,0.9997
+58472,Wallets,0.9997
+58473,Wallets,0.9994
+58474,Wallets,0.9999
+58475,Wallets,1.0
+58476,Wallets,1.0
+58477,Wallets,0.999
+58478,Wallets,1.0
+58479,Wallets,1.0
+58480,Wallets,1.0
+58481,Wallets,0.9962
+58482,Wallets,0.9999
+58483,Wallets,0.9953
+58484,Wallets,0.9998
+58485,Wallets,0.9991
+58486,Wallets,0.9945
+58487,Wallets,0.9998
+58488,Heels,0.9441
+58489,Dresses,1.0
+58490,Other,0.9155
+58491,Shorts,0.6644
+58492,Dresses,0.9997
+58493,Dresses,0.7233
+58494,Free Gifts,0.9
+58495,Tops,0.797
+58496,Shirts,0.578
+58497,Other,0.8678
+58498,Kurtas,0.9583
+58499,Tops,0.8207
+58500,Other,0.2619
+58501,Dresses,0.9553
+58502,Kurta Sets,0.6875
+58503,Shirts,0.462
+58504,Dresses,0.7602
+58505,Other,0.7917
+58506,Dresses,0.4769
+58507,Tops,0.8294
+58508,Tops,0.9474
+58509,Other,0.4789
+58510,Tops,0.9716
+58511,Shirts,0.5867
+58512,Tops,0.329
+58513,Tops,0.5576
+58514,Tshirts,0.9816
+58515,Tops,0.9889
+58516,Sweatshirts,0.5819
+58517,Shirts,0.3271
+58518,Tops,0.8582
+58519,Necklace and Chains,0.9691
+58520,Dresses,0.243
+58521,Backpacks,0.6276
+58522,Handbags,0.8106
+58523,Clutches,0.6615
+58524,Other,0.9747
+58525,Clutches,0.295
+58526,Shirts,0.5713
+58527,Sunglasses,0.9995
+58528,Sunglasses,0.9387
+58529,Sunglasses,0.9998
+58530,Sunglasses,0.9978
+58531,Sunglasses,0.9895
+58532,Sunglasses,0.9761
+58533,Sunglasses,0.9973
+58534,Sunglasses,0.9986
+58535,Sunglasses,0.9975
+58536,Sunglasses,0.9999
+58537,Sunglasses,1.0
+58538,Sunglasses,0.9996
+58539,Sunglasses,0.9998
+58540,Sunglasses,0.9998
+58541,Sunglasses,0.9997
+58542,Sunglasses,0.9997
+58543,Sunglasses,1.0
+58544,Sunglasses,0.9994
+58545,Sunglasses,0.9984
+58546,Sunglasses,0.9995
+58547,Sunglasses,0.9997
+58548,Sunglasses,0.9998
+58549,Sunglasses,0.9995
+58550,Sunglasses,1.0
+58551,Sunglasses,0.9999
+58552,Sunglasses,0.9996
+58553,Sunglasses,0.9997
+58555,Formal Shoes,0.9994
+58559,Tshirts,0.9622
+58560,Other,0.8182
+58561,Trousers,0.3948
+58562,Jeans,0.8008
+58563,Shirts,0.8944
+58565,Shirts,0.4286
+58566,Shirts,0.4546
+58567,Sarees,0.4987
+58569,Tshirts,0.9869
+58570,Shirts,0.4142
+58571,Shorts,0.9948
+58573,Tshirts,0.6647
+58574,Tops,0.4468
+58576,Tshirts,0.7132
+58577,Tshirts,0.9806
+58581,Earrings,0.8575
+58586,Necklace and Chains,1.0
+58588,Pendant,0.8967
+58589,Necklace and Chains,1.0
+58590,Necklace and Chains,0.9489
+58591,Necklace and Chains,0.9402
+58600,Necklace and Chains,0.981
+58603,Earrings,0.8197
+58605,Earrings,0.9999
+58606,Earrings,0.9994
+58607,Earrings,0.9999
+58608,Earrings,1.0
+58609,Earrings,1.0
+58610,Earrings,0.9999
+58611,Earrings,0.9998
+58612,Earrings,0.9999
+58614,Other,0.643
+58615,Other,0.8725
+58616,Earrings,1.0
+58618,Earrings,0.9999
+58619,Earrings,0.9999
+58620,Earrings,1.0
+58621,Earrings,0.9747
+58622,Trunk,0.4911
+58624,Caps,0.7543
+58625,Bracelet,0.5724
+58626,Belts,0.9291
+58627,Belts,0.6121
+58628,Belts,0.4368
+58629,Sandals,0.5672
+58634,Socks,0.9988
+58635,Socks,1.0
+58636,Socks,0.9999
+58637,Socks,1.0
+58638,Socks,1.0
+58639,Socks,0.9995
+58640,Socks,0.9999
+58641,Socks,0.9998
+58642,Socks,0.9999
+58643,Tunics,0.4602
+58644,Other,0.3904
+58645,Kurtas,0.8525
+58646,Dresses,0.9282
+58647,Tops,0.8408
+58648,Kurtas,0.8468
+58652,Kurtas,0.8428
+58653,Kurtas,0.9958
+58654,Kurtas,0.9987
+58655,Kurtas,0.9807
+58656,Kurtas,0.9998
+58657,Kurtas,0.9973
+58658,Kurtas,0.6936
+58659,Kurtas,0.9612
+58660,Kurtas,0.963
+58661,Kurtas,0.9966
+58662,Kurtas,0.6948
+58663,Kurtas,0.8066
+58664,Kurtas,0.9913
+58666,Tunics,0.6594
+58667,Kurtas,0.9994
+58668,Sunglasses,0.2435
+58669,Kurtas,0.8518
+58670,Dresses,0.9231
+58671,Kurtas,0.9999
+58672,Kurtas,0.9217
+58673,Kurtas,0.9837
+58674,Kurtas,1.0
+58675,Kurtas,0.9992
+58676,Kurtas,0.7393
+58677,Kurtas,0.5812
+58678,Kurtas,0.9647
+58680,Tops,0.582
+58681,Kurtas,0.9035
+58682,Kurtas,0.9951
+58683,Kurtas,0.9911
+58684,Kurtas,0.8828
+58685,Dresses,0.3111
+58686,Tunics,0.4548
+58687,Shirts,0.3993
+58689,Kurtas,0.8499
+58690,Tunics,0.7327
+58691,Tunics,0.7955
+58692,Kurtas,0.9998
+58693,Kurtas,0.7446
+58694,Kurtas,0.9829
+58695,Kurtas,0.8949
+58696,Kurtas,0.9582
+58698,Dresses,0.5218
+58700,Kurtas,0.9642
+58701,Kurtas,0.8812
+58702,Other,0.4852
+58703,Dresses,0.8916
+58718,Kurtas,0.9956
+58719,Kurtas,0.9902
+58720,Tshirts,0.8733
+58722,Tshirts,0.9958
+58723,Tshirts,0.9237
+58724,Tshirts,0.3597
+58725,Tshirts,0.9967
+58726,Tshirts,0.9685
+58727,Tshirts,0.9855
+58728,Tops,0.8904
+58729,Tshirts,0.4054
+58730,Tops,0.819
+58731,Tops,0.6143
+58732,Tshirts,0.9295
+58734,Tshirts,0.9283
+58735,Tops,0.8041
+58736,Shorts,0.6942
+58737,Tops,0.5972
+58738,Tops,0.6736
+58740,Shirts,0.3588
+58741,Tshirts,0.5718
+58742,Tshirts,0.6455
+58743,Tshirts,0.713
+58744,Tshirts,0.8396
+58745,Tshirts,0.5805
+58765,Shirts,0.7102
+58770,Shirts,0.9502
+58793,Shirts,0.9983
+58794,Shirts,0.9547
+58795,Shirts,0.9905
+58796,Shirts,0.9833
+58797,Shirts,0.993
+58798,Jackets,0.5803
+58800,Shirts,0.9983
+58801,Shirts,0.962
+58802,Shirts,0.4945
+58805,Shirts,0.9912
+58807,Jackets,0.8407
+58808,Shirts,0.7142
+58809,Shirts,0.9959
+58810,Shirts,0.9866
+58815,Casual Shoes,0.8082
+58816,Casual Shoes,0.42
+58817,Heels,0.9449
+58818,Casual Shoes,0.7637
+58819,Casual Shoes,0.6833
+58820,Sandals,0.9673
+58821,Watches,0.9982
+58822,Watches,0.9982
+58823,Watches,0.9998
+58825,Watches,0.7292
+58827,Watches,0.9989
+58828,Watches,0.9996
+58829,Watches,0.8891
+58830,Watches,0.9959
+58831,Watches,1.0
+58832,Watches,0.9994
+58833,Other,0.5201
+58834,Other,0.3006
+58835,Other,0.9923
+58836,Other,0.9674
+58837,Other,0.9978
+58838,Other,0.9987
+58839,Other,0.989
+58840,Earrings,0.4674
+58841,Other,0.9991
+58842,Other,0.9601
+58843,Other,0.9988
+58844,Other,0.9838
+58845,Other,0.996
+58846,Other,0.9996
+58847,Other,0.9949
+58848,Other,0.9648
+58849,Other,0.9932
+58850,Other,0.9746
+58851,Other,0.9874
+58852,Other,0.9827
+58853,Other,0.9266
+58854,Other,0.9598
+58855,Other,0.9794
+58856,Other,0.985
+58857,Other,0.9977
+58858,Other,0.9973
+58859,Other,0.9133
+58860,Other,0.8988
+58861,Other,0.9705
+58862,Other,0.9243
+58863,Other,0.9738
+58864,Other,0.9961
+58865,Other,0.7729
+58867,Earrings,0.9171
+58868,Earrings,0.9921
+58869,Other,0.9926
+58870,Other,0.907
+58871,Other,0.9946
+58872,Ties,1.0
+58873,Ties,1.0
+58874,Ties,1.0
+58875,Ties,1.0
+58876,Ties,1.0
+58877,Ties,1.0
+58878,Ties,1.0
+58879,Ties,1.0
+58880,Ties,0.9999
+58881,Ties,1.0
+58882,Ties,1.0
+58883,Ties,1.0
+58884,Ties,0.9967
+58885,Ties,1.0
+58886,Ties,0.9992
+58887,Ties,0.9989
+58888,Ties,0.9999
+58889,Ties,1.0
+58890,Ties,1.0
+58891,Ties,0.9989
+58892,Ties,1.0
+58893,Ties,0.9999
+58894,Ties,1.0
+58895,Ties,1.0
+58896,Ties,0.9999
+58897,Ties,1.0
+58898,Ties,1.0
+58899,Ties,1.0
+58900,Ties,1.0
+58901,Ties,1.0
+58902,Ties,0.9999
+58903,Ties,1.0
+58904,Ties,1.0
+58905,Ties,1.0
+58906,Ties,1.0
+58907,Ties,0.9999
+58908,Ties,1.0
+58909,Ties,1.0
+58910,Ties,1.0
+58911,Ties,1.0
+58912,Ties,1.0
+58913,Ties,1.0
+58914,Ties,0.9999
+58915,Ties,1.0
+58916,Ties,1.0
+58917,Ties,1.0
+58918,Ties,1.0
+58919,Ties,1.0
+58920,Accessory Gift Set,0.9994
+58921,Accessory Gift Set,0.9988
+58922,Accessory Gift Set,0.9997
+58923,Accessory Gift Set,0.9964
+58924,Accessory Gift Set,0.9992
+58925,Handbags,0.4818
+58926,Handbags,0.9327
+58928,Laptop Bag,0.8337
+58931,Clutches,0.4364
+58932,Clutches,0.6893
+58934,Watches,1.0
+58935,Watches,0.9925
+58937,Watches,0.9999
+58939,Watches,0.9989
+58940,Watches,0.9996
+58941,Watches,0.9919
+58942,Watches,0.9873
+58943,Deodorant,0.6601
+58944,Perfume and Body Mist,0.9905
+58945,Perfume and Body Mist,0.8945
+58946,Perfume and Body Mist,0.8285
+58947,Deodorant,0.9947
+58948,Deodorant,0.9544
+58949,Deodorant,0.9915
+58950,Deodorant,0.9652
+58951,Deodorant,0.9982
+58952,Deodorant,0.999
+58954,Deodorant,0.9998
+58955,Deodorant,1.0
+58956,Deodorant,1.0
+58958,Deodorant,0.9975
+58959,Deodorant,0.9927
+58960,Perfume and Body Mist,0.8394
+58961,Perfume and Body Mist,0.9983
+58962,Perfume and Body Mist,0.9878
+58963,Deodorant,0.8753
+58964,Deodorant,0.6323
+58965,Perfume and Body Mist,0.9704
+58966,Perfume and Body Mist,0.977
+58967,Deodorant,0.8314
+58968,Perfume and Body Mist,0.8936
+58969,Deodorant,0.9242
+58970,Perfume and Body Mist,0.8593
+58971,Deodorant,0.8565
+58972,Deodorant,0.9311
+58973,Perfume and Body Mist,0.827
+58974,Deodorant,0.9995
+58975,Deodorant,0.9988
+58976,Deodorant,0.9985
+58977,Deodorant,0.9967
+58978,Deodorant,0.9999
+58979,Deodorant,0.9972
+58980,Deodorant,0.9999
+58981,Deodorant,0.9974
+58982,Deodorant,0.9999
+58983,Deodorant,0.9993
+58984,Deodorant,0.9995
+58985,Deodorant,0.9998
+58986,Deodorant,0.9998
+58987,Deodorant,0.9996
+58988,Deodorant,0.9999
+58989,Perfume and Body Mist,0.9771
+58990,Perfume and Body Mist,0.982
+58991,Deodorant,0.9917
+58992,Deodorant,0.9653
+59002,Deodorant,0.9999
+59003,Deodorant,0.9935
+59004,Deodorant,0.9995
+59005,Deodorant,0.9999
+59006,Deodorant,0.9993
+59008,Sports Shoes,0.8892
+59010,Sports Shoes,0.6447
+59011,Sports Shoes,0.8604
+59012,Sports Shoes,0.9217
+59013,Sports Shoes,0.9674
+59014,Sports Shoes,0.8985
+59015,Sports Shoes,0.9584
+59016,Sports Shoes,0.7543
+59017,Flip Flops,0.7114
+59018,Heels,0.9965
+59019,Flats,0.5102
+59020,Heels,0.973
+59021,Heels,0.9973
+59022,Heels,0.9978
+59023,Flats,0.9799
+59024,Flats,0.9532
+59025,Heels,0.8312
+59026,Heels,0.9856
+59027,Heels,0.9803
+59028,Heels,0.998
+59029,Heels,0.9795
+59030,Flats,0.9717
+59031,Heels,0.9
+59032,Heels,0.9999
+59033,Heels,0.9995
+59034,Heels,0.9995
+59035,Heels,0.9183
+59036,Flats,0.9828
+59037,Heels,0.8085
+59038,Flats,0.6295
+59039,Flip Flops,0.7137
+59040,Flats,0.6582
+59042,Heels,0.9916
+59043,Heels,0.9996
+59044,Heels,0.999
+59045,Heels,0.9622
+59046,Heels,0.5901
+59047,Flats,0.9431
+59048,Flats,0.8019
+59049,Heels,0.9995
+59050,Heels,0.9999
+59051,Flats,0.7715
+59052,Flats,0.5992
+59053,Heels,0.4055
+59054,Casual Shoes,0.5232
+59055,Heels,0.4537
+59056,Sports Shoes,0.3836
+59058,Tops,0.3604
+59059,Kurtas,0.9991
+59060,Kurtas,0.9143
+59061,Dresses,0.8355
+59062,Shirts,0.663
+59063,Kurtas,0.9589
+59064,Bra,0.891
+59065,Bra,0.9906
+59066,Bra,1.0
+59067,Bra,0.9999
+59068,Bra,0.9654
+59069,Bra,0.9999
+59070,Bra,0.9999
+59071,Bra,0.9983
+59072,Bra,0.9996
+59073,Bra,0.9966
+59074,Bra,0.9999
+59075,Bra,0.9784
+59076,Bra,0.9995
+59077,Bra,0.9979
+59078,Briefs,0.9977
+59079,Briefs,0.9864
+59080,Briefs,0.9906
+59081,Bra,0.9994
+59082,Bra,1.0
+59083,Bra,0.9908
+59084,Bra,0.9921
+59085,Briefs,0.999
+59086,Briefs,0.9992
+59087,Bra,0.9996
+59088,Bra,0.9999
+59089,Briefs,0.9999
+59090,Bra,0.9999
+59091,Bra,0.9953
+59092,Bra,0.9993
+59093,Bra,0.9999
+59094,Bra,1.0
+59095,Bra,0.9948
+59096,Bra,0.9998
+59097,Bra,0.9999
+59098,Bra,1.0
+59099,Briefs,0.9978
+59100,Briefs,0.9997
+59101,Briefs,0.9998
+59102,Sweatshirts,0.6825
+59103,Jackets,0.9757
+59104,Jackets,0.9021
+59105,Sweatshirts,0.5746
+59106,Shirts,0.7398
+59112,Sweaters,0.3078
+59115,Sweatshirts,0.5039
+59116,Jackets,0.4624
+59117,Shirts,0.8709
+59118,Jackets,1.0
+59119,Jackets,0.9965
+59120,Jackets,0.984
+59121,Jackets,0.9983
+59122,Jackets,0.9994
+59123,Jackets,0.722
+59124,Shirts,0.3978
+59126,Shirts,0.5582
+59127,Jackets,0.986
+59128,Backpacks,0.5117
+59129,Jackets,0.8889
+59130,Jackets,0.9893
+59131,Shirts,0.8991
+59132,Shirts,0.9974
+59133,Jackets,0.9837
+59142,Flats,0.7128
+59143,Flats,0.9785
+59144,Flats,0.5091
+59145,Heels,0.8823
+59146,Flats,0.7136
+59147,Heels,0.9913
+59149,Formal Shoes,0.8339
+59160,Formal Shoes,0.9956
+59161,Casual Shoes,0.9352
+59165,Flats,0.544
+59166,Formal Shoes,0.9942
+59167,Formal Shoes,0.9968
+59172,Formal Shoes,0.9982
+59173,Formal Shoes,0.9993
+59174,Formal Shoes,0.9931
+59175,Formal Shoes,0.9992
+59176,Casual Shoes,0.995
+59177,Casual Shoes,0.9804
+59178,Casual Shoes,0.9894
+59181,Formal Shoes,0.9719
+59185,Casual Shoes,0.9298
+59187,Heels,0.9352
+59188,Heels,0.9543
+59190,Sandals,0.9831
+59212,Heels,0.8681
+59213,Watches,0.9999
+59214,Watches,0.9997
+59215,Watches,0.9965
+59216,Watches,0.9997
+59217,Watches,0.9874
+59218,Socks,0.623
+59219,Watches,0.9141
+59220,Watches,0.7945
+59221,Watches,0.9925
+59222,Watches,0.9754
+59223,Watches,0.9972
+59224,Watches,0.9861
+59225,Watches,0.9864
+59226,Watches,0.9903
+59227,Watches,0.9993
+59228,Watches,0.9999
+59229,Free Gifts,0.7508
+59230,Watches,0.9989
+59231,Watches,0.9994
+59232,Watches,0.9998
+59233,Watches,0.9942
+59235,Watches,0.9895
+59236,Watches,0.9956
+59237,Watches,0.9582
+59238,Watches,0.988
+59239,Watches,0.9999
+59240,Watches,0.9925
+59241,Watches,0.9534
+59242,Watches,0.8674
+59243,Watches,0.9998
+59244,Watches,0.9654
+59245,Watches,0.9976
+59246,Watches,0.999
+59247,Watches,0.9975
+59248,Watches,0.9972
+59249,Watches,1.0
+59250,Watches,0.9101
+59251,Free Gifts,0.7871
+59252,Watches,0.9982
+59253,Watches,0.9995
+59254,Watches,0.9999
+59255,Watches,0.999
+59256,Watches,0.994
+59257,Watches,0.988
+59258,Watches,0.9915
+59259,Watches,0.9678
+59260,Watches,0.9999
+59261,Watches,0.9306
+59262,Watches,0.9997
+59263,Watches,0.9981
+59264,Watches,0.9994
+59265,Watches,0.9561
+59266,Watches,0.9418
+59267,Watches,0.997
+59268,Watches,0.9976
+59269,Watches,0.9995
+59270,Watches,0.9654
+59271,Watches,0.9994
+59272,Watches,0.9821
+59273,Watches,0.9824
+59274,Watches,0.9655
+59275,Track Pants,0.495
+59276,Watches,0.9966
+59277,Watches,0.9911
+59278,Watches,0.9924
+59279,Watches,0.9948
+59280,Watches,0.6685
+59281,Watches,0.9901
+59282,Deodorant,0.4721
+59283,Watches,0.9901
+59284,Watches,0.9989
+59286,Watches,0.9971
+59287,Watches,0.9942
+59290,Free Gifts,0.5514
+59291,Watches,0.8545
+59292,Watches,0.9512
+59293,Watches,0.981
+59294,Shirts,0.9999
+59295,Shirts,0.9999
+59296,Shirts,0.8561
+59297,Shirts,0.875
+59298,Shirts,0.5233
+59299,Kurtas,0.9629
+59300,Shirts,0.5597
+59301,Tshirts,0.9697
+59302,Sweaters,0.2804
+59303,Shirts,0.9887
+59304,Shirts,0.9999
+59305,Shirts,0.9447
+59306,Shirts,0.5497
+59311,Sandals,0.9986
+59312,Sandals,0.9763
+59315,Casual Shoes,0.878
+59323,Sandals,0.9969
+59324,Sandals,0.9884
+59326,Flats,0.5289
+59329,Sports Shoes,0.6134
+59330,Casual Shoes,0.9971
+59338,Casual Shoes,0.8767
+59342,Casual Shoes,0.9091
+59349,Sandals,0.997
+59352,Kurtas,0.9997
+59353,Tunics,0.8638
+59354,Kurtas,0.9588
+59355,Kurtas,1.0
+59356,Kurtas,0.9396
+59357,Kurtas,0.5642
+59358,Kurtas,0.7421
+59359,Kurtas,0.9642
+59360,Kurtas,0.9571
+59361,Kurtas,0.9928
+59362,Kurtas,0.9994
+59363,Kurtas,1.0
+59364,Kurtas,0.9998
+59365,Dresses,0.8036
+59366,Tunics,0.5545
+59367,Dresses,0.8011
+59368,Kurtas,0.9998
+59369,Kurtas,0.993
+59370,Kurtas,0.9846
+59371,Kurtas,0.9994
+59372,Kurtas,0.9835
+59373,Dresses,0.8591
+59374,Kurtas,0.9993
+59375,Kurtas,0.7825
+59376,Kurtas,0.317
+59377,Tunics,0.6819
+59378,Kurtas,0.9963
+59379,Kurtas,0.9636
+59380,Kurtas,0.9597
+59381,Tunics,0.8351
+59382,Kurtas,0.9959
+59383,Kurtas,0.9884
+59387,Flats,0.6168
+59388,Heels,0.81
+59390,Formal Shoes,0.9987
+59396,Casual Shoes,0.6776
+59399,Kurtas,0.9062
+59400,Kurtas,0.979
+59403,Tops,0.9659
+59404,Tops,0.4953
+59405,Tops,0.9547
+59407,Tops,0.8885
+59410,Night suits,0.8902
+59413,Tshirts,0.7086
+59418,Tops,0.7896
+59421,Tops,0.8912
+59422,Tops,0.4942
+59428,Handbags,0.9761
+59430,Handbags,0.9951
+59432,Handbags,0.998
+59433,Clutches,0.9988
+59435,Formal Shoes,0.9979
+59436,Heels,0.9803
+59437,Heels,0.9365
+59439,Shirts,0.9995
+59440,Shirts,0.9879
+59441,Shirts,0.743
+59442,Shirts,0.6162
+59443,Shirts,0.9983
+59444,Shirts,0.9904
+59445,Shirts,0.8182
+59446,Shirts,0.9559
+59448,Shirts,0.9672
+59451,Shirts,0.9992
+59452,Shirts,0.9925
+59453,Shirts,0.8594
+59454,Shirts,0.5645
+59455,Ring,0.87
+59456,Ring,0.9719
+59457,Ring,0.9255
+59458,Ring,0.8847
+59459,Ring,0.4735
+59460,Ring,0.9865
+59461,Ring,0.9944
+59462,Ring,0.9902
+59463,Ring,0.9165
+59464,Ring,0.9859
+59465,Ring,0.7693
+59466,Pendant,0.3279
+59467,Ring,0.9997
+59468,Ring,0.9711
+59469,Bangle,0.9203
+59470,Ring,0.6733
+59471,Ring,0.8845
+59474,Ring,0.9874
+59481,Ring,0.9209
+59484,Ring,0.4913
+59498,Other,0.531
+59499,Necklace and Chains,0.9752
+59501,Pendant,0.8969
+59502,Necklace and Chains,0.7538
+59503,Pendant,1.0
+59504,Pendant,0.9983
+59505,Pendant,0.9999
+59507,Necklace and Chains,0.798
+59508,Pendant,0.9999
+59509,Pendant,1.0
+59510,Pendant,0.9999
+59511,Pendant,0.9973
+59512,Pendant,0.6785
+59513,Necklace and Chains,0.8991
+59514,Pendant,0.6032
+59515,Necklace and Chains,0.7194
+59516,Necklace and Chains,0.9752
+59518,Necklace and Chains,1.0
+59519,Necklace and Chains,0.9986
+59520,Earrings,0.9977
+59521,Earrings,0.9997
+59522,Earrings,1.0
+59523,Earrings,0.9999
+59524,Earrings,0.9999
+59525,Earrings,0.9998
+59526,Earrings,1.0
+59527,Earrings,1.0
+59528,Earrings,0.9998
+59529,Earrings,0.9999
+59530,Earrings,0.9985
+59531,Earrings,0.9998
+59532,Earrings,1.0
+59533,Earrings,1.0
+59534,Earrings,1.0
+59535,Earrings,0.9997
+59537,Earrings,1.0
+59541,Earrings,1.0
+59543,Earrings,0.9999
+59544,Earrings,0.9999
+59545,Earrings,1.0
+59546,Earrings,0.9999
+59547,Earrings,0.9997
+59550,Earrings,0.9999
+59551,Earrings,0.9983
+59552,Bracelet,0.889
+59553,Bangle,0.6794
+59554,Bracelet,0.9394
+59555,Bracelet,0.9094
+59556,Bangle,0.772
+59557,Bracelet,0.9996
+59558,Bangle,0.8302
+59559,Bracelet,0.9996
+59560,Bracelet,0.9997
+59561,Ring,0.8871
+59563,Pendant,0.9486
+59564,Earrings,0.3908
+59565,Other,0.9027
+59566,Other,0.9998
+59567,Other,0.9866
+59568,Other,0.8717
+59569,Other,0.9812
+59570,Other,0.7803
+59571,Other,0.9803
+59572,Earrings,0.8228
+59573,Other,0.9876
+59574,Other,0.9898
+59575,Other,0.4496
+59576,Other,0.7176
+59577,Other,0.7703
+59578,Earrings,0.4222
+59579,Other,0.9615
+59580,Earrings,0.7972
+59581,Other,0.8752
+59582,Other,0.9959
+59583,Other,0.9907
+59584,Other,0.9983
+59585,Earrings,0.7997
+59586,Other,0.7152
+59587,Earrings,0.926
+59589,Free Gifts,0.9441
+59590,Sarees,0.7387
+59591,Sarees,0.9622
+59592,Sarees,0.9991
+59593,Sarees,1.0
+59594,Sarees,0.9998
+59595,Free Gifts,0.947
+59596,Sarees,0.9997
+59597,Sarees,0.9981
+59598,Tops,0.3686
+59599,Sarees,0.9383
+59600,Sarees,0.9189
+59601,Sarees,0.9991
+59603,Sarees,0.9985
+59604,Sarees,0.9985
+59606,Sarees,0.6573
+59607,Sarees,0.9338
+59608,Sarees,0.9915
+59609,Sarees,0.9987
+59610,Sarees,0.999
+59611,Sarees,0.8199
+59612,Sarees,0.8967
+59613,Sarees,0.9963
+59614,Sarees,0.9928
+59615,Sarees,0.9481
+59616,Sarees,0.7969
+59618,Sarees,0.5602
+59619,Sarees,0.9872
+59620,Sarees,0.8927
+59621,Sarees,0.999
+59622,Sarees,0.9744
+59623,Sarees,0.8018
+59624,Sarees,0.7198
+59625,Sarees,0.9998
+59626,Sarees,0.9989
+59628,Sarees,0.9914
+59630,Sarees,0.9973
+59631,Free Gifts,0.9954
+59632,Sarees,1.0
+59633,Free Gifts,0.9881
+59634,Sarees,0.9958
+59635,Sarees,0.9999
+59636,Free Gifts,0.5019
+59637,Sarees,0.9799
+59638,Free Gifts,0.6523
+59639,Sarees,0.9999
+59640,Free Gifts,0.6565
+59641,Sarees,0.6329
+59642,Sarees,0.9957
+59643,Sarees,0.9955
+59644,Sarees,0.9123
+59645,Sarees,0.9991
+59646,Sarees,0.9799
+59647,Sarees,0.999
+59648,Sarees,0.4923
+59649,Sarees,0.9637
+59650,Sarees,0.9904
+59651,Sarees,0.9624
+59652,Sarees,0.9882
+59653,Sarees,0.8335
+59654,Sarees,0.8107
+59655,Sarees,0.9998
+59656,Sarees,0.9972
+59657,Sarees,0.9657
+59658,Sarees,0.9905
+59659,Sarees,0.802
+59660,Sarees,0.7065
+59661,Sarees,0.9991
+59662,Sarees,0.8362
+59663,Sarees,1.0
+59664,Free Gifts,0.5308
+59665,Sarees,0.9925
+59666,Kurta Sets,0.8287
+59667,Sarees,0.8036
+59668,Sarees,0.999
+59669,Sarees,0.9894
+59670,Sarees,0.9968
+59672,Sarees,1.0
+59673,Dresses,0.7823
+59674,Free Gifts,0.5308
+59675,Flats,0.6553
+59676,Flats,0.7615
+59677,Briefs,0.996
+59678,Briefs,0.9982
+59679,Briefs,0.9999
+59680,Briefs,0.9999
+59681,Briefs,0.9654
+59682,Briefs,0.9977
+59683,Briefs,0.9978
+59684,Briefs,0.997
+59685,Briefs,0.999
+59686,Briefs,0.9989
+59687,Briefs,0.9263
+59688,Briefs,0.9966
+59689,Bra,1.0
+59690,Bra,1.0
+59691,Bra,1.0
+59692,Bra,1.0
+59693,Bra,1.0
+59694,Briefs,1.0
+59695,Briefs,0.9841
+59696,Briefs,0.9768
+59697,Tops,0.6996
+59698,Tops,0.6044
+59699,Bra,1.0
+59700,Bra,1.0
+59701,Briefs,0.9907
+59702,Tops,0.9402
+59703,Briefs,1.0
+59704,Briefs,0.9999
+59705,Bra,1.0
+59706,Bra,1.0
+59707,Briefs,0.9991
+59708,Briefs,0.9896
+59709,Briefs,0.9935
+59710,Briefs,0.9853
+59711,Briefs,0.9979
+59712,Tops,0.9751
+59713,Tops,0.796
+59714,Tops,0.8878
+59715,Shirts,0.4321
+59716,Other,0.6016
+59717,Bra,1.0
+59718,Bra,1.0
+59719,Bra,1.0
+59720,Bra,0.9999
+59721,Bra,0.9998
+59722,Briefs,0.9992
+59723,Bra,1.0
+59724,Bra,0.9999
+59725,Bra,1.0
+59726,Bra,1.0
+59727,Bra,1.0
+59728,Bra,1.0
+59729,Bra,0.9993
+59730,Bra,0.6604
+59731,Bra,0.6756
+59732,Bra,0.9988
+59733,Bra,0.9996
+59734,Briefs,0.9962
+59735,Briefs,0.9999
+59736,Briefs,0.995
+59739,Bra,1.0
+59740,Bra,1.0
+59741,Bra,1.0
+59742,Briefs,0.9999
+59743,Briefs,0.9915
+59744,Dresses,0.7674
+59745,Dresses,0.7995
+59746,Dresses,0.9227
+59747,Socks,0.5639
+59748,Night suits,0.8931
+59749,Leggings,0.7299
+59750,Briefs,0.9735
+59751,Briefs,0.9966
+59752,Briefs,0.9996
+59753,Briefs,0.9986
+59754,Other,0.3826
+59755,Briefs,0.9996
+59756,Tops,0.6281
+59757,Flats,0.7777
+59758,Flats,0.8982
+59759,Flats,0.7327
+59760,Heels,0.9152
+59761,Flats,0.7152
+59762,Flats,0.9036
+59763,Heels,0.9856
+59764,Heels,0.9933
+59765,Earrings,1.0
+59766,Earrings,0.9997
+59767,Earrings,1.0
+59768,Handbags,0.4035
+59769,Pendant,0.9053
+59770,Pendant,0.9699
+59771,Pendant,0.9518
+59772,Pendant,0.9925
+59773,Pendant,0.3726
+59774,Necklace and Chains,0.7275
+59775,Bangle,0.7814
+59776,Bangle,0.8029
+59777,Bracelet,0.9546
+59778,Bracelet,0.8489
+59779,Bracelet,0.9907
+59780,Bangle,0.7459
+59781,Bracelet,0.9995
+59782,Bracelet,0.9791
+59783,Belts,0.6778
+59784,Bracelet,0.9977
+59794,Tops,0.6163
+59795,Tops,0.5028
+59796,Tops,0.9641
+59797,Tshirts,0.9999
+59810,Tshirts,0.9873
+59811,Kurtas,0.465
+59813,Shorts,0.4225
+59814,Trousers,0.66
+59819,Shirts,0.4453
+59824,Shirts,0.9943
+59826,Shirts,0.9875
+59827,Shirts,0.9679
+59832,Shirts,0.4159
+59833,Kurtis,0.5189
+59834,Sweatshirts,0.908
+59838,Shirts,0.5975
+59839,Fragrance Gift Set,0.7969
+59851,Other,0.9863
+59853,Perfume and Body Mist,0.954
+59856,Perfume and Body Mist,0.5646
+59858,Perfume and Body Mist,0.9267
+59859,Other,0.7662
+59860,Perfume and Body Mist,0.4388
+59862,Other,0.7996
+59863,Perfume and Body Mist,0.8978
+59866,Perfume and Body Mist,0.5577
+59872,Tops,0.6277
+59873,Skirts,0.9111
+59874,Shirts,0.5694
+59875,Tops,0.9971
+59876,Sarees,0.9761
+59877,Leggings,0.6925
+59878,Track Pants,0.2719
+59879,Jeans,0.6335
+59880,Leggings,0.9986
+59881,Other,0.4778
+59882,Tops,0.8762
+59883,Tops,0.4157
+59884,Tops,0.8413
+59885,Tops,0.609
+59886,Tops,0.7297
+59887,Tops,0.7857
+59888,Tops,0.6369
+59889,Tops,0.7452
+59890,Dresses,0.8844
+59891,Shirts,0.5981
+59892,Tops,0.6131
+59893,Shirts,0.8054
+59894,Tops,0.9213
+59895,Tunics,0.9681
+59896,Sarees,0.8306
+59897,Sarees,0.9916
+59898,Tops,0.3299
+59900,Tops,0.4095
+59901,Socks,0.2854
+59902,Tops,0.6884
+59903,Tops,0.4313
+59904,Dupatta,0.6055
+59905,Watches,0.3178
+59906,Kurtas,0.4335
+59907,Stoles,0.35
+59908,Other,0.5148
+59909,Dresses,0.3333
+59910,Kurtas,0.9988
+59911,Kurtas,0.8224
+59912,Dresses,0.995
+59914,Kurtas,1.0
+59915,Kurtas,0.9988
+59916,Other,0.4899
+59917,Kurtas,0.9999
+59918,Kurtas,0.9946
+59919,Kurtas,0.9654
+59920,Kurtas,0.9418
+59921,Kurtas,0.9495
+59922,Kurtas,0.8669
+59923,Kurtas,0.9998
+59924,Kurtas,0.5626
+59925,Kurtas,0.7883
+59926,Kurtas,0.9935
+59927,Tops,0.5113
+59928,Tops,0.3008
+59929,Kurtas,0.4203
+59930,Tops,0.7557
+59931,Kurtas,0.9979
+59932,Kurtas,0.4133
+59933,Kurtas,0.9539
+59934,Kurtas,0.5303
+59935,Casual Shoes,0.9896
+59936,Casual Shoes,0.9973
+59937,Casual Shoes,0.9996
+59938,Casual Shoes,0.9986
+59939,Casual Shoes,0.9988
+59940,Casual Shoes,0.9977
+59941,Casual Shoes,0.9995
+59942,Casual Shoes,0.9995
+59943,Casual Shoes,0.999
+59944,Casual Shoes,0.9992
+59945,Casual Shoes,0.996
+59946,Perfume and Body Mist,0.9568
+59947,Perfume and Body Mist,0.9377
+59948,Deodorant,0.9998
+59949,Deodorant,0.9686
+59950,Deodorant,0.9998
+59951,Deodorant,0.9333
+59961,Deodorant,0.9996
+59962,Deodorant,0.9946
+59963,Dresses,0.8963
+59964,Dresses,0.9254
+59965,Tunics,0.313
+59966,Dresses,0.9425
+59967,Dresses,0.6441
+59968,Dresses,0.9613
+59969,Dresses,0.9114
+59970,Dresses,0.7158
+59971,Dresses,0.8462
+59972,Dresses,0.9669
+59973,Dresses,0.9971
+59974,Dresses,0.9916
+59975,Kurtas,0.516
+59976,Sarees,0.9311
+59977,Dresses,0.9678
+59978,Dresses,0.8398
+59979,Dresses,0.926
+59980,Dresses,0.9194
+59981,Dresses,0.5806
+59982,Dresses,0.8715
+59983,Kurtas,0.3915
+59984,Dresses,0.9262
+59985,Dresses,0.9998
+59986,Dresses,0.9999
+59987,Dresses,0.963
+59988,Dresses,0.7242
+59989,Sandals,0.5269
+59990,Kurtas,0.8188
+59991,Dresses,0.9972
+59992,Kurta Sets,0.4234
+59993,Dresses,0.9873
+59994,Dresses,0.8215
+59995,Watches,0.2356
+59996,Kurtas,0.678
+59998,Heels,0.8559
+59999,Heels,0.9976
+60000,Kurtas,0.6552

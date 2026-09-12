@@ -1,0 +1,5 @@
+2026-09-12 09:39:03,850 [INFO] predict - Run directory: results/predict/20260912_093903
+2026-09-12 09:39:03,850 [INFO] predict - Checkpoint: ./results/train/20260907_234357/best_model.pth
+2026-09-12 09:39:05,105 [INFO] predict - Model loaded | Classes: 60
+2026-09-12 09:39:42,698 [INFO] predict - Saved 5829 predictions to results/predict/20260912_093903/predictions.csv
+2026-09-12 09:39:42,699 [INFO] predict - Prediction complete. Artifacts saved to: results/predict/20260912_093903

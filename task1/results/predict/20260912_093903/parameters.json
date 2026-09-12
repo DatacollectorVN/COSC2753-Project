@@ -1,0 +1,8 @@
+{
+  "CHECKPOINT_PATH": "./results/train/20260907_234357/best_model.pth",
+  "TEST_IMAGE_DIR": "../data/FashionDataset/test/images_test",
+  "SAVE_DIR": "./results",
+  "IN_CHANNELS": 3,
+  "BATCH_SIZE": 64,
+  "NUM_WORKERS": 4
+}
