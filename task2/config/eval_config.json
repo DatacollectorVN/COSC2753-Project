@@ -1,0 +1,6 @@
+{
+  "_comment": "=== Evaluate the development-only model on the untouched holdout IDs ===",
+  "MODEL_PATH": "./artifacts/holdout_model.joblib",
+  "DATA_DIR_TRAIN": "../FashionDataset/train",
+  "SAVE_DIR": "./results"
+}

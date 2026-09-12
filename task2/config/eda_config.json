@@ -1,0 +1,36 @@
+{
+  "task": {
+    "name": "Fashion Season Classification",
+    "target_column": "season",
+    "classes": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ]
+  },
+  "paths": {
+    "train_csv": "../FashionDataset/train/styles_train.csv",
+    "train_images": "../FashionDataset/train/images_train",
+    "test_csv": "../FashionDataset/test/styles_prediction.csv",
+    "test_images": "../FashionDataset/test/images_test",
+    "artifacts": "artifacts",
+    "results": "results"
+  },
+  "data": {
+    "image_width": 60,
+    "image_height": 80,
+    "holdout_ratio": 0.2,
+    "random_seed": 42
+  },
+  "model_selection": {
+    "procedure": "GridSearchCV",
+    "estimator": "Task2CNNClassifier",
+    "cross_validation_folds": 3,
+    "primary_metric": "f1_macro",
+    "secondary_metrics": [
+      "accuracy",
+      "f1_weighted"
+    ]
+  }
+}

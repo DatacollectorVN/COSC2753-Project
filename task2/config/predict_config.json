@@ -1,0 +1,9 @@
+{
+  "_comment": "=== Predict season for the supplied test images ===",
+  "MODEL_PATH": "./artifacts/season_model.joblib",
+  "TEST_IMAGE_DIR": "../FashionDataset/test/images_test",
+  "TEST_CSV_PATH": "../FashionDataset/test/styles_prediction.csv",
+  "SAVE_DIR": "./results",
+  "OUTPUT_FILENAME": "styles_prediction.csv",
+  "STABLE_OUTPUT_PATH": "./task2_predictions.csv"
+}
