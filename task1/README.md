@@ -21,6 +21,7 @@ The implementation addresses class imbalance with optional rare-class grouping a
 ## Documentation
 
 - [Installation and usage](docs/installation.md)
+- [Developer usage guide](docs/usage.md)
 - [Architecture and data flow](docs/architecture.md)
 
 ## Quick start
@@ -101,4 +102,3 @@ The entry-point scripts load their corresponding JSON file and pass its keys dir
 | `SAVE_BEST` | Chooses `val_acc`, `val_loss`, `train_acc`, or `train_loss` for checkpoint selection. |
 
 For the full component and runtime design, see [architecture.md](docs/architecture.md).
-

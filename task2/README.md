@@ -144,5 +144,5 @@ task2/
 ```
 
 More detail is available in [installation.md](docs/installation.md),
-[architecture.md](docs/architecture.md), and
+[usage.md](docs/usage.md), [architecture.md](docs/architecture.md), and
 [report_notes.md](docs/report_notes.md).

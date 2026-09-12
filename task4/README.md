@@ -110,6 +110,6 @@ different model checkpoints do not share a meaningful vector space.
 ## Documentation
 
 - [Installation and operation](docs/installation.md)
+- [Developer usage guide](docs/usage.md)
 - [System architecture](docs/architecture.md)
 - [KNN vs ANN/HNSW in detail](docs/search-algorithms.md)
-
