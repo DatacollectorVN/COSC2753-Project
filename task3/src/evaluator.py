@@ -6,7 +6,9 @@ import cv2
 import pandas as pd
 import torch
 
-from .custom_dataset import create_test_loader, create_train_val_loaders
+from torch.utils.data import DataLoader
+
+from .custom_dataset import FashionDataset, create_test_loader, create_train_val_loaders
 from .metric_evaluation import compute_metrics
 from .models import build_model
 from .transforms import get_val_transforms
@@ -50,13 +52,19 @@ class FashionEvaluator(SettingConfig):
         model.eval()
         return model, gender_label_map, occasion_label_map, meta_vocabs, min_occasion_count, transform_params
 
-    def evaluate(self) -> dict:
-        """Evaluate on validation split. Reports metrics for each head separately."""
+    def evaluate(self, evaluate_all: bool = False) -> dict:
+        """Evaluate on validation split or entire dataset.
+
+        Args:
+            evaluate_all: If True, evaluate on the entire training dataset.
+                          If False (default), evaluate only on the validation split.
+        """
         run_dir = create_run_dir(self.SAVE_DIR, "eval")
         logger = setup_logger("evaluate", run_dir / "logs.txt")
 
         logger.info(f"Run directory: {run_dir}")
         logger.info(f"Checkpoint: {self.CHECKPOINT_PATH}")
+        logger.info(f"Mode: {'entire dataset' if evaluate_all else 'validation split'}")
 
         model, gender_label_map, occasion_label_map, meta_vocabs, min_occasion_count, transform_params = self._load_model()
         gender_names = [n for n, _ in sorted(gender_label_map.items(), key=lambda x: x[1])]
@@ -64,18 +72,36 @@ class FashionEvaluator(SettingConfig):
 
         logger.info(f"Gender classes: {len(gender_label_map)} | Occasion classes: {len(occasion_label_map)}")
 
-        (
-            _, val_loader,
-            _, _, _, _, _,
-        ) = create_train_val_loaders(
-            data_dir=self.DATA_DIR_TRAIN,
-            batch_size=self.BATCH_SIZE,
-            val_ratio=self.VAL_RATIO,
-            num_workers=self.NUM_WORKERS,
-            seed=self.SEED,
-            min_occasion_count=min_occasion_count,
-            transform_params=transform_params,
-        )
+        if evaluate_all:
+            dataset = FashionDataset(
+                data_dir=self.DATA_DIR_TRAIN,
+                split="train",
+                transform=get_val_transforms(transform_params),
+                gender_label_map=gender_label_map,
+                occasion_label_map=occasion_label_map,
+                meta_vocabs=meta_vocabs,
+                min_occasion_count=min_occasion_count,
+            )
+            val_loader = DataLoader(
+                dataset,
+                batch_size=self.BATCH_SIZE,
+                shuffle=False,
+                num_workers=self.NUM_WORKERS,
+                pin_memory=torch.cuda.is_available(),
+            )
+        else:
+            (
+                _, val_loader,
+                _, _, _, _, _,
+            ) = create_train_val_loaders(
+                data_dir=self.DATA_DIR_TRAIN,
+                batch_size=self.BATCH_SIZE,
+                val_ratio=self.VAL_RATIO,
+                num_workers=self.NUM_WORKERS,
+                seed=self.SEED,
+                min_occasion_count=min_occasion_count,
+                transform_params=transform_params,
+            )
 
         g_preds, g_targets = [], []
         o_preds, o_targets = [], []
