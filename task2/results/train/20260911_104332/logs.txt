@@ -1,0 +1,11 @@
+10:43:32 [INFO] Run directory: results/train/20260911_104332
+10:43:32 [INFO] Loading Task 2 metadata from ../FashionDataset/train
+10:43:33 [INFO] Using 38592 rows; removed 20 missing-label and 5 missing-image rows
+10:43:33 [INFO] CNN input: 38592 RGB image paths; tensor shape [3, 80, 60]
+10:43:33 [INFO] Majority baseline | accuracy 0.4958 | macro-F1 0.1657
+10:43:33 [INFO] Starting GridSearchCV: 4 candidates x 3 folds; refit=macro_f1
+14:10:59 [INFO] Best parameters: {'classifier__channels': [32, 64, 128], 'classifier__dropout_rate': 0.25, 'classifier__learning_rate': 0.001}
+14:10:59 [INFO] Best cross-validation macro-F1: 0.7155
+14:11:04 [INFO] Refitting the selected pipeline on all 38592 labelled rows
+14:21:38 [INFO] Holdout | accuracy 0.7257 | macro-F1 0.7249 | weighted-F1 0.7250
+14:21:38 [INFO] Final model saved to artifacts/season_model.joblib

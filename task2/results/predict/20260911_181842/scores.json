@@ -1,0 +1,21 @@
+{
+  "run_directory": "results/predict/20260911_181842",
+  "model_path": "./artifacts/season_model.joblib",
+  "prediction_rows": 5829,
+  "prediction_seconds": 8.314625875005731,
+  "prediction_path": "results/predict/20260911_181842/styles_prediction.csv",
+  "stable_output_path": "task2_predictions.csv",
+  "columns": [
+    "id",
+    "gender",
+    "articleType",
+    "season",
+    "usage"
+  ],
+  "class_counts": {
+    "Summer": 3055,
+    "Spring": 1256,
+    "Winter": 1239,
+    "Fall": 279
+  }
+}

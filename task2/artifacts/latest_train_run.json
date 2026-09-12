@@ -1,0 +1,46 @@
+{
+  "run_directory": "results/train/20260911_104332",
+  "summary": {
+    "run_directory": "results/train/20260911_104332",
+    "usable_rows": 38592,
+    "input_kind": "image_paths",
+    "input_shape": [
+      3,
+      80,
+      60
+    ],
+    "input_preparation_seconds": 0.16509845800464973,
+    "grid_search_seconds": 3454.637574417022,
+    "final_refit_seconds": 634.4017924590153,
+    "grid_candidates": 4,
+    "total_cross_validation_fits": 12,
+    "best_params": {
+      "classifier__channels": [
+        32,
+        64,
+        128
+      ],
+      "classifier__dropout_rate": 0.25,
+      "classifier__learning_rate": 0.001
+    },
+    "best_cv_macro_f1": 0.7155320362628667,
+    "baseline_accuracy": 0.49578961005311567,
+    "baseline_macro_f1": 0.16572839078468735,
+    "holdout_accuracy": 0.7257416763829512,
+    "holdout_macro_f1": 0.7249213263861956,
+    "holdout_weighted_f1": 0.7250366845979604,
+    "holdout_balanced_accuracy": 0.702925510371232,
+    "training_iteration_unit": "epochs",
+    "holdout_training_iterations": 28,
+    "final_training_iterations": 30,
+    "max_training_iterations": 30,
+    "model_parameter_count": 339876,
+    "diagnostic_plots": {
+      "accuracy": "docs/figures/task2_cnn_epoch_accuracy.png",
+      "loss": "docs/figures/task2_cnn_epoch_loss.png"
+    },
+    "diagnostic_history": "docs/task2_cnn_epoch_history.csv",
+    "final_model_path": "artifacts/season_model.joblib",
+    "final_model_size_bytes": 1273072
+  }
+}

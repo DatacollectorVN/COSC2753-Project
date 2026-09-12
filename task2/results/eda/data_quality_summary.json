@@ -1,0 +1,57 @@
+{
+  "raw_csv_rows": 38617,
+  "empty_trailing_columns_removed": [
+    "Unnamed: 10",
+    "Unnamed: 11"
+  ],
+  "unique_csv_ids": 38617,
+  "duplicate_csv_ids": 0,
+  "training_image_files": 38612,
+  "rows_missing_season": 20,
+  "missing_season_ids": [
+    "5354",
+    "5355",
+    "5360",
+    "5361",
+    "5365",
+    "5368",
+    "5370",
+    "5376",
+    "5377",
+    "5380",
+    "5385",
+    "5389",
+    "5390",
+    "5391",
+    "5392",
+    "5398",
+    "5401",
+    "5402",
+    "5406",
+    "5407"
+  ],
+  "csv_rows_missing_image": 5,
+  "missing_image_ids": [
+    "12347",
+    "39401",
+    "39403",
+    "39410",
+    "39425"
+  ],
+  "images_missing_csv_row": 0,
+  "extra_image_ids": [],
+  "usable_task2_rows": 38592,
+  "test_csv_rows": 5829,
+  "test_image_files": 5829,
+  "test_unique_csv_ids": 5829,
+  "test_ids_missing_image": [],
+  "test_images_missing_csv_row": [],
+  "prediction_columns": [
+    "id",
+    "gender",
+    "articleType",
+    "season",
+    "usage"
+  ],
+  "prediction_schema_matches_assignment": true
+}

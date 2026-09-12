@@ -1,0 +1,97 @@
+{
+  "accuracy": 0.7257416763829512,
+  "balanced_accuracy": 0.702925510371232,
+  "macro_precision": 0.7645426806583819,
+  "macro_recall": 0.702925510371232,
+  "macro_f1": 0.7249213263861956,
+  "weighted_f1": 0.7250366845979604,
+  "classification_report": {
+    "Spring": {
+      "precision": 0.9392523364485982,
+      "recall": 0.6421725239616614,
+      "f1-score": 0.7628083491461101,
+      "support": 313.0
+    },
+    "Summer": {
+      "precision": 0.752366334100793,
+      "recall": 0.7684870655866214,
+      "f1-score": 0.7603412616339194,
+      "support": 3827.0
+    },
+    "Fall": {
+      "precision": 0.7073695535233997,
+      "recall": 0.6252971944840704,
+      "f1-score": 0.6638061585058052,
+      "support": 2103.0
+    },
+    "Winter": {
+      "precision": 0.6591824985607369,
+      "recall": 0.7757452574525745,
+      "f1-score": 0.712729536258948,
+      "support": 1476.0
+    },
+    "accuracy": 0.7257416763829512,
+    "macro avg": {
+      "precision": 0.7645426806583819,
+      "recall": 0.702925510371232,
+      "f1-score": 0.7249213263861956,
+      "support": 7719.0
+    },
+    "weighted avg": {
+      "precision": 0.7298670139716937,
+      "recall": 0.7257416763829512,
+      "f1-score": 0.7250366845979604,
+      "support": 7719.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      201,
+      61,
+      20,
+      31
+    ],
+    [
+      9,
+      2941,
+      475,
+      402
+    ],
+    [
+      1,
+      628,
+      1315,
+      159
+    ],
+    [
+      3,
+      279,
+      49,
+      1145
+    ]
+  ],
+  "class_order": [
+    "Spring",
+    "Summer",
+    "Fall",
+    "Winter"
+  ],
+  "evaluation_seconds": 11.060079416987719,
+  "evaluated_rows": 7719,
+  "dataset_audit": {
+    "raw_rows": 38617,
+    "empty_trailing_columns_removed": [
+      "Unnamed: 10",
+      "Unnamed: 11"
+    ],
+    "missing_label_rows": 20,
+    "missing_image_rows": 5,
+    "usable_rows": 38592,
+    "class_counts": {
+      "Summer": 19135,
+      "Fall": 10512,
+      "Winter": 7379,
+      "Spring": 1566
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "strategy": "most_frequent",
+  "predicted_class": "Summer",
+  "development_rows": 30873,
+  "holdout_rows": 7719,
+  "accuracy": 0.49578961005311567,
+  "macro_f1": 0.16572839078468735
+}

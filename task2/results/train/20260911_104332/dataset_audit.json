@@ -1,0 +1,16 @@
+{
+  "raw_rows": 38617,
+  "empty_trailing_columns_removed": [
+    "Unnamed: 10",
+    "Unnamed: 11"
+  ],
+  "missing_label_rows": 20,
+  "missing_image_rows": 5,
+  "usable_rows": 38592,
+  "class_counts": {
+    "Summer": 19135,
+    "Fall": 10512,
+    "Winter": 7379,
+    "Spring": 1566
+  }
+}
