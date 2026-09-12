@@ -2,11 +2,13 @@ import csv
 import json
 from pathlib import Path
 
+import cv2
 import torch
 
 from .custom_dataset import create_test_loader, create_train_val_loaders
 from .metric_evaluation import compute_metrics
 from .models import build_model
+from .transforms import get_val_transforms
 from .utils import SettingConfig, create_run_dir, setup_logger
 
 
@@ -128,7 +130,8 @@ class FashionEvaluator(SettingConfig):
             num_workers=self.NUM_WORKERS,
             transform_params=transform_params,
         )
-
+        logger.info(f"Test loader created | {len(test_loader)} images")
+        
         results = []
         with torch.no_grad():
             for images, image_ids in test_loader:
@@ -159,3 +162,27 @@ class FashionEvaluator(SettingConfig):
 
         logger.info(f"Saved {len(results)} predictions to {predictions_path}")
         logger.info(f"Prediction complete. Artifacts saved to: {run_dir}")
+
+    def predict_single(self, image_path: str) -> dict:
+        """Run inference on a single image. Returns dict with predicted_class and confidence."""
+        model, label_map, _, transform_params = self._load_model()
+        idx_to_class = {v: k for k, v in label_map.items()}
+
+        transform = get_val_transforms(transform_params)
+
+        image = cv2.imread(str(image_path))
+        if image is None:
+            raise FileNotFoundError(f"Cannot read image: {image_path}")
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        image = transform(image).unsqueeze(0).to(self.device)
+
+        with torch.no_grad():
+            outputs = model(image)
+            probs = torch.softmax(outputs, dim=1)
+            confidence, predicted = torch.max(probs, dim=1)
+
+        return {
+            "image_id": Path(image_path).stem,
+            "predicted_class": idx_to_class[predicted.item()],
+            "confidence": confidence.item(),
+        }
