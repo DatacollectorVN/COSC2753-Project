@@ -1,0 +1,81 @@
+2026-09-08 23:26:52,881 [INFO] train - Run directory: results/train/20260908_232652
+2026-09-08 23:26:52,881 [INFO] train - Using device: mps
+2026-09-08 23:26:52,881 [INFO] train - Model: hybrid_cnn | Params: {'backbone': 'simple', 'channels': [32, 64, 128, 256], 'depth': 50, 'article_embed_dim': 16, 'master_embed_dim': 8, 'colour_embed_dim': 8, 'meta_dim': 64, 'fc_hidden': 128, 'dropout_rate': 0.2, 'meta_dropout_p': 0.2}
+2026-09-08 23:26:53,473 [INFO] train - Gender classes: 5 | Occasion classes: 5
+2026-09-08 23:26:53,473 [INFO] train - Train batches: 963 | Val batches: 241
+2026-09-08 23:26:53,529 [INFO] train - Using class-weighted CrossEntropyLoss for both heads
+2026-09-08 23:26:54,063 [INFO] train - Save best model by: val_loss
+2026-09-08 23:29:20,000 [INFO] train - Epoch [1/100] LR: 1.00e-03 | Loss: 2.5914/1.4313 | Gender: 0.5195/0.6947 | Occasion: 0.5533/0.6928
+2026-09-08 23:29:20,059 [INFO] train -   -> Saved best model (val_loss: 1.4313)
+2026-09-08 23:31:33,792 [INFO] train - Epoch [2/100] LR: 1.00e-03 | Loss: 1.6046/1.3758 | Gender: 0.6385/0.6102 | Occasion: 0.6439/0.8570
+2026-09-08 23:31:33,874 [INFO] train -   -> Saved best model (val_loss: 1.3758)
+2026-09-08 23:33:56,146 [INFO] train - Epoch [3/100] LR: 1.00e-03 | Loss: 1.4474/1.1243 | Gender: 0.6766/0.8129 | Occasion: 0.6825/0.8559
+2026-09-08 23:33:56,276 [INFO] train -   -> Saved best model (val_loss: 1.1243)
+2026-09-08 23:36:12,662 [INFO] train - Epoch [4/100] LR: 1.00e-03 | Loss: 1.3949/2.2084 | Gender: 0.6975/0.4941 | Occasion: 0.6892/0.7102
+2026-09-08 23:38:31,405 [INFO] train - Epoch [5/100] LR: 1.00e-03 | Loss: 1.3078/0.9996 | Gender: 0.7027/0.7876 | Occasion: 0.7182/0.7113
+2026-09-08 23:38:31,485 [INFO] train -   -> Saved best model (val_loss: 0.9996)
+2026-09-08 23:40:46,174 [INFO] train - Epoch [6/100] LR: 1.00e-03 | Loss: 1.2676/0.9890 | Gender: 0.7254/0.7905 | Occasion: 0.7075/0.7699
+2026-09-08 23:40:46,211 [INFO] train -   -> Saved best model (val_loss: 0.9890)
+2026-09-08 23:43:03,452 [INFO] train - Epoch [7/100] LR: 1.00e-03 | Loss: 1.2358/0.9800 | Gender: 0.7306/0.7895 | Occasion: 0.7326/0.8165
+2026-09-08 23:43:03,483 [INFO] train -   -> Saved best model (val_loss: 0.9800)
+2026-09-08 23:45:14,648 [INFO] train - Epoch [8/100] LR: 1.00e-03 | Loss: 1.2005/1.0526 | Gender: 0.7386/0.8276 | Occasion: 0.7420/0.8028
+2026-09-08 23:47:26,258 [INFO] train - Epoch [9/100] LR: 1.00e-03 | Loss: 1.1733/0.9843 | Gender: 0.7460/0.8205 | Occasion: 0.7469/0.8646
+2026-09-08 23:49:42,427 [INFO] train - Epoch [10/100] LR: 1.00e-03 | Loss: 1.1548/1.0203 | Gender: 0.7529/0.8069 | Occasion: 0.7357/0.6754
+2026-09-08 23:52:20,697 [INFO] train - Epoch [11/100] LR: 1.00e-03 | Loss: 1.1180/0.9505 | Gender: 0.7570/0.7942 | Occasion: 0.7461/0.7817
+2026-09-08 23:52:20,769 [INFO] train -   -> Saved best model (val_loss: 0.9505)
+2026-09-08 23:54:57,584 [INFO] train - Epoch [12/100] LR: 1.00e-03 | Loss: 1.1020/1.0884 | Gender: 0.7589/0.8270 | Occasion: 0.7481/0.7750
+2026-09-08 23:57:33,733 [INFO] train - Epoch [13/100] LR: 1.00e-03 | Loss: 1.0777/0.9847 | Gender: 0.7562/0.8218 | Occasion: 0.7565/0.8727
+2026-09-08 23:59:25,658 [INFO] train - Epoch [14/100] LR: 1.00e-03 | Loss: 1.0440/0.9128 | Gender: 0.7711/0.8405 | Occasion: 0.7604/0.8668
+2026-09-08 23:59:25,739 [INFO] train -   -> Saved best model (val_loss: 0.9128)
+2026-09-09 00:01:14,978 [INFO] train - Epoch [15/100] LR: 1.00e-03 | Loss: 1.0329/0.9158 | Gender: 0.7683/0.8143 | Occasion: 0.7649/0.8129
+2026-09-09 00:03:04,314 [INFO] train - Epoch [16/100] LR: 1.00e-03 | Loss: 1.0258/0.9687 | Gender: 0.7704/0.8233 | Occasion: 0.7590/0.8248
+2026-09-09 00:04:52,767 [INFO] train - Epoch [17/100] LR: 1.00e-03 | Loss: 1.0351/0.9301 | Gender: 0.7801/0.8063 | Occasion: 0.7551/0.7924
+2026-09-09 00:06:41,142 [INFO] train - Epoch [18/100] LR: 1.00e-03 | Loss: 0.9799/0.9231 | Gender: 0.7849/0.8483 | Occasion: 0.7736/0.7665
+2026-09-09 00:08:29,744 [INFO] train - Epoch [19/100] LR: 1.00e-03 | Loss: 0.9668/0.8647 | Gender: 0.7887/0.8517 | Occasion: 0.7798/0.8055
+2026-09-09 00:08:29,809 [INFO] train -   -> Saved best model (val_loss: 0.8647)
+2026-09-09 00:10:19,001 [INFO] train - Epoch [20/100] LR: 1.00e-03 | Loss: 0.9536/0.8792 | Gender: 0.7894/0.8169 | Occasion: 0.7719/0.7790
+2026-09-09 00:12:08,624 [INFO] train - Epoch [21/100] LR: 1.00e-03 | Loss: 0.9376/0.8935 | Gender: 0.7895/0.7909 | Occasion: 0.7830/0.8473
+2026-09-09 00:13:57,380 [INFO] train - Epoch [22/100] LR: 1.00e-03 | Loss: 0.9248/0.9275 | Gender: 0.7946/0.8203 | Occasion: 0.7778/0.7163
+2026-09-09 00:15:46,518 [INFO] train - Epoch [23/100] LR: 1.00e-03 | Loss: 0.8988/0.9813 | Gender: 0.8008/0.8253 | Occasion: 0.7889/0.8572
+2026-09-09 00:17:35,883 [INFO] train - Epoch [24/100] LR: 1.00e-03 | Loss: 0.8910/0.8936 | Gender: 0.7987/0.8407 | Occasion: 0.7865/0.8316
+2026-09-09 00:19:25,238 [INFO] train - Epoch [25/100] LR: 1.00e-04 | Loss: 0.9001/0.8754 | Gender: 0.8025/0.8296 | Occasion: 0.7862/0.7686
+2026-09-09 00:21:15,630 [INFO] train - Epoch [26/100] LR: 1.00e-04 | Loss: 0.7876/0.8083 | Gender: 0.8210/0.8477 | Occasion: 0.7987/0.8402
+2026-09-09 00:21:15,685 [INFO] train -   -> Saved best model (val_loss: 0.8083)
+2026-09-09 00:23:06,980 [INFO] train - Epoch [27/100] LR: 1.00e-04 | Loss: 0.7506/0.7976 | Gender: 0.8278/0.8544 | Occasion: 0.8124/0.8564
+2026-09-09 00:23:07,038 [INFO] train -   -> Saved best model (val_loss: 0.7976)
+2026-09-09 00:24:57,239 [INFO] train - Epoch [28/100] LR: 1.00e-04 | Loss: 0.7381/0.7877 | Gender: 0.8335/0.8574 | Occasion: 0.8177/0.8431
+2026-09-09 00:24:57,304 [INFO] train -   -> Saved best model (val_loss: 0.7877)
+2026-09-09 00:26:47,580 [INFO] train - Epoch [29/100] LR: 1.00e-04 | Loss: 0.7213/0.7771 | Gender: 0.8354/0.8653 | Occasion: 0.8195/0.8499
+2026-09-09 00:26:47,663 [INFO] train -   -> Saved best model (val_loss: 0.7771)
+2026-09-09 00:28:38,623 [INFO] train - Epoch [30/100] LR: 1.00e-04 | Loss: 0.7050/0.7835 | Gender: 0.8379/0.8622 | Occasion: 0.8217/0.8503
+2026-09-09 00:30:28,498 [INFO] train - Epoch [31/100] LR: 1.00e-04 | Loss: 0.6792/0.7933 | Gender: 0.8375/0.8600 | Occasion: 0.8266/0.8652
+2026-09-09 00:32:17,640 [INFO] train - Epoch [32/100] LR: 1.00e-04 | Loss: 0.6834/0.7795 | Gender: 0.8409/0.8618 | Occasion: 0.8284/0.8555
+2026-09-09 00:34:06,332 [INFO] train - Epoch [33/100] LR: 1.00e-04 | Loss: 0.6783/0.7827 | Gender: 0.8438/0.8648 | Occasion: 0.8272/0.8614
+2026-09-09 00:35:55,463 [INFO] train - Epoch [34/100] LR: 1.00e-04 | Loss: 0.6764/0.7768 | Gender: 0.8418/0.8633 | Occasion: 0.8241/0.8524
+2026-09-09 00:35:55,528 [INFO] train -   -> Saved best model (val_loss: 0.7768)
+2026-09-09 00:37:44,619 [INFO] train - Epoch [35/100] LR: 1.00e-04 | Loss: 0.6610/0.8043 | Gender: 0.8440/0.8626 | Occasion: 0.8303/0.8690
+2026-09-09 00:39:34,054 [INFO] train - Epoch [36/100] LR: 1.00e-04 | Loss: 0.6631/0.7741 | Gender: 0.8436/0.8678 | Occasion: 0.8337/0.8576
+2026-09-09 00:39:34,122 [INFO] train -   -> Saved best model (val_loss: 0.7741)
+2026-09-09 00:41:23,320 [INFO] train - Epoch [37/100] LR: 1.00e-04 | Loss: 0.6498/0.7809 | Gender: 0.8453/0.8672 | Occasion: 0.8327/0.8620
+2026-09-09 00:43:12,809 [INFO] train - Epoch [38/100] LR: 1.00e-04 | Loss: 0.6431/0.7865 | Gender: 0.8468/0.8679 | Occasion: 0.8348/0.8640
+2026-09-09 00:45:01,596 [INFO] train - Epoch [39/100] LR: 1.00e-04 | Loss: 0.6375/0.7858 | Gender: 0.8485/0.8664 | Occasion: 0.8349/0.8731
+2026-09-09 00:46:50,738 [INFO] train - Epoch [40/100] LR: 1.00e-04 | Loss: 0.6175/0.7882 | Gender: 0.8511/0.8762 | Occasion: 0.8347/0.8686
+2026-09-09 00:48:39,815 [INFO] train - Epoch [41/100] LR: 1.00e-04 | Loss: 0.6102/0.7758 | Gender: 0.8509/0.8686 | Occasion: 0.8426/0.8762
+2026-09-09 00:50:29,086 [INFO] train - Epoch [42/100] LR: 1.00e-05 | Loss: 0.6189/0.7794 | Gender: 0.8481/0.8731 | Occasion: 0.8400/0.8748
+2026-09-09 00:52:18,290 [INFO] train - Epoch [43/100] LR: 1.00e-05 | Loss: 0.5970/0.7817 | Gender: 0.8540/0.8726 | Occasion: 0.8427/0.8716
+2026-09-09 00:54:07,132 [INFO] train - Epoch [44/100] LR: 1.00e-05 | Loss: 0.5784/0.7771 | Gender: 0.8549/0.8704 | Occasion: 0.8461/0.8687
+2026-09-09 00:55:56,702 [INFO] train - Epoch [45/100] LR: 1.00e-05 | Loss: 0.5829/0.7786 | Gender: 0.8561/0.8735 | Occasion: 0.8438/0.8747
+2026-09-09 00:57:45,801 [INFO] train - Epoch [46/100] LR: 1.00e-05 | Loss: 0.5865/0.7705 | Gender: 0.8554/0.8726 | Occasion: 0.8418/0.8752
+2026-09-09 00:57:45,885 [INFO] train -   -> Saved best model (val_loss: 0.7705)
+2026-09-09 00:59:35,569 [INFO] train - Epoch [47/100] LR: 1.00e-05 | Loss: 0.5839/0.7770 | Gender: 0.8549/0.8729 | Occasion: 0.8466/0.8735
+2026-09-09 01:01:25,678 [INFO] train - Epoch [48/100] LR: 1.00e-05 | Loss: 0.5741/0.7768 | Gender: 0.8581/0.8701 | Occasion: 0.8398/0.8760
+2026-09-09 01:03:14,815 [INFO] train - Epoch [49/100] LR: 1.00e-05 | Loss: 0.5823/0.7801 | Gender: 0.8549/0.8726 | Occasion: 0.8461/0.8775
+2026-09-09 01:05:03,594 [INFO] train - Epoch [50/100] LR: 1.00e-05 | Loss: 0.5774/0.7887 | Gender: 0.8563/0.8724 | Occasion: 0.8442/0.8777
+2026-09-09 01:06:52,949 [INFO] train - Epoch [51/100] LR: 1.00e-05 | Loss: 0.5722/0.7817 | Gender: 0.8572/0.8731 | Occasion: 0.8451/0.8785
+2026-09-09 01:08:42,631 [INFO] train - Epoch [52/100] LR: 1.00e-06 | Loss: 0.5751/0.7808 | Gender: 0.8577/0.8742 | Occasion: 0.8439/0.8738
+2026-09-09 01:10:31,803 [INFO] train - Epoch [53/100] LR: 1.00e-06 | Loss: 0.5836/0.7772 | Gender: 0.8561/0.8707 | Occasion: 0.8439/0.8729
+2026-09-09 01:12:20,983 [INFO] train - Epoch [54/100] LR: 1.00e-06 | Loss: 0.5694/0.7822 | Gender: 0.8572/0.8731 | Occasion: 0.8476/0.8730
+2026-09-09 01:14:10,352 [INFO] train - Epoch [55/100] LR: 1.00e-06 | Loss: 0.5737/0.7804 | Gender: 0.8579/0.8722 | Occasion: 0.8476/0.8737
+2026-09-09 01:15:59,715 [INFO] train - Epoch [56/100] LR: 1.00e-06 | Loss: 0.5727/0.7810 | Gender: 0.8568/0.8714 | Occasion: 0.8468/0.8740
+2026-09-09 01:15:59,716 [INFO] train - Early stopping at epoch 56
+2026-09-09 01:16:00,948 [INFO] train - Training complete. Artifacts saved to: results/train/20260908_232652

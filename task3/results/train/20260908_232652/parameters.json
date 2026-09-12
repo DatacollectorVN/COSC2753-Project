@@ -1,0 +1,53 @@
+{
+  "_comment_data": "=== Data ===",
+  "DATA_DIR_TRAIN": "../data/FashionDataset/train",
+  "_comment_output": "=== Output ===",
+  "SAVE_MODEL_DIR": "./results",
+  "SAVE_BEST": "val_loss",
+  "_comment_seed": "=== Reproducibility ===",
+  "SEED": 42,
+  "IN_CHANNELS": 3,
+  "_comment_model": "=== Model: hybrid_cnn with backbone + metadata branch ===",
+  "MODEL_NAME": "hybrid_cnn",
+  "MODEL_PARAMS": {
+    "backbone": "simple",
+    "channels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "depth": 50,
+    "article_embed_dim": 16,
+    "master_embed_dim": 8,
+    "colour_embed_dim": 8,
+    "meta_dim": 64,
+    "fc_hidden": 128,
+    "dropout_rate": 0.2,
+    "meta_dropout_p": 0.2
+  },
+  "_comment_transform": "=== Image transforms (96x128, 3:4 aspect ratio) ===",
+  "TRANSFORM_PARAMS": {
+    "width": 96,
+    "height": 128,
+    "pad_value": 0,
+    "flip_p": 0.5,
+    "brightness": 0.2,
+    "contrast": 0.2,
+    "saturation": 0.2
+  },
+  "_comment_labels": "=== Label processing ===",
+  "MIN_OCCASION_COUNT": 50,
+  "USE_CLASS_WEIGHTS": true,
+  "_comment_loader": "=== DataLoader ===",
+  "BATCH_SIZE": 32,
+  "VAL_RATIO": 0.2,
+  "NUM_WORKERS": 4,
+  "_comment_optim": "=== Optimizer & scheduler ===",
+  "LEARNING_RATE": 0.001,
+  "WEIGHT_DECAY": 0.0001,
+  "LR_SCHEDULE_FACTOR": 0.1,
+  "LR_PATIENCE": 5,
+  "EARLY_STOPPING_PATIENCE": 10,
+  "MAX_EPOCHS": 100
+}
